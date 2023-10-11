@@ -2,8 +2,6 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.ArrayList;
 import java.util.List;
