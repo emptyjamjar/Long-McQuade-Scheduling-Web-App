@@ -46,7 +46,8 @@ public class lessonController {
     @PutMapping("/updatelesson")
     public Lesson updateLesson(@RequestBody Lesson lesson) {
 
-        return lessonService.save(lesson);
+        Lesson newLesson = lessonService.save(lesson);
+        return newLesson;
     }
 
     @DeleteMapping("/deletelesson/{lessonNumber}")

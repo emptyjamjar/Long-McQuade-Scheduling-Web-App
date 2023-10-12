@@ -70,7 +70,7 @@ CREATE TABLE `lesson_centre` (
   `city` varchar(60) DEFAULT NULL,
   `phonnum` varchar(45) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
-  `address` int DEFAULT NULL,
+  `address` varchar(45) DEFAULT NULL,
   `postcode` varchar(60) DEFAULT NULL,
   `numofrooms` int DEFAULT NULL,
   PRIMARY KEY (`id`)

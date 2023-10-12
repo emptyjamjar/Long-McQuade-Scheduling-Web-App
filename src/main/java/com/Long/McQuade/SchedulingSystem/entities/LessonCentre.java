@@ -15,7 +15,7 @@ public class LessonCentre {
     @Column(name = "city")
     private String city;
 
-    @Column(name = "phonenum")
+    @Column(name = "phonnum")
     private String phoneNumber;
 
     @Column(name = "email")
