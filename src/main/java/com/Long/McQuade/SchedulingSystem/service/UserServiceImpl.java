@@ -3,6 +3,7 @@ package com.Long.McQuade.SchedulingSystem.service;
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 import com.Long.McQuade.SchedulingSystem.entities.User;
 import com.Long.McQuade.SchedulingSystem.repositories.UserRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UserService{
 
+    @Autowired
     private UserRepo repo;
 
     @Override

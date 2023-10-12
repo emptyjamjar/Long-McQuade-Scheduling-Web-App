@@ -14,10 +14,10 @@ public class Teacher {
     @Column(name = "teacherNumber")
     private String teacherNumber;
 
-    @Column(name = "firstName")
+    @Column(name = "first")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "last")
     private String lastName;
 
     @Column(name = "address")
@@ -29,7 +29,7 @@ public class Teacher {
     @Column(name = "phoneNumber")
     private String phoneNumber;
 
-    @Column(name = "instrumentsTaught")
+    @Column(name = "instruments")
     private String instrumentsTaught;
 
     public Teacher(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsTaught) {

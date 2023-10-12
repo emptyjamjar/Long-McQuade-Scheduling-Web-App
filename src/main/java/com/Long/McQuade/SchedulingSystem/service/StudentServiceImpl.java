@@ -2,6 +2,7 @@ package com.Long.McQuade.SchedulingSystem.service;
 
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 import com.Long.McQuade.SchedulingSystem.repositories.StudentRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.Optional;
 @Service
 public class StudentServiceImpl implements StudentService{
 
+    @Autowired
     private StudentRepo repo;
 
     @Override

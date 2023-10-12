@@ -15,31 +15,31 @@ public class Student {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "studentNumber")
+    @Column(name = "snum")
     private String studentNumber;
 
-    @Column(name = "firstName")
+    @Column(name = "first")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "last")
     private String lastName;
 
     @Column(name = "address")
     private String address;
 
-    @Column(name = "postCode")
+    @Column(name = "pcode")
     private String postCode;
 
-    @Column(name = "phoneNumber")
+    @Column(name = "phonnum")
     private String phoneNumber;
 
-    @Column(name = "instrumentsPlayed")
+    @Column(name = "played")
     private String instrumentsPlayed;
 
     @Column(name = "experience")
     private String experience;
 
-    @Column(name = "yearOfBirth")
+    @Column(name = "yob")
     private int yearOfBirth;
 
 
