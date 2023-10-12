@@ -38,14 +38,14 @@ public class teacherController {
     @PostMapping("/addteacher")
     public Teacher addNewTeacher(@RequestBody Teacher teacher) {
 
-
-        User user = new User(teacher.getId(), teacher.getFirstName(), teacher.getLastName(), "password1234", "TEACHER");
+        int length = teacherService.findAll().size() + 1;
+        teacher.setTeacherNumber("T" + length);
+        User user = new User(teacher.getTeacherNumber(), teacher.getFirstName(), teacher.getLastName(), "password1234", "TEACHER");
         userService.save(user);
         teacherService.save(teacher);
         Student student = new Student(null, null, null, null, null, null, null, null);
         studentService.save(student);
 
-        teacher.setTeacherNumber("T" + teacher.getId());
         return teacherService.save(teacher);
     }
 
@@ -54,7 +54,7 @@ public class teacherController {
 
         Teacher newTeacher = teacherService.save(teacher);
         User oldUser = userService.findBy(teacher.getId());
-        User user = new User(teacher.getId(), teacher.getFirstName(), teacher.getLastName(), oldUser.getPwd(), oldUser.getAuthority());
+        User user = new User(teacher.getTeacherNumber(), teacher.getFirstName(), teacher.getLastName(), oldUser.getPwd(), oldUser.getAuthority());
         userService.save(user);
 
         return newTeacher;

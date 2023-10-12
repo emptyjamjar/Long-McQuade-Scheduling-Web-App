@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS `lesson_centre`;
 
 CREATE TABLE `user` (
     `id` int NOT NULL AUTO_INCREMENT,
+    `identifiernumber` varchar(45) DEFAULT NULL,
 	`first` varchar(45) DEFAULT NULL,
 	`last` varchar(45) DEFAULT NULL,
 	`pwd` varchar(45) DEFAULT NULL,
@@ -75,16 +76,3 @@ CREATE TABLE `lesson_centre` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=latin1;
 
-
-INSERT INTO `user` VALUES 
-	('1', 'test','test','test','test'),
-    ('2', 'testt','testt','testt','testt');
-
-INSERT INTO `student` VALUES 
-	(1, 'S1','test','test','test', 'test', 'test', 'test', 'test', '2003'),
-    (2, NULL, NULL,NULL,NULL, NULL, NULL, NULL, NULL, NULL);
-    
-    
-INSERT INTO `teacher` VALUES 
-	(1, NULL, NULL,NULL,NULL, NULL, NULL, NULL),
-	(2, 'T2','testt','testt','testt', 'testt', 'test', 'test');

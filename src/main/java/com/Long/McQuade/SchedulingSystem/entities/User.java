@@ -12,6 +12,9 @@ public class User {
     @Column(name = "id")
     private int id;
 
+    @Column(name = "identifiernumber")
+    private String userNumber;
+
     @Column(name = "first")
     private String firstName;
 
@@ -25,8 +28,8 @@ public class User {
     private String authority;
 
 
-    public User(int id, String firstName, String lastName, String pwd, String authority) {
-        this.id = id;
+    public User(String userNumber, String firstName, String lastName, String pwd, String authority) {
+        this.userNumber = userNumber;
         this.firstName = firstName;
         this.lastName = lastName;
         this.pwd = pwd;
@@ -77,10 +80,19 @@ public class User {
         this.authority = authority;
     }
 
+    public String getUserNumber() {
+        return userNumber;
+    }
+
+    public void setUserNumber(String userNumber) {
+        this.userNumber = userNumber;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
+                ", userNumber='" + userNumber + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", pwd='" + pwd + '\'' +

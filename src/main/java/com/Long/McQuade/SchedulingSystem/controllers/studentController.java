@@ -25,7 +25,7 @@ public class studentController {
     private TeacherServiceImpl teacherService;
 
     @GetMapping("/")
-    public List<Student> showAllStudents() {
+    public List<Student> showAllUsers() {
         return studentService.findAll();
     }
 
@@ -39,13 +39,16 @@ public class studentController {
     public Student addNewStudent(@RequestBody Student student) {
 
 
-        User user = new User(student.getId(), student.getFirstName(), student.getLastName(), "password1234", "STUDENT");
+        int length = studentService.findAll().size() + 1;
+        student.setStudentNumber("S" + length);
+
+        User user = new User(student.getStudentNumber(), student.getFirstName(), student.getLastName(), "password1234", "STUDENT");
         userService.save(user);
         studentService.save(student);
         Teacher teacher = new Teacher(null, null, null, null, null, null);
         teacherService.save(teacher);
 
-        student.setStudentNumber("S" + student.getId());
+
         return studentService.save(student);
     }
 
@@ -55,7 +58,7 @@ public class studentController {
 
         Student newStudent = studentService.save(student);
         User oldUser = userService.findBy(student.getId());
-        User user = new User(student.getId(), student.getFirstName(), student.getLastName(), oldUser.getPwd(), oldUser.getAuthority());
+        User user = new User(student.getStudentNumber(), student.getFirstName(), student.getLastName(), oldUser.getPwd(), oldUser.getAuthority());
         userService.save(user);
 
         return newStudent;
