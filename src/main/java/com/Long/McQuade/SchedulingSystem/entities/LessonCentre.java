@@ -8,14 +8,14 @@ import jakarta.persistence.*;
 public class LessonCentre {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
     @Column(name = "city")
     private String city;
 
-    @Column(name = "phoneNumber")
+    @Column(name = "phonenum")
     private String phoneNumber;
 
     @Column(name = "email")
@@ -24,10 +24,10 @@ public class LessonCentre {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "postCode")
+    @Column(name = "postcode")
     private String postCode;
 
-    @Column(name = "numOfRooms")
+    @Column(name = "numofrooms")
     private String numOfRooms;
 
 

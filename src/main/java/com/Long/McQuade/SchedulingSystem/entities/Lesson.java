@@ -8,42 +8,41 @@ import jakarta.persistence.*;
 public class Lesson {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
-    @Column(name = "studentNumber")
-    private String studentNumber;
-
-    @Column(name = "teacherNumber")
-    private String teacherNumber;
-
-    @Column(name = "centreID")
-    private String centreID;
-
-    @Column(name = "lessonNumber")
+    @Column(name = "lessonnum")
     private String lessonNumber;
 
-    @Column(name = "startTime")
+    @Column(name = "snum")
+    private String studentNumber;
+
+    @Column(name = "tnum")
+    private String teacherNumber;
+
+    @Column(name = "centrenum")
+    private String centreID;
+
+    @Column(name = "starttime")
     private String startTime;
 
-    @Column(name = "endTime")
+    @Column(name = "endtime")
     private String endTime;
 
-    @Column(name = "roomNumber")
-    private int roomNumber;
+    @Column(name = "roomnumber")
+    private String roomNumber;
 
     @Column(name = "date")
     private String date;
 
-    @Column(name = "dayOfWeek")
+    @Column(name = "dayofweek")
     private String dayOfWeek;
 
-    public Lesson(String studentNumber, String teacherNumber, String centreID, String lessonNumber, String startTime, String endTime, int roomNumber, String date, String dayOfWeek) {
+    public Lesson(String studentNumber, String teacherNumber, String centreID, String startTime, String endTime, String roomNumber, String date, String dayOfWeek) {
         this.studentNumber = studentNumber;
         this.teacherNumber = teacherNumber;
         this.centreID = centreID;
-        this.lessonNumber = lessonNumber;
         this.startTime = startTime;
         this.endTime = endTime;
         this.roomNumber = roomNumber;
@@ -111,11 +110,11 @@ public class Lesson {
         this.endTime = endTime;
     }
 
-    public int getRoomNumber() {
+    public String getRoomNumber() {
         return roomNumber;
     }
 
-    public void setRoomNumber(int roomNumber) {
+    public void setRoomNumber(String roomNumber) {
         this.roomNumber = roomNumber;
     }
 
