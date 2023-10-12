@@ -28,7 +28,7 @@ CREATE TABLE `student` (
   `phonnum` varchar(45) DEFAULT NULL,
   `played` varchar(255) DEFAULT NULL,
   `experience` varchar(45) DEFAULT NULL,
-  `yob` int DEFAULT NULL,
+  `yob` varchar(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -36,15 +36,15 @@ CREATE TABLE `student` (
 CREATE TABLE `teacher` (
 
   `id` int NOT NULL AUTO_INCREMENT,
-  `teacherNumber` varchar(60) DEFAULT NULL,
+  `teachernum` varchar(60) DEFAULT NULL,
   `first` varchar(45) DEFAULT NULL,
   `last` varchar(45) DEFAULT NULL,
   `address` varchar(60) DEFAULT NULL,
-  `postCode` varchar(10) DEFAULT NULL,
-  `phoneNumber` varchar(45) DEFAULT NULL,
+  `postcode` varchar(10) DEFAULT NULL,
+  `phonenumber` varchar(45) DEFAULT NULL,
   `instruments` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 
 CREATE TABLE `lesson` (
@@ -81,8 +81,10 @@ INSERT INTO `user` VALUES
     ('2', 'testt','testt','testt','testt');
 
 INSERT INTO `student` VALUES 
-	(1, 'S1','test','test','test', 'test', 'test', 'test', 'test', '2003');
+	(1, 'S1','test','test','test', 'test', 'test', 'test', 'test', '2003'),
+    (2, NULL, NULL,NULL,NULL, NULL, NULL, NULL, NULL, NULL);
     
     
 INSERT INTO `teacher` VALUES 
+	(1, NULL, NULL,NULL,NULL, NULL, NULL, NULL),
 	(2, 'T2','testt','testt','testt', 'testt', 'test', 'test');

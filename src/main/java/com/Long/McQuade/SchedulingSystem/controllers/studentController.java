@@ -2,8 +2,10 @@ package com.Long.McQuade.SchedulingSystem.controllers;
 
 
 import com.Long.McQuade.SchedulingSystem.entities.Student;
+import com.Long.McQuade.SchedulingSystem.entities.Teacher;
 import com.Long.McQuade.SchedulingSystem.entities.User;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
+import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,9 @@ public class studentController {
     private StudentServiceImpl studentService;
     @Autowired
     private UserServiceImpl userService;
+
+    @Autowired
+    private TeacherServiceImpl teacherService;
 
     @GetMapping("/")
     public List<Student> showAllStudents() {
@@ -37,6 +42,9 @@ public class studentController {
         User user = new User(student.getId(), student.getFirstName(), student.getLastName(), "password1234", "STUDENT");
         userService.save(user);
         studentService.save(student);
+        Teacher teacher = new Teacher(null, null, null, null, null, null);
+        teacherService.save(teacher);
+
         student.setStudentNumber("S" + student.getId());
         return studentService.save(student);
     }
@@ -45,14 +53,19 @@ public class studentController {
     @PutMapping("/updatestudent")
     public Student updateCurrentStudent(@RequestBody Student student) {
 
-        //student.setStudentNumber(student.getStudentNumber());
         Student newStudent = studentService.save(student);
+        User oldUser = userService.findBy(student.getId());
+        User user = new User(student.getId(), student.getFirstName(), student.getLastName(), oldUser.getPwd(), oldUser.getAuthority());
+        userService.save(user);
 
         return newStudent;
     }
 
     @DeleteMapping("/deletestudent/{id}")
     public String deleteCurrentStudent(@PathVariable("id") int id) {
+
+        userService.deleteByID(id);
+        teacherService.deleteByID(id);
         return studentService.deleteByID(id);
     }
 

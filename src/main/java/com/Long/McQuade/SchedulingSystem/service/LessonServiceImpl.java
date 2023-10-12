@@ -4,6 +4,7 @@ package com.Long.McQuade.SchedulingSystem.service;
 import com.Long.McQuade.SchedulingSystem.entities.Lesson;
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 import com.Long.McQuade.SchedulingSystem.repositories.LessonRepo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.Optional;
 @Service
 public class LessonServiceImpl implements LessonService{
 
+    @Autowired
     private LessonRepo repo;
     @Override
     public List<Lesson> findAll() {

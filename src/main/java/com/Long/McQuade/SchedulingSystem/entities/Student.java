@@ -40,10 +40,10 @@ public class Student {
     private String experience;
 
     @Column(name = "yob")
-    private int yearOfBirth;
+    private String yearOfBirth;
 
 
-    public Student(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsPlayed, String experience, int yearOfBirth) {
+    public Student(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsPlayed, String experience, String yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -130,11 +130,11 @@ public class Student {
         this.experience = experience;
     }
 
-    public int getYearOfBirth() {
+    public String getYearOfBirth() {
         return yearOfBirth;
     }
 
-    public void setYearOfBirth(int yearOfBirth) {
+    public void setYearOfBirth(String yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
 

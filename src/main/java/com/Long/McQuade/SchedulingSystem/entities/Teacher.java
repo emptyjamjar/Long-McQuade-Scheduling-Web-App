@@ -7,11 +7,11 @@ import jakarta.persistence.*;
 public class Teacher {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
-    @Column(name = "teacherNumber")
+    @Column(name = "teachernum")
     private String teacherNumber;
 
     @Column(name = "first")
@@ -23,10 +23,10 @@ public class Teacher {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "postCode")
+    @Column(name = "postcode")
     private String postCode;
 
-    @Column(name = "phoneNumber")
+    @Column(name = "phonenumber")
     private String phoneNumber;
 
     @Column(name = "instruments")
