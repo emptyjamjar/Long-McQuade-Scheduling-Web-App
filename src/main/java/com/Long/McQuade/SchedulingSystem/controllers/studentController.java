@@ -39,12 +39,11 @@ public class studentController {
     public Student addNewStudent(@RequestBody Student student) {
 
 
-        int length = studentService.findAll().size() + 1;
-        student.setStudentNumber("S" + length);
+        studentService.save(student);
+        student.setStudentNumber("S" + student.getId());
 
         User user = new User(student.getStudentNumber(), student.getFirstName(), student.getLastName(), "password1234", "STUDENT");
         userService.save(user);
-        studentService.save(student);
         Teacher teacher = new Teacher(null, null, null, null, null, null);
         teacherService.save(teacher);
 

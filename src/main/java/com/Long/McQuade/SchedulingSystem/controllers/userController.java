@@ -39,9 +39,11 @@ public class userController {
     @PostMapping("/addadmin")
     public User addAdmin(@RequestBody User user) {
 
-        int length = userService.findAll().size() + 1;
 
-        User newUser = new User("A" + length, user.getFirstName(), user.getLastName(), user.getPwd(), "ADMIN");
+
+        User newUser = new User("A" + user.getId(), user.getFirstName(), user.getLastName(), user.getPwd(), "ADMIN");
+        userService.save(newUser);
+        newUser.setUserNumber("A" + newUser.getId());
         Student student = new Student(null, null, null, null, null, null, null, null);
         Teacher teacher = new Teacher(null, null, null, null, null, null);
         teacherService.save(teacher);
