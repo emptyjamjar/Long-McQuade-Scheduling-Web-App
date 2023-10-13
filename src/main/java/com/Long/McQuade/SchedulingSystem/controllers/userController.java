@@ -1,9 +1,11 @@
 package com.Long.McQuade.SchedulingSystem.controllers;
 
 
+import com.Long.McQuade.SchedulingSystem.entities.Authority;
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 import com.Long.McQuade.SchedulingSystem.entities.Teacher;
 import com.Long.McQuade.SchedulingSystem.entities.User;
+import com.Long.McQuade.SchedulingSystem.service.AuthorityServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
@@ -24,6 +26,9 @@ public class userController {
     @Autowired
     private TeacherServiceImpl teacherService;
 
+    @Autowired
+    private AuthorityServiceImpl authorityService;
+
 
     @GetMapping("/")
     public List<User> showAllUsers() {
@@ -40,14 +45,18 @@ public class userController {
     public User addAdmin(@RequestBody User user) {
 
 
-
-        User newUser = new User("A" + user.getId(), user.getFirstName(), user.getLastName(), user.getPwd(), "ADMIN");
+        User newUser = new User("A" + user.getId(), user.getFirstName(), user.getLastName(), user.getPwd(), true);
         userService.save(newUser);
         newUser.setUserNumber("A" + newUser.getId());
+
+        Authority authority = new Authority(newUser.getUserNumber(), "ADMIN");
+        authorityService.save(authority);
+
         Student student = new Student(null, null, null, null, null, null, null, null);
+        studentService.save(student);
+
         Teacher teacher = new Teacher(null, null, null, null, null, null);
         teacherService.save(teacher);
-        studentService.save(student);
 
 
         return userService.save(newUser);
@@ -64,6 +73,7 @@ public class userController {
 
         teacherService.deleteByID(id);
         studentService.deleteByID(id);
+        authorityService.deleteByID(id);
         userService.deleteByID(id);
     }
 

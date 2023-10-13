@@ -2,20 +2,34 @@ CREATE DATABASE  IF NOT EXISTS `scheduling_system`;
 USE `scheduling_system`;
 
 DROP TABLE IF EXISTS `student`;
+DROP TABLE IF EXISTS `authorities`;
 DROP TABLE IF EXISTS `user`;
 DROP TABLE IF EXISTS `teacher`;
 DROP TABLE IF EXISTS `lesson`;
 DROP TABLE IF EXISTS `lesson_centre`;
 
 CREATE TABLE `user` (
-    `id` int NOT NULL AUTO_INCREMENT,
-    `identifiernumber` varchar(45) DEFAULT NULL,
+	`id` int NOT NULL AUTO_INCREMENT,
+    `identifiernumber` varchar(45) NOT NULL,
 	`first` varchar(45) DEFAULT NULL,
 	`last` varchar(45) DEFAULT NULL,
 	`pwd` varchar(45) DEFAULT NULL,
-	`authority` varchar(45) DEFAULT NULL,
+    `enabled` tinyint NOT NULL,
     PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `authorities` (
+
+	`id` int NOT NULL AUTO_INCREMENT,
+	`identifiernumber` varchar(45) NOT NULL,
+    `authority` varchar(45) DEFAULT NULL,
+    
+    UNIQUE KEY `authorities_idx_1` (`id`, `identifiernumber`, `authority`),
+    
+    CONSTRAINT `authorities_ibfk_1`
+    FOREIGN KEY (`id`)
+    REFERENCES `user` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 CREATE TABLE `student` (

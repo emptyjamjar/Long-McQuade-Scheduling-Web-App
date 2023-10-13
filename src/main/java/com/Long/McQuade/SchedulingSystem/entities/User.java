@@ -24,16 +24,17 @@ public class User {
     @Column(name = "pwd")
     private String pwd;
 
-    @Column(name = "authority")
-    private String authority;
+    @Column(name = "enabled")
+    private boolean enabled;
 
 
-    public User(String userNumber, String firstName, String lastName, String pwd, String authority) {
+
+    public User(String userNumber, String firstName, String lastName, String pwd, boolean enabled) {
         this.userNumber = userNumber;
         this.firstName = firstName;
         this.lastName = lastName;
         this.pwd = pwd;
-        this.authority = authority;
+        this.enabled = enabled;
     }
 
     public User() {
@@ -46,6 +47,14 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getUserNumber() {
+        return userNumber;
+    }
+
+    public void setUserNumber(String userNumber) {
+        this.userNumber = userNumber;
     }
 
     public String getFirstName() {
@@ -72,31 +81,22 @@ public class User {
         this.pwd = pwd;
     }
 
-    public String getAuthority() {
-        return authority;
+    public boolean isEnabled() {
+        return enabled;
     }
 
-    public void setAuthority(String authority) {
-        this.authority = authority;
-    }
-
-    public String getUserNumber() {
-        return userNumber;
-    }
-
-    public void setUserNumber(String userNumber) {
-        this.userNumber = userNumber;
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", userNumber='" + userNumber + '\'' +
+                "userNumber='" + userNumber + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", pwd='" + pwd + '\'' +
-                ", authority='" + authority + '\'' +
+                ", enabled=" + enabled +
                 '}';
     }
 }

@@ -1,9 +1,11 @@
 package com.Long.McQuade.SchedulingSystem.controllers;
 
 
+import com.Long.McQuade.SchedulingSystem.entities.Authority;
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 import com.Long.McQuade.SchedulingSystem.entities.Teacher;
 import com.Long.McQuade.SchedulingSystem.entities.User;
+import com.Long.McQuade.SchedulingSystem.service.AuthorityServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
@@ -20,9 +22,11 @@ public class studentController {
     private StudentServiceImpl studentService;
     @Autowired
     private UserServiceImpl userService;
-
     @Autowired
     private TeacherServiceImpl teacherService;
+
+    @Autowired
+    private AuthorityServiceImpl authorityService;
 
     @GetMapping("/")
     public List<Student> showAllUsers() {
@@ -42,8 +46,12 @@ public class studentController {
         studentService.save(student);
         student.setStudentNumber("S" + student.getId());
 
-        User user = new User(student.getStudentNumber(), student.getFirstName(), student.getLastName(), "password1234", "STUDENT");
+        User user = new User(student.getStudentNumber(), student.getFirstName(), student.getLastName(), "password1234", true);
         userService.save(user);
+
+        Authority authority = new Authority(student.getStudentNumber(), "STUDENT");
+        authorityService.save(authority);
+
         Teacher teacher = new Teacher(null, null, null, null, null, null);
         teacherService.save(teacher);
 
@@ -56,9 +64,11 @@ public class studentController {
     public Student updateCurrentStudent(@RequestBody Student student) {
 
         Student newStudent = studentService.save(student);
+
         User oldUser = userService.findBy(student.getId());
-        User user = new User(student.getStudentNumber(), student.getFirstName(), student.getLastName(), oldUser.getPwd(), oldUser.getAuthority());
-        userService.save(user);
+        oldUser.setFirstName(newStudent.getFirstName());
+        oldUser.setLastName(newStudent.getLastName());
+        userService.save(oldUser);
 
         return newStudent;
     }
@@ -66,6 +76,7 @@ public class studentController {
     @DeleteMapping("/deletestudent/{id}")
     public String deleteCurrentStudent(@PathVariable("id") int id) {
 
+        authorityService.deleteByID(id);
         userService.deleteByID(id);
         teacherService.deleteByID(id);
         return studentService.deleteByID(id);
