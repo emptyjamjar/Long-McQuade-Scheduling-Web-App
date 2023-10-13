@@ -6,6 +6,7 @@ import com.Long.McQuade.SchedulingSystem.repositories.TeacherRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,8 +17,20 @@ public class TeacherServiceImpl implements TeacherService{
     private TeacherRepo repo;
 
     @Override
-    public List<Teacher> findAll() {
-        return repo.findAll();
+    public List<Teacher> findAll()
+    {
+        List<Teacher> uneditedTeacher = repo.findAll();
+        List<Teacher> editedTeacher = new ArrayList<>();
+
+        for (Teacher teacher: uneditedTeacher) {
+
+            if (teacher.getTeacherNumber() != null) {
+                editedTeacher.add(teacher);
+            }
+        }
+
+        return editedTeacher;
+
     }
 
     @Override

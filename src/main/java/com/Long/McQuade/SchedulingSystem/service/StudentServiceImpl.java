@@ -5,6 +5,7 @@ import com.Long.McQuade.SchedulingSystem.repositories.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,7 +17,18 @@ public class StudentServiceImpl implements StudentService{
 
     @Override
     public List<Student> findAll() {
-        return repo.findAll();
+
+        List<Student> uneditedStudents = repo.findAll();
+        List<Student> editedStudents = new ArrayList<>();
+
+        for (Student student: uneditedStudents) {
+
+            if (student.getStudentNumber() != null) {
+                editedStudents.add(student);
+            }
+        }
+
+        return editedStudents;
     }
 
     @Override
