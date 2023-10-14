@@ -3,12 +3,12 @@ USE `scheduling_system`;
 
 DROP TABLE IF EXISTS `student`;
 DROP TABLE IF EXISTS `authorities`;
-DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `users`;
 DROP TABLE IF EXISTS `teacher`;
 DROP TABLE IF EXISTS `lesson`;
 DROP TABLE IF EXISTS `lesson_centre`;
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
 	`id` int NOT NULL AUTO_INCREMENT,
     `identifiernumber` varchar(45) NOT NULL,
 	`first` varchar(45) DEFAULT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE `authorities` (
     
     CONSTRAINT `authorities_ibfk_1`
     FOREIGN KEY (`id`)
-    REFERENCES `user` (`id`)
+    REFERENCES `users` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
@@ -89,4 +89,16 @@ CREATE TABLE `lesson_centre` (
   `numofrooms` int DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10000 DEFAULT CHARSET=latin1;
+	
 
+INSERT INTO `users` VALUES 
+	(NULL, 'A1','momo', 'momo', '{noop}admin', 1);
+    
+INSERT INTO `authorities` VALUES
+	(NULL, 'A1', 'ADMIN') ;
+    
+INSERT INTO `student` VALUES
+	(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+INSERT INTO `teacher` VALUES
+	(NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
