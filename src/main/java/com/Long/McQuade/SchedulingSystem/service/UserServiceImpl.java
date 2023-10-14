@@ -44,4 +44,9 @@ public class UserServiceImpl implements UserService{
 
         repo.deleteById(id);
     }
+
+    @Override
+    public User findByUserNumber(String userNumber) {
+        return repo.findByUserNumber(userNumber);
+    }
 }

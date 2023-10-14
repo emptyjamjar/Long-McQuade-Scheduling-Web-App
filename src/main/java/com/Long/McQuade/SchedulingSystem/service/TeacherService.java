@@ -14,4 +14,12 @@ public interface TeacherService {
     Teacher save(Teacher teacher);
 
     String deleteByID(int id);
+
+    public Teacher findTeacherByTeacherNumber(String teacherNumber);
+
+    public List<Teacher> findAllByInstrumentsTaughtContaining(String instrument);
+
+    public List<Teacher> findTeachersByFirstName(String firstName);
+
+    public List<Teacher> findTeachersByLastName(String lastName);
 }

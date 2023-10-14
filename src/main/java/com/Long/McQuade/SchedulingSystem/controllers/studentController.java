@@ -33,10 +33,17 @@ public class studentController {
         return studentService.findAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}/")
     public Student showStudentByID(@PathVariable("id") int id) {
 
         return studentService.findBy(id);
+    }
+
+
+    @GetMapping("/{studentNumber}")
+    public Student findStudentByStudentNumber(@PathVariable("studentNumber") String studentNumber) {
+
+        return studentService.findStudentByStudentNumber(studentNumber);
     }
 
     @PostMapping("/addstudent")

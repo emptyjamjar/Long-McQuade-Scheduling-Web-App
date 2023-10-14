@@ -44,4 +44,9 @@ public class AuthorityServiceImpl implements AuthorityService{
 
         repo.deleteById(id);
     }
+
+    @Override
+    public Authority findByAuthority(String authority) {
+        return repo.findByAuthority(authority);
+    }
 }

@@ -15,4 +15,6 @@ public interface LessonCentreService {
 
     String deleteByID(int id);
 
+    public LessonCentre findByCity(String city);
+
 }

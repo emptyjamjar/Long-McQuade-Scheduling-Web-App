@@ -45,4 +45,9 @@ public class LessonCentreImpl implements LessonCentreService{
         repo.deleteById(id);
         return "Lesson Centre with id - " + id + " has been deleted";
     }
+
+    @Override
+    public LessonCentre findByCity(String city) {
+        return repo.findByCity(city);
+    }
 }

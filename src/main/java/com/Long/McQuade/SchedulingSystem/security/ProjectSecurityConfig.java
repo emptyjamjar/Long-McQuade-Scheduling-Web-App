@@ -53,7 +53,8 @@ public class ProjectSecurityConfig {
                         .requestMatchers(HttpMethod.DELETE, "/users/deleteadmin/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
 
                         .requestMatchers(HttpMethod.GET, "/users/students/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
-                        .requestMatchers(HttpMethod.GET, "/users/students/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/students/*").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/students/*/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
                         .requestMatchers(HttpMethod.POST, "/users/students/addstudent").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
                         .requestMatchers(HttpMethod.PUT, "/users/students/updatestudent").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
                         .requestMatchers(HttpMethod.DELETE, "/users/students/deletestudents/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")

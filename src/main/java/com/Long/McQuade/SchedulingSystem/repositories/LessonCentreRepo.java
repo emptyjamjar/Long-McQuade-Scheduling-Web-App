@@ -6,4 +6,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface LessonCentreRepo extends JpaRepository<LessonCentre, Integer> {
 
+    public LessonCentre findByCity(String city);
+
 }

@@ -15,5 +15,14 @@ public interface StudentService {
 
     String deleteByID(int id);
 
+    public Student findStudentByStudentNumber(String studentNumber);
+
+    public List<Student> findAllByExperience(String experience);
+
+    public List<Student> findAllStudentsByFirstName(String firstName);
+
+    public List<Student> findStudentsByLastName(String lastName);
+
+    public List<Student> findAllByYearOfBirth(String yearOfBirth);
 
 }

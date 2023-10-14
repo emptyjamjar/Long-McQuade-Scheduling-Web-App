@@ -17,4 +17,6 @@ public interface AuthorityService {
 
     void deleteByID(int id);
 
+    public Authority findByAuthority(String authority);
+
 }

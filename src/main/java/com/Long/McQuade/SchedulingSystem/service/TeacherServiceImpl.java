@@ -59,4 +59,26 @@ public class TeacherServiceImpl implements TeacherService{
 
         return "Teacher with id - " + id + " has been deleted";
     }
+
+    @Override
+    public Teacher findTeacherByTeacherNumber(String teacherNumber) {
+        return repo.findTeacherByTeacherNumber(teacherNumber);
+    }
+
+    @Override
+    public List<Teacher> findAllByInstrumentsTaughtContaining(String instrument) {
+        return repo.findAllByInstrumentsTaughtContaining(instrument);
+    }
+
+    @Override
+    public List<Teacher> findTeachersByFirstName(String firstName) {
+        return repo.findTeachersByFirstName(firstName);
+    }
+
+    @Override
+    public List<Teacher> findTeachersByLastName(String lastName) {
+        return repo.findTeachersByLastName(lastName);
+    }
+
+
 }

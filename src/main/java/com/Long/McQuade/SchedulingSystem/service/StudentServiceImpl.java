@@ -57,4 +57,32 @@ public class StudentServiceImpl implements StudentService{
 
         return "Student with id - " + id + " has been deleted";
     }
+
+    @Override
+    public Student findStudentByStudentNumber(String studentNumber) {
+        return repo.findStudentByStudentNumber(studentNumber);
+    }
+
+    @Override
+    public List<Student> findAllByExperience(String experience) {
+        return repo.findAllByExperience(experience);
+    }
+
+    @Override
+    public List<Student> findAllStudentsByFirstName(String firstName) {
+        return repo.findAllStudentsByFirstName(firstName);
+    }
+
+    @Override
+    public List<Student> findStudentsByLastName(String lastName) {
+        return repo.findStudentsByLastName(lastName);
+    }
+
+
+    @Override
+    public List<Student> findAllByYearOfBirth(String yearOfBirth) {
+        return repo.findAllByYearOfBirth(yearOfBirth);
+    }
+
+
 }
