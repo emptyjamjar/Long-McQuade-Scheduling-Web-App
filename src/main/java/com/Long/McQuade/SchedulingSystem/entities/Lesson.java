@@ -136,9 +136,9 @@ public class Lesson {
 
     @Override
     public String toString() {
-        return "Lesson{" +
+        return "Lesson\n" +
                 "id=" + id +
-                ", studentNumber='" + studentNumber + '\'' +
+                ", studentNumber='" + studentNumber + '\n' +
                 ", teacherNumber='" + teacherNumber + '\'' +
                 ", centreID='" + centreID + '\'' +
                 ", lessonNumber='" + lessonNumber + '\'' +
@@ -147,6 +147,6 @@ public class Lesson {
                 ", roomNumber=" + roomNumber +
                 ", date='" + date + '\'' +
                 ", dayOfWeek='" + dayOfWeek + '\'' +
-                '}';
+                "\n";
     }
 }
