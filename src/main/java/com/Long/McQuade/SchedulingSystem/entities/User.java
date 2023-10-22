@@ -10,22 +10,35 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    protected int id;
 
     @Column(name = "identifiernumber")
-    private String userNumber;
+    protected String userNumber;
 
     @Column(name = "first")
-    private String firstName;
+    protected String firstName;
 
     @Column(name = "last")
-    private String lastName;
+    protected String lastName;
+
+    @Column(name = "address")
+    protected String address;
+
+    @Column(name = "pcode")
+    protected String postCode;
+
+    @Column(name = "phonnum")
+    protected String phoneNumber;
+
+
+    @Column(name = "yob")
+    protected String yearOfBirth;
 
     @Column(name = "pwd")
-    private String pwd;
+    protected String pwd;
 
     @Column(name = "enabled")
-    private boolean enabled;
+    protected boolean enabled;
 
 
 
