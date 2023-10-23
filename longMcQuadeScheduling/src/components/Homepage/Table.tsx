@@ -1,9 +1,7 @@
 import Table from "react-bootstrap/Table";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
 
-// TODO: uncomment when able to get the lesson data, need to figure out
 const Tables = () => {
+<<<<<<< HEAD
   const [lessons, setLessons] = useState([]);
   useEffect(() => {
     axios
@@ -16,6 +14,8 @@ const Tables = () => {
       });
   }, []);
 
+=======
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
   const headings = [
     "Student",
     "Teacher",
@@ -24,6 +24,16 @@ const Tables = () => {
     "Instrument",
     "Room",
     "Location",
+  ];
+
+  const lessons = [
+    "Rhapsody Ruth",
+    "Jana Janovsky",
+    "Wednesday, October 25",
+    "3:30pm",
+    "Violin",
+    "Room",
+    "Saskatoon North",
   ];
 
   const style = {
@@ -47,6 +57,7 @@ const Tables = () => {
         </tr>
       </thead>
       <tbody>
+<<<<<<< HEAD
         {lessons.map(
           (
             lesson,
@@ -63,6 +74,22 @@ const Tables = () => {
             </tr>
           )
         )}
+=======
+        <tr id="row">
+          {lessons.map((lesson) => (
+            <td key={lesson} style={style}>
+              {lesson}
+            </td>
+          ))}
+        </tr>
+        <tr id="row">
+          {lessons.map((lesson) => (
+            <td key={lesson} style={style}>
+              {lesson}
+            </td>
+          ))}
+        </tr>
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
       </tbody>
     </Table>
   );

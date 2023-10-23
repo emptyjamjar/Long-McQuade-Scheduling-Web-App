@@ -28,10 +28,14 @@
       </map>
     </option>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
 =======
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,9 +45,13 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option name="useMavenConfig" value="true" />
 =======
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+        <option name="useMavenConfig" value="true" />
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
       </MavenGeneralSettings>
     </option>
   </component>
@@ -55,6 +63,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -97,6 +106,31 @@
       </method>
     </configuration>
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.SchedulingSystemApplication">
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
     <configuration default="true" type="JetRunConfigurationType">
       <module name="test" />
       <method v="2">
@@ -111,6 +145,9 @@
       </method>
     </configuration>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
     <configuration name="SchedulingSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="SchedulingSystem" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
@@ -131,8 +168,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
 =======
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
     <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="SchedulingSystem" />
@@ -150,9 +190,12 @@
     <recent_temporary>
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <item itemvalue="Application.SchedulingSystemApplicationTests" />
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
         <item itemvalue="Spring Boot.SchedulingSystemApplication" />
         <item itemvalue="Spring Boot.SchedulingSystemApplication" />
         <item itemvalue="Spring Boot.SchedulingSystemApplication" />
@@ -163,10 +206,14 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <changelist id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commit" />
 =======
       <changelist id="775c13c4-9ebb-46a2-b66b-b6e20b90e27e" name="Changes" comment="" />
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+      <changelist id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commit" />
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
       <created>1697582965521</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -175,10 +222,14 @@
       <workItem from="1696975998178" duration="6164000" />
       <workItem from="1697580233850" duration="2698000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1698092453748" duration="454000" />
       <workItem from="1698099516359" duration="9000" />
 =======
 >>>>>>> e1cc2ef8 (Initial commit)
+=======
+      <workItem from="1698092453748" duration="454000" />
+>>>>>>> 5c24b20d (Changed back to hardcoding for now)
     </task>
     <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
       <option name="closed" value="true" />
