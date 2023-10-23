@@ -14,18 +14,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="messagingStart" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -35,15 +36,13 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
-  <component name="ProjectId" id="2Wa1l9Bz8HnYMa5D8fe2FUo3jVU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2WuWV7FpTCjTvvcHnYj2NBlsB0F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,17 +67,57 @@
   <component name="RunManager">
     <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SchedulingSystem" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.McQuade.SchedulingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="test" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="SchedulingSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.McQuade.SchedulingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SchedulingSystemApplicationTests" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="" />
-      <created>1696956033225</created>
+      <changelist id="775c13c4-9ebb-46a2-b66b-b6e20b90e27e" name="Changes" comment="" />
+      <created>1697582965521</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696956033225</updated>
@@ -86,35 +125,41 @@
       <workItem from="1696975998178" duration="6164000" />
       <workItem from="1697580233850" duration="2698000" />
     </task>
-    <task id="LOCAL-00001" summary="commit">
-      <created>1696991189577</created>
+    <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
+      <option name="closed" value="true" />
+      <created>1698008642824</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1696991189577</updated>
+      <updated>1698008642824</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added ArrayList attribute for a contact list in User class which contains other User objects.">
+      <option name="closed" value="true" />
+      <created>1698011131488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698011131488</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far">
+      <option name="closed" value="true" />
+      <created>1698013226813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698013226813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
-  </component>
-  <component name="VgoProject">
-    <settings-migrated>true</settings-migrated>
+    <MESSAGE value="Made teacher and student class extend user class" />
+    <MESSAGE value="Made teacher and student class extend user class, got rid of redundant attributes and methods" />
+    <MESSAGE value="Added ArrayList attribute for a contact list in User class which contains other User objects." />
+    <MESSAGE value="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far" />
   </component>
 </project>
