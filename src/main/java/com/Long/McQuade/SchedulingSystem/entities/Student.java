@@ -2,7 +2,6 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 
 import jakarta.persistence.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
