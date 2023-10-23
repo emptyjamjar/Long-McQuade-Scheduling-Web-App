@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="775c13c4-9ebb-46a2-b66b-b6e20b90e27e" name="Changes" comment="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/TeacherServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/homepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/homepageController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,27 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ExtendingUserClass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d200cdcd2d5c79e37a2ca27185a96c1d&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.SchedulingSystemApplicationTests">
-    <configuration name="SchedulingSystemApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplicationTests" />
+}</component>
+  <component name="RunManager">
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SchedulingSystem" />
       <extension name="coverage">
         <pattern>
@@ -142,13 +120,10 @@
       <created>1697582965521</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1697582965521</updated>
-      <workItem from="1697582966930" duration="1437000" />
-      <workItem from="1697755915593" duration="1481000" />
-      <workItem from="1697757417590" duration="15000" />
-      <workItem from="1697757493809" duration="641000" />
-      <workItem from="1698007595110" duration="6216000" />
-      <workItem from="1698081816714" duration="959000" />
+      <updated>1696956033225</updated>
+      <workItem from="1696956034698" duration="1934000" />
+      <workItem from="1696975998178" duration="6164000" />
+      <workItem from="1697580233850" duration="2698000" />
     </task>
     <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
       <option name="closed" value="true" />
