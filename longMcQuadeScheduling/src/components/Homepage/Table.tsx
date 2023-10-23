@@ -1,5 +1,6 @@
 import Table from "react-bootstrap/Table";
 
+/* Tables to display lesson information on the homepage */
 const Tables = () => {
   const headings = [
     "Student",
@@ -10,6 +11,8 @@ const Tables = () => {
     "Room",
     "Location",
   ];
+
+  // glpat-me9NJE6WL-Jy_nDq9iP-
 
   const lessons = [
     "Rhapsody Ruth",
