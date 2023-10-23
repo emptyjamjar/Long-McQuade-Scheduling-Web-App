@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" afterDir="false" />
@@ -24,6 +25,32 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/CorsConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
+=======
+    <list default="true" id="775c13c4-9ebb-46a2-b66b-b6e20b90e27e" name="Changes" comment="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/TeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" afterDir="false" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
     </list>
 =======
     <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commented controllers" />
@@ -36,9 +63,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+=======
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -47,6 +77,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="messagingStart" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HttpClientSelectedEnvironments">
@@ -55,7 +90,21 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="2XmGd8hHYDYfCXDsVUhgDwCzCjh" />
+=======
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2WuWV7FpTCjTvvcHnYj2NBlsB0F" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -89,10 +138,8 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem",
 <<<<<<< HEAD
@@ -109,21 +156,77 @@
       <method v="2" />
     </configuration>
     <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+=======
+    "git-widget-placeholder": "ExtendingUserClass",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.SchedulingSystemApplicationTests">
+    <configuration name="SchedulingSystemApplicationTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplicationTests" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
+      <module name="SchedulingSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.McQuade.SchedulingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.All in Project-endpoints" />
+=======
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="test" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="SchedulingSystem" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.McQuade.SchedulingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.All in Project-endpoints" />
+        <item itemvalue="Application.SchedulingSystemApplicationTests" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="" />
       <created>1699226936507</created>
       <option name="number" value="Default" />
@@ -143,14 +246,29 @@
       <workItem from="1697912451107" duration="3110000" />
       <workItem from="1698112189054" duration="1825000" />
       <workItem from="1698117319503" duration="322000" />
+=======
+      <changelist id="775c13c4-9ebb-46a2-b66b-b6e20b90e27e" name="Changes" comment="" />
+      <created>1697582965521</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697582965521</updated>
+      <workItem from="1697582966930" duration="1437000" />
+      <workItem from="1697755915593" duration="1481000" />
+      <workItem from="1697757417590" duration="15000" />
+      <workItem from="1697757493809" duration="641000" />
+      <workItem from="1698007595110" duration="6216000" />
+      <workItem from="1698081816714" duration="959000" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
     </task>
-    <task id="LOCAL-00001" summary="commit">
-      <created>1696991189577</created>
+    <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
+      <option name="closed" value="true" />
+      <created>1698008642824</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1696991189577</updated>
+      <updated>1698008642824</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="case statements for each entity">
       <created>1697583382492</created>
       <option name="number" value="00002" />
@@ -181,11 +299,31 @@
     </task>
     <option name="localTasksCounter" value="6" />
 >>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
+=======
+    <task id="LOCAL-00002" summary="Added ArrayList attribute for a contact list in User class which contains other User objects.">
+      <option name="closed" value="true" />
+      <created>1698011131488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698011131488</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far">
+      <option name="closed" value="true" />
+      <created>1698013226813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698013226813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +346,14 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made teacher and student class extend user class" />
+    <MESSAGE value="Made teacher and student class extend user class, got rid of redundant attributes and methods" />
+    <MESSAGE value="Added ArrayList attribute for a contact list in User class which contains other User objects." />
+    <MESSAGE value="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far" />
+>>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
   </component>
 >>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
 </project>
