@@ -64,6 +64,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 05ba2684 (Adding front end)
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -79,12 +82,16 @@
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem&quot;,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 05ba2684 (Adding front end)
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;d200cdcd2d5c79e37a2ca27185a96c1d&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+<<<<<<< HEAD
   }
 }</component>
   <component name="RunManager" selected="Spring Boot.SchedulingSystemApplication">
@@ -127,8 +134,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d",
     "vue.rearranger.settings.migration": "true"
+=======
+>>>>>>> 05ba2684 (Adding front end)
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.SchedulingSystemApplication">
 >>>>>>> 5c24b20d (Changed back to hardcoding for now)
     <configuration default="true" type="JetRunConfigurationType">
@@ -225,11 +234,14 @@
 <<<<<<< HEAD
       <workItem from="1698092453748" duration="454000" />
       <workItem from="1698099516359" duration="9000" />
+<<<<<<< HEAD
 =======
 >>>>>>> e1cc2ef8 (Initial commit)
 =======
       <workItem from="1698092453748" duration="454000" />
 >>>>>>> 5c24b20d (Changed back to hardcoding for now)
+=======
+>>>>>>> 05ba2684 (Adding front end)
     </task>
     <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
       <option name="closed" value="true" />
