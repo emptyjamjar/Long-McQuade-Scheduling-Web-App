@@ -1,17 +1,24 @@
 package com.Long.McQuade.SchedulingSystem.controllers;
 
+import com.Long.McQuade.SchedulingSystem.entities.Lesson;
+import com.Long.McQuade.SchedulingSystem.entities.User;
+import com.Long.McQuade.SchedulingSystem.service.LessonServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/homepage")
+@CrossOrigin
 public class homepageController {
 
     @Autowired
@@ -23,32 +30,43 @@ public class homepageController {
     @Autowired
     private UserServiceImpl userService;
 
+    @Autowired
+    private LessonServiceImpl lessonService;
+
     @GetMapping("/")
     public String showHomepage() {
 
-        String message = "";
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
         String authority = authentication.getAuthorities().iterator().next().getAuthority();
 
         String identificationNumber = authentication.getName();
 
+        User user = userService.findByUserNumber(identificationNumber);
+
+        String message = "Welcome back, " + user.getFirstName() + " " + user.getLastName() + "r\n";
+        message += "Upcoming lessons: \r\n";
+
+
         switch (authority) {
             case "ADMIN":
 
-                message += "Your first name is: " + userService.findByUserNumber(identificationNumber).getFirstName() + " \n\n\n";
+                message += "You are an admin";
                 break;
 
             case "TEACHER":
-                message += "Your first name is: " + teacherServiceImpl.findTeacherByTeacherNumber(identificationNumber).getFirstName() + " \n";
-                break;
+                List<Lesson> lessons = lessonService.findLessonsByTeacherNumber(identificationNumber);
+                for (Lesson lesson: lessons) {
+                    message += "Lesson on " + lesson.getDayOfWeek() + " " + lesson.getDate() + " at room " + lesson.getRoomNumber() + " with student " + studentService.findStudentByStudentNumber(lesson.getStudentNumber()).getFirstName() + "\r\n";
+                }
+
 
             case "STUDENT":
-                message += "Your first name is: " + studentService.findStudentByStudentNumber(identificationNumber).getFirstName() + " \n";
-                break;
+                List<Lesson> lessonss = lessonService.findLessonsByStudentNumber(identificationNumber);
+                for (Lesson lesson: lessonss) {
+                    message += "Lesson on " + lesson.getDayOfWeek() + " " + lesson.getDate() + " at room " + lesson.getRoomNumber() + " with teacher " + teacherServiceImpl.findTeacherByTeacherNumber(lesson.getTeacherNumber()).getFirstName() + "\r\n";
+                }
         }
-
-        message += "\nThis is the homepage and user " + authentication.getName() + " is logged in";
 
 
 
