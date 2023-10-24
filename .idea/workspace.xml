@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commented controllers">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commented controllers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +57,7 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem",
+    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/testing/test-front-end",
     "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d"
   }
 }]]></component>
@@ -92,7 +83,7 @@
       <workItem from="1697580233850" duration="3757000" />
       <workItem from="1697755176715" duration="1481000" />
       <workItem from="1697912451107" duration="3110000" />
-      <workItem from="1698112189054" duration="1363000" />
+      <workItem from="1698112189054" duration="1825000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1696991189577</created>
@@ -115,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697914336298</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commented controllers">
+      <created>1698113566411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698113566411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
