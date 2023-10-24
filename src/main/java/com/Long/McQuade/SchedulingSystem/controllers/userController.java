@@ -30,17 +30,33 @@ public class userController {
     private AuthorityServiceImpl authorityService;
 
 
+    /**
+     *
+     * @return list of all users
+     */
     @GetMapping("/")
     public List<User> showAllUsers() {
         return userService.findAll();
     }
 
+
+    /**
+     *
+     * @param id of user
+     * @return user with specified id
+     */
     @GetMapping("/{id}")
     public User showUserByID(@PathVariable("id") int id) {
 
         return userService.findBy(id);
     }
 
+
+    /**
+     *
+     * @param the new admin
+     * @return the new admin
+     */
     @PostMapping("/addadmin")
     public User addAdmin(@RequestBody User user) {
 
@@ -62,12 +78,22 @@ public class userController {
         return userService.save(newUser);
     }
 
+    /**
+     *
+     * @param user the updated user
+     * @return the updated user details
+     */
     @PutMapping("/updateadmin")
     public User updateAdmin(@RequestBody User user) {
 
         return userService.save(user);
     }
 
+    /**
+     *
+     * @param id id of user to be deleted
+     * @return conformation of user deletion
+     */
     @DeleteMapping("/deleteadmin/{id}")
     public void deleteAdmin(@PathVariable("id") int id) {
 
