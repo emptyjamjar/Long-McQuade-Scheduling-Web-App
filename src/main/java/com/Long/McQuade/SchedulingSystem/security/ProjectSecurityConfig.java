@@ -24,6 +24,11 @@ import javax.sql.DataSource;
 public class ProjectSecurityConfig {
 
 
+    /**
+     *
+     * @param dataSource - database
+     * @return - gets user and authority by userNumber and returns
+     */
 
     @Bean
     public UserDetailsManager userDetailsManager(DataSource dataSource) {
@@ -38,7 +43,12 @@ public class ProjectSecurityConfig {
     }
 
 
-
+    /**
+     * protects all endpoints
+     * @param http
+     * @return
+     * @throws Exception
+     */
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
 
@@ -82,6 +92,8 @@ public class ProjectSecurityConfig {
         http.csrf(csrf -> csrf.disable());
 
         http.httpBasic(Customizer.withDefaults());
+
+        http.formLogin();
 
         return http.build();
     }

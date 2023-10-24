@@ -1,8 +1,7 @@
 package com.Long.McQuade.SchedulingSystem.controllers;
 
-import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
-import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
-import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
+import com.Long.McQuade.SchedulingSystem.entities.Lesson;
+import com.Long.McQuade.SchedulingSystem.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -23,6 +22,13 @@ public class homepageController {
     @Autowired
     private UserServiceImpl userService;
 
+    @Autowired
+    private LessonServiceImpl lessonService;
+
+    /**
+     *
+     * @return - returns a list of the users lesson information based off their authority
+     */
     @GetMapping("/")
     public String showHomepage() {
 
@@ -40,11 +46,17 @@ public class homepageController {
                 break;
 
             case "TEACHER":
-                message += "Your first name is: " + teacherServiceImpl.findTeacherByTeacherNumber(identificationNumber).getFirstName() + " \n";
+                for (Lesson lesson: lessonService.findLessonsByTeacherNumber(identificationNumber)) {
+                    message += lesson.toString();
+                    message += "\n";
+                }
                 break;
 
             case "STUDENT":
-                message += "Your first name is: " + studentService.findStudentByStudentNumber(identificationNumber).getFirstName() + " \n";
+                for (Lesson lesson: lessonService.findLessonsByStudentNumber(identificationNumber)) {
+                    message += lesson.toString();
+                    message += "\n";
+                }
                 break;
         }
 
