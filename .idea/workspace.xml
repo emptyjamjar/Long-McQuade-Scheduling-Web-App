@@ -57,7 +57,8 @@
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/testing/test-front-end",
+    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem",
+    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d"
   }
 }]]></component>
@@ -84,6 +85,7 @@
       <workItem from="1697755176715" duration="1481000" />
       <workItem from="1697912451107" duration="3110000" />
       <workItem from="1698112189054" duration="1825000" />
+      <workItem from="1698117319503" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1696991189577</created>
@@ -113,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698113566411</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commented controllers">
+      <created>1698117575856</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698117575856</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
