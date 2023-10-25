@@ -36,22 +36,22 @@ function PageNavbar() {
               alignItems: "center",
             }}
           >
-            <Nav.Link style={linkStyle} href="#account">
+            <Nav.Link style={linkStyle} href="/account">
               Account
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="#messages">
+            <Nav.Link style={linkStyle} href="/messages">
               Message
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="#calendar">
+            <Nav.Link style={linkStyle} href="/calendar">
               Calendar
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="#my_schedule">
+            <Nav.Link style={linkStyle} href="/my_schedule">
               My Schedule
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="#profiles">
+            <Nav.Link style={linkStyle} href="/profiles">
               Teacher Profiles
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="#contact">
+            <Nav.Link style={linkStyle} href="/contact">
               Contact
             </Nav.Link>
           </Nav>

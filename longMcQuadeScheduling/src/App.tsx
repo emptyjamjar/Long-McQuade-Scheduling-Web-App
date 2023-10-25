@@ -1,9 +1,8 @@
 import "./App.css";
-import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Welcome from "./components/Homepage/WelcomeText";
-import Table from "./components/Homepage/Table";
-import Button from "./components/Button";
+import Home from "./pages/";
+import Contact from "./pages/contact";
 
 /* 
   The main application for all components 
@@ -11,24 +10,13 @@ import Button from "./components/Button";
 */
 function App() {
   return (
-    <>
-      <div id="appContainer">
-        <Header></Header>
-        <Navbar></Navbar>
-        <div id="homepage">
-          <Welcome></Welcome>
-          <h2 id="tableHeading">Upcoming Lessons</h2>
-          <Table></Table>
-          <div id="lessonChangeRequestHeader">
-            <h2 id="tableHeading">Lesson Change Requests</h2>
-            <Button color="dark" onClick={() => console.log("Clicked")}>
-              Request Change
-            </Button>
-          </div>
-          <Table></Table>
-        </div>
-      </div>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
