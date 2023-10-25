@@ -1,17 +1,12 @@
-#appContainer {
+/* WILL USE #APPCONTAINER CODE IN INDEX.CSS FILE ONCE CREATED */
+
+/* #appContainer {
   background-color: #f5f1ed;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   padding-top: 4rem;
-}
-
-#homepage {
-  position: relative;
-  margin: 2rem;
-  width: fit-content;
-  height: fit-content;
-}
+} */
 
 #tableHeading {
   color: #6e6969;
