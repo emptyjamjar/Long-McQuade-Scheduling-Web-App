@@ -1,22 +1,26 @@
-import Welcome from "../components/Homepage/WelcomeText";
-import Table from "../components/Homepage/Table";
+import Welcome from "../components/WelcomeText";
+import Table from "../components/Table";
 import Button from "../components/Button";
-import "../App.css";
+import "./index.css";
 
 const Home = () => {
   return (
-    <>
+    <div id="home">
       <Welcome></Welcome>
-      <h2 id="tableHeading">Upcoming Lessons</h2>
-      <Table></Table>
-      <div id="lessonChangeRequestHeader">
-        <h2 id="tableHeading">Lesson Change Requests</h2>
-        <Button color="dark" onClick={() => console.log("Clicked")}>
-          Request Change
-        </Button>
+      <div id="lessonTable">
+        <h2 id="tableHeading">Upcoming Lessons</h2>
+        <Table></Table>
       </div>
-      <Table></Table>
-    </>
+      <div id="lessonTable">
+        <div id="lessonChangeRequestHeader">
+          <h2 id="tableHeading">Lesson Change Requests</h2>
+          <Button color="dark" onClick={() => console.log("Clicked")}>
+            Request Change
+          </Button>
+        </div>
+        <Table></Table>
+      </div>
+    </div>
   );
 };
 
