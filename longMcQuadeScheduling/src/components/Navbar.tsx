@@ -29,6 +29,7 @@ function PageNavbar() {
             justify
             variant="underline"
             className="flex-column"
+            activeKey={location.pathname}
             style={{
               fontSize: "14px",
               fontWeight: "lighter",
@@ -37,6 +38,9 @@ function PageNavbar() {
               paddingTop: "40%",
             }}
           >
+            <Nav.Link style={linkStyle} href="/">
+              Home
+            </Nav.Link>
             <Nav.Link style={linkStyle} href="/account">
               Account
             </Nav.Link>
