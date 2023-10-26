@@ -5,7 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./Topbar.css";
 
 /* 
@@ -17,6 +16,7 @@ const Top = () => {
   return (
     <Navbar
       fixed="top"
+      collapseOnSelect
       expand="sm"
       id="topContainer"
       className="navbar fixed-top navbar-light bg-background"
@@ -34,32 +34,35 @@ const Top = () => {
           </Navbar.Brand>
         </Row>
         <Row>
-          <Nav
-            justify
-            variant="underline"
-            className="justify-content-end"
-            style={{
-              fontSize: "14px",
-              fontWeight: "lighter",
-              alignItems: "center",
-              textAlign: "center",
-            }}
-          >
-            <Nav.Link id="iconLink" href="/#">
-              <img src={messageIcon} width="30px" alt="Message Icon" />
-            </Nav.Link>
-            <Nav.Link id="iconLink" href="/contact">
-              <img src={phoneIcon} width="30px" alt="Phone Icon" />
-            </Nav.Link>
-            <div id="wordLinks">
-              <Nav.Link id="signOut" href="/#">
-                Sign Out
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav
+              justify
+              variant="underline"
+              className="justify-content-end"
+              style={{
+                fontSize: "14px",
+                fontWeight: "lighter",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
+              <Nav.Link id="iconLink" href="/#">
+                <img src={messageIcon} width="30px" alt="Message Icon" />
               </Nav.Link>
-              <Nav.Link id="reportProblem" href="/#">
-                Report a Problem
+              <Nav.Link id="iconLink" href="/contact">
+                <img src={phoneIcon} width="30px" alt="Phone Icon" />
               </Nav.Link>
-            </div>
-          </Nav>
+              <div id="wordLinks">
+                <Nav.Link id="signOut" href="/#">
+                  Sign Out
+                </Nav.Link>
+                <Nav.Link id="reportProblem" href="/#">
+                  Report a Problem
+                </Nav.Link>
+              </div>
+            </Nav>
+          </Navbar.Collapse>
         </Row>
       </Container>
     </Navbar>

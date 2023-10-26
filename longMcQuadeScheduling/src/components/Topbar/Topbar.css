@@ -1,8 +1,7 @@
 #topContainer {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   border-bottom: 1px solid #aaa3a3;
-  background-color: yellow;
 }
 
 #wordLogo {
