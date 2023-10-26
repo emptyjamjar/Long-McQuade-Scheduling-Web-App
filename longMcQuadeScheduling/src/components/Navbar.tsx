@@ -14,9 +14,10 @@ function PageNavbar() {
     <>
       <Navbar
         id="navbar"
+        collapseOnSelect
         sticky="top"
         style={{
-          width: "180px",
+          width: "200px",
           height: "100vh",
           fontFamily: "Raleway",
           textTransform: "uppercase",
