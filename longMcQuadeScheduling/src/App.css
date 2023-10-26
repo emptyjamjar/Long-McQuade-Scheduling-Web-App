@@ -1,23 +1,7 @@
-/* WILL USE #APPCONTAINER CODE IN INDEX.CSS FILE ONCE CREATED */
-
-/* #appContainer {
+#root {
   background-color: #f5f1ed;
-  width: 100vw;
+  font-family: "Roboto", "Raleway";
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 4rem;
-} */
-
-#tableHeading {
-  color: #6e6969;
-  font-family: "Raleway";
-  font-size: 20px;
-  margin: 2rem 0 0.5rem 0;
-}
-
-#lessonChangeRequestHeader {
-  display: flex;
-  justify-content: space-between;
-  height: fit-content;
   align-items: center;
+  justify-content: flex-start;
 }
