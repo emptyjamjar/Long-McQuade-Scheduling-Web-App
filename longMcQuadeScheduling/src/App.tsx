@@ -1,8 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header/Header";
-import Home from "./pages/";
+import Topbar from "./components/Topbar/Topbar";
+import Home from "./pages/index/index";
+import Account from "./pages/account/account";
+import Calendar from "./pages/calendar/calendar";
 import Contact from "./pages/contact";
 
 /* 
@@ -12,10 +14,12 @@ import Contact from "./pages/contact";
 function App() {
   return (
     <Router>
-      <Header />
+      <Topbar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/calendar" element={<Calendar />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
