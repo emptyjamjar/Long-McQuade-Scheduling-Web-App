@@ -1,0 +1,10 @@
+.sidebar {
+  position: sticky;
+  top: -10;
+  height: 100vh;
+  overflow-y: auto;
+  z-index: 1;
+  width: 200px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+}

@@ -1,8 +1,21 @@
 #root {
-  background-color: #f5f1ed;
-  padding-top: 5rem;
+  /* background-color: #f5f1ed; */
+  background-color: pink;
+  height: 100vh;
+  width: auto;
+  overflow: auto;
   font-family: "Roboto", "Raleway";
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
+}
+
+body {
+  padding-top: 60px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 14vh;
+  }
 }
