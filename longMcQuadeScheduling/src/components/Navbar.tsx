@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import {Link} from "react-router-dom"
 
 /* 
 Navbar is the left aligned orange column with links to different pages of the website.
@@ -36,26 +37,33 @@ function PageNavbar() {
               alignItems: "center",
             }}
           >
+<<<<<<< HEAD
             <Nav.Link style={linkStyle} href="/">
               Home
             </Nav.Link>
             <Nav.Link style={linkStyle} href="/account">
+=======
+            <Nav.Link as={Link} style={linkStyle} to="/account">
+>>>>>>> 6cd00aaa872bebcc6b971c61c8ba8229a99ab05a
               Account
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="/messages">
+            <Nav.Link as={Link} style={linkStyle} to="/messages">
               Message
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="/calendar">
+            <Nav.Link as={Link} style={linkStyle} to="/calendar">
               Calendar
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="/my_schedule">
+            <Nav.Link as={Link} style={linkStyle} to="/my_schedule">
               My Schedule
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="/profiles">
+            <Nav.Link as={Link} style={linkStyle} to="/profiles">
               Teacher Profiles
             </Nav.Link>
-            <Nav.Link style={linkStyle} href="/contact">
+            <Nav.Link as={Link} style={linkStyle} to="/contact">
               Contact
+            </Nav.Link>
+            <Nav.Link as={Link} style={linkStyle} to="/manageUsers">
+              Manage Users
             </Nav.Link>
           </Nav>
         </Container>

@@ -6,6 +6,8 @@ import Home from "./pages/index/index";
 import Account from "./pages/account/account";
 import Calendar from "./pages/calendar/calendar";
 import Contact from "./pages/contact";
+import ManageUsers from "./pages/manageUsers";
+
 
 /* 
   The main application for all components 
@@ -21,6 +23,7 @@ function App() {
         <Route path="/account" element={<Account />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/manageUsers" element={<ManageUsers />} />
       </Routes>
     </Router>
   );
