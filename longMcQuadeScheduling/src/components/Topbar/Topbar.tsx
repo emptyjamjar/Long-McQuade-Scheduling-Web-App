@@ -47,18 +47,15 @@ const Top = () => {
                 textAlign: "center",
               }}
             >
-              <Nav.Link id="iconLink" href="/#">
+              <Nav.Link id="iconLink" href="/messages">
                 <img src={messageIcon} width="30px" alt="Message Icon" />
               </Nav.Link>
               <Nav.Link id="iconLink" href="/contact">
                 <img src={phoneIcon} width="30px" alt="Phone Icon" />
               </Nav.Link>
               <div id="wordLinks">
-                <Nav.Link id="signOut" href="/#">
+                <Nav.Link id="signOut" href="/">
                   Sign Out
-                </Nav.Link>
-                <Nav.Link id="reportProblem" href="/#">
-                  Report a Problem
                 </Nav.Link>
               </div>
             </Nav>

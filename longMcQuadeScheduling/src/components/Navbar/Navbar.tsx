@@ -1,7 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+// import "./Navbar.css";
 
 /* 
 Navbar is the left aligned orange column with links to different pages of the website.
@@ -16,6 +17,7 @@ function PageNavbar() {
       <Navbar
         id="navbar"
         sticky="top"
+        className="sidebar"
         style={{
           width: "200px",
           height: "86.9vh",
@@ -37,14 +39,7 @@ function PageNavbar() {
               alignItems: "center",
             }}
           >
-<<<<<<< HEAD
-            <Nav.Link style={linkStyle} href="/">
-              Home
-            </Nav.Link>
-            <Nav.Link style={linkStyle} href="/account">
-=======
             <Nav.Link as={Link} style={linkStyle} to="/account">
->>>>>>> 6cd00aaa872bebcc6b971c61c8ba8229a99ab05a
               Account
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/messages">
