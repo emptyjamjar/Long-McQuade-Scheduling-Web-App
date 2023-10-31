@@ -27,7 +27,7 @@ const Top = () => {
             <img
               src={wordLogo}
               id="wordLogo"
-              width="180px"
+              width="160px"
               className="d-inline-block align-top"
               alt=""
             />
