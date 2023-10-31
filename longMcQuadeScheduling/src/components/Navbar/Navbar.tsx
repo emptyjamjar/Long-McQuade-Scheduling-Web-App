@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
-// import "./Navbar.css";
 
 /* 
 Navbar is the left aligned orange column with links to different pages of the website.
@@ -22,6 +21,7 @@ function PageNavbar() {
         style={{
           position: "fixed",
           maxWidth: "180px",
+          minWidth: "180px",
           top: "40px",
           zIndex: "1",
           height: "100vh",
