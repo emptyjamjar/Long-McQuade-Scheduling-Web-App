@@ -16,16 +16,18 @@ function PageNavbar() {
     <>
       <Navbar
         id="navbar"
-        sticky="top"
-        className="sidebar"
-        style={{
-          width: "200px",
-          height: "86.9vh",
-          fontFamily: "Raleway",
-          textTransform: "uppercase",
-        }}
+        fixed="top"
         bg="primary"
         data-bs-theme="dark"
+        style={{
+          position: "fixed",
+          maxWidth: "180px",
+          top: "40px",
+          zIndex: "1",
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+        }}
       >
         <Container>
           <Nav
@@ -37,6 +39,8 @@ function PageNavbar() {
               fontSize: "14px",
               fontWeight: "lighter",
               alignItems: "center",
+              fontFamily: "Raleway",
+              textTransform: "uppercase",
             }}
           >
             <Nav.Link as={Link} style={linkStyle} to="/account">
