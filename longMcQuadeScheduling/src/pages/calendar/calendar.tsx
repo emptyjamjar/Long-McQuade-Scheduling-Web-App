@@ -72,7 +72,7 @@ function CalendarPage() {
         />
         <DateTimePicker
           minDate={new Date(today)}
-          onChange={(start) => setNewEvent({ ...newEvent, start })}
+          // onChange={(start) => setNewEvent({ ...newEvent, start })}
           yearPlaceholder="yyyy"
           monthPlaceholder="mm"
           dayPlaceholder="dd"
