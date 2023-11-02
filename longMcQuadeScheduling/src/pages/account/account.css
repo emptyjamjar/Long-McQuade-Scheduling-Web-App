@@ -1,0 +1,32 @@
+#account {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+#student {
+  width: 100%;
+  background-color: pink;
+}
+
+#userInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  padding-left: 5px;
+  padding-top: 1rem;
+}
+
+p {
+  padding-right: 10px;
+}
+
+#sectionHeading {
+  font-size: 26px;
+  font-family: "Raleway";
+  width: 100%;
+}
+
+#infoHeading {
+  font-size: 18px;
+}
