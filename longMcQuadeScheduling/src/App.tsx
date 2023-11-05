@@ -7,7 +7,7 @@ import Account from "./pages/account/account";
 import Calendar from "./pages/calendar/calendar";
 import Contact from "./pages/contact";
 import ManageUsers from "./pages/manageUsers";
-
+import AddStudent from "./pages/addstudent";
 
 /* 
   The main application for all components 
@@ -24,6 +24,7 @@ function App() {
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/manageUsers" element={<ManageUsers />} />
+        <Route path="/addstudent" element={<AddStudent />} />
       </Routes>
     </Router>
   );

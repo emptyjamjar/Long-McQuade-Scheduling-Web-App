@@ -2,10 +2,23 @@ import Header from "../components/Header";
 
 const manageUsers = () => {
   return (
-    <div>
-      <div id="calendar">
+    <div
+      style={{
+        
+        width: "100vw",
+        
+      }}
+    >
+      <div id="manage">
         <Header message="Manage Users" name=""></Header>
       </div>
+      <a
+        href="/addstudent"
+        color="white"
+        onClick={() => console.log("Clicked")}
+      >
+        Registration
+      </a>
     </div>
   );
 };
