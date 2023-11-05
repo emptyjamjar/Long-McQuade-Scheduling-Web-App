@@ -10,13 +10,14 @@ import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/users/students")
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin
 public class studentController {
 
     @Autowired
@@ -38,6 +39,12 @@ public class studentController {
     public Student showStudentByID(@PathVariable("id") int id) {
 
         return studentService.findBy(id);
+    }
+
+    @GetMapping("/s")
+    public ResponseEntity<String> getName() {
+        String name = "John Doe"; // Replace this with the actual logic to get the user's name
+        return ResponseEntity.ok(name);
     }
 
 

@@ -3,6 +3,10 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 import jakarta.persistence.*;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -39,7 +43,6 @@ public class User {
 
     @Column(name = "enabled")
     protected boolean enabled;
-
 
 
     public User(String userNumber, String firstName, String lastName, String pwd, boolean enabled) {

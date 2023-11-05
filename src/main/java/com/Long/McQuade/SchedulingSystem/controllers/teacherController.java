@@ -31,10 +31,16 @@ public class teacherController {
         return teacherService.findAll();
     }
 
-    @GetMapping("/{id}")
-    public Teacher showTeacherByID(@PathVariable("id") int id) {
+//    @GetMapping("/{id}")
+//    public Teacher showTeacherByID(@PathVariable("id") int id) {
+//
+//        return teacherService.findBy(id);
+//    }
 
-        return teacherService.findBy(id);
+    @GetMapping("/{teacherNumber}")
+    public Teacher showTeacherByID(@PathVariable("teacherNumber") String teacherNumber) {
+
+        return teacherService.findTeacherByTeacherNumber(teacherNumber);
     }
 
     @PostMapping("/addteacher")
