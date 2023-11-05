@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./account.css";
+import axios from "axios";
 
 const account = () => {
+  const [user, setUser] = useState([]);
+
+  useEffect(() => {
+    loadUser;
+  }, []);
+
+  const loadUser = async () => {
+    const result = await axios.get("http://localhost:1919/users/1");
+    console.log(result.data);
+  };
+
   return (
     <div id="account">
       <h2 id="sectionHeading">Student</h2>
       <div id="userInfo">
         <div>
           <h3 id="infoHeading">First Name</h3>
-          <p>Rhapsody</p>
+          <p>{user}</p>
         </div>
         <div>
           <h3 id="infoHeading">Last Name</h3>
