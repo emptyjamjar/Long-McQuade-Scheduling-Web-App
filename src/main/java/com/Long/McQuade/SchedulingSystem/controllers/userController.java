@@ -35,10 +35,10 @@ public class userController {
         return userService.findAll();
     }
 
-    @GetMapping("/{id}")
-    public User showUserByID(@PathVariable("id") int id) {
+    @GetMapping("/{identificationNumber}")
+    public User showUserByID(@PathVariable("identificationNumber") String identificationNumber) {
 
-        return userService.findBy(id);
+        return userService.findByUserNumber(identificationNumber);
     }
 
     @PostMapping("/addadmin")
@@ -55,7 +55,7 @@ public class userController {
         Student student = new Student(null, null, null, null, null, null, null, null);
         studentService.save(student);
 
-        Teacher teacher = new Teacher(null, null, null, null, null, null);
+        Teacher teacher = new Teacher(null, null, null, null, null, null, null, null);
         teacherService.save(teacher);
 
 
@@ -69,12 +69,15 @@ public class userController {
     }
 
     @DeleteMapping("/deleteadmin/{id}")
-    public void deleteAdmin(@PathVariable("id") int id) {
+    public void deleteAdmin(@PathVariable("id") String id) {
 
-        teacherService.deleteByID(id);
-        studentService.deleteByID(id);
-        authorityService.deleteByID(id);
-        userService.deleteByID(id);
+        User user = userService.findByUserNumber(id);
+
+
+        teacherService.deleteByID(user.getId());
+        studentService.deleteByID(user.getId());
+        authorityService.deleteByID(user.getId());
+        userService.deleteByID(user.getId());
     }
 
 }

@@ -30,8 +30,8 @@ public class Student {
     @Column(name = "pcode")
     private String postCode;
 
-    @Column(name = "phonnum")
-    private String phoneNumber;
+    @Column(name = "email")
+    private String email;
 
     @Column(name = "played")
     private String instrumentsPlayed;
@@ -43,12 +43,12 @@ public class Student {
     private String yearOfBirth;
 
 
-    public Student(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsPlayed, String experience, String yearOfBirth) {
+    public Student(String firstName, String lastName, String address, String postCode, String email, String instrumentsPlayed, String experience, String yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.postCode = postCode;
-        this.phoneNumber = phoneNumber;
+        this.email = email;
         this.instrumentsPlayed = instrumentsPlayed;
         this.experience = experience;
         this.yearOfBirth = yearOfBirth;
@@ -106,12 +106,12 @@ public class Student {
         this.postCode = postCode;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getInstrumentsPlayed() {
@@ -147,7 +147,7 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", address='" + address + '\'' +
                 ", postCode='" + postCode + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
                 ", instrumentsPlayed='" + instrumentsPlayed + '\'' +
                 ", experience='" + experience + '\'' +
                 ", yearOfBirth=" + yearOfBirth +

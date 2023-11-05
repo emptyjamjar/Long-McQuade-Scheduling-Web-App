@@ -26,19 +26,28 @@ public class Teacher {
     @Column(name = "postcode")
     private String postCode;
 
-    @Column(name = "phonenumber")
+    @Column(name = "email")
     private String phoneNumber;
 
     @Column(name = "instruments")
     private String instrumentsTaught;
 
-    public Teacher(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsTaught) {
+    @Column(name = "starttime")
+    private String starttime;
+
+    @Column(name = "endtime")
+    private String endtime;
+
+
+    public Teacher(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsTaught, String starttime, String endtime) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.postCode = postCode;
         this.phoneNumber = phoneNumber;
         this.instrumentsTaught = instrumentsTaught;
+        this.starttime = starttime;
+        this.endtime = endtime;
     }
 
     public Teacher() {
@@ -107,6 +116,22 @@ public class Teacher {
 
     public void setInstrumentsTaught(String instrumentsTaught) {
         this.instrumentsTaught = instrumentsTaught;
+    }
+
+    public String getStarttime() {
+        return starttime;
+    }
+
+    public void setStarttime(String starttime) {
+        this.starttime = starttime;
+    }
+
+    public String getEndtime() {
+        return endtime;
+    }
+
+    public void setEndtime(String endtime) {
+        this.endtime = endtime;
     }
 
     @Override

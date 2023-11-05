@@ -1,10 +1,7 @@
 package com.Long.McQuade.SchedulingSystem.controllers;
 
 
-import com.Long.McQuade.SchedulingSystem.entities.Authority;
-import com.Long.McQuade.SchedulingSystem.entities.Student;
-import com.Long.McQuade.SchedulingSystem.entities.Teacher;
-import com.Long.McQuade.SchedulingSystem.entities.User;
+import com.Long.McQuade.SchedulingSystem.entities.*;
 import com.Long.McQuade.SchedulingSystem.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -25,6 +22,9 @@ public class teacherController {
 
     @Autowired
     private AuthorityServiceImpl authorityService;
+
+    @Autowired
+    private LessonServiceImpl lessonService;
 
     @GetMapping("/")
     public List<Teacher> showAllTeachers() {
@@ -74,13 +74,22 @@ public class teacherController {
         return newTeacher;
     }
 
-    @DeleteMapping("/deleteteacher/{id}")
-    public String deleteCurrentStudent(@PathVariable("id") int id) {
+    @DeleteMapping("/deleteteacher/{teacherNumber}")
+    public String deleteCurrentStudent(@PathVariable("teacherNumber") String teacherNumber) {
 
-        authorityService.deleteByID(id);
-        userService.deleteByID(id);
-        studentService.deleteByID(id);
-        return teacherService.deleteByID(id);
+        Teacher teacher = teacherService.findTeacherByTeacherNumber(teacherNumber);
+
+        authorityService.deleteByID(teacher.getId());
+        userService.deleteByID(teacher.getId());
+        studentService.deleteByID(teacher.getId());
+
+        List<Lesson> teacherLessons = lessonService.findLessonsByTeacherNumber(teacherNumber);
+
+        for (Lesson lesson: teacherLessons) {
+            lessonService.deleteByID(lesson.getId());
+        }
+
+        return teacherService.deleteByID(teacher.getId());
     }
 
 
