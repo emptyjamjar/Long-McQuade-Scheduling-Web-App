@@ -2,8 +2,10 @@ package com.Long.McQuade.SchedulingSystem.controllers;
 
 
 import com.Long.McQuade.SchedulingSystem.entities.*;
+import com.Long.McQuade.SchedulingSystem.exception.ErrorResponse;
 import com.Long.McQuade.SchedulingSystem.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -102,6 +104,20 @@ public class studentController {
 
 
         return studentService.deleteByID(student.getId());
+    }
+
+
+    @ExceptionHandler
+    public ResponseEntity<com.Long.McQuade.SchedulingSystem.exception.ErrorResponse> handleException(RuntimeException exc) {
+
+        ErrorResponse errorResponse = new ErrorResponse();
+
+
+        errorResponse.setStatus(HttpStatus.NOT_FOUND.value());
+        errorResponse.setMessage("Incorrect Data Entered for Student");
+        errorResponse.setTimeStamp(System.currentTimeMillis());
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
 }

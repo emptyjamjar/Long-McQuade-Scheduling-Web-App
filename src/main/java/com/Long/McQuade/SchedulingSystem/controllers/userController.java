@@ -5,11 +5,14 @@ import com.Long.McQuade.SchedulingSystem.entities.Authority;
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 import com.Long.McQuade.SchedulingSystem.entities.Teacher;
 import com.Long.McQuade.SchedulingSystem.entities.User;
+import com.Long.McQuade.SchedulingSystem.exception.ErrorResponse;
 import com.Long.McQuade.SchedulingSystem.service.AuthorityServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -78,6 +81,20 @@ public class userController {
         studentService.deleteByID(user.getId());
         authorityService.deleteByID(user.getId());
         userService.deleteByID(user.getId());
+    }
+
+
+    @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleException(RuntimeException exc) {
+
+        ErrorResponse errorResponse = new ErrorResponse();
+
+
+        errorResponse.setStatus(HttpStatus.NOT_FOUND.value());
+        errorResponse.setMessage("Incorrect Data Entered for Admin");
+        errorResponse.setTimeStamp(System.currentTimeMillis());
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
 }

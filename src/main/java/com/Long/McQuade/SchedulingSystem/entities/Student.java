@@ -2,6 +2,8 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,27 +20,41 @@ public class Student {
     @Column(name = "snum")
     private String studentNumber;
 
+    @NotNull(message = "First name cannot be empty")
+    @Size(min = 2, max = 20, message = "First name must be between 2 characters and 20 characters")
     @Column(name = "first")
     private String firstName;
 
+    @NotNull(message = "Last name cannot be empty")
+    @Size(min = 2, max = 20, message = "Last name must be between 2 characters and 20 characters")
     @Column(name = "last")
     private String lastName;
 
+    @NotNull(message = "Address name cannot be empty")
+    @Size(min = 5, max = 30, message = "Address must be between 5 characters and 30 characters")
     @Column(name = "address")
     private String address;
 
+    @NotNull(message = "Post code cannot be empty")
+    @Size(min = 7, max = 7, message = "Post code must be 7 characters")
     @Column(name = "pcode")
     private String postCode;
 
+    @NotNull(message = "Email cannot be empty")
     @Column(name = "email")
     private String email;
 
+    @NotNull(message = "Instruments played cannot be empty")
+    @Size(min = 5, max = 50, message = "Email must be between 5 and 50 characters")
     @Column(name = "played")
     private String instrumentsPlayed;
 
+    @NotNull(message = "Experience cannot be empty")
     @Column(name = "experience")
     private String experience;
 
+    @NotNull(message = "Year of Birth cannot be empty")
+    @Size(min = 4, max = 4, message = "Year of Birth must be 4 digits")
     @Column(name = "yob")
     private String yearOfBirth;
 

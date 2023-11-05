@@ -2,6 +2,8 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "lesson_centre")
@@ -12,22 +14,33 @@ public class LessonCentre {
     @Column(name = "id")
     private int id;
 
+    @NotNull(message = "City cannot be null")
+    @Size(min = 4, max = 20)
     @Column(name = "city")
     private String city;
 
     @Column(name = "phonnum")
+    @NotNull(message = "Phone number cannot be empty")
+    @Size(min = 10, max = 10, message = "Phone number must be 10 digits")
     private String phoneNumber;
 
     @Column(name = "email")
+    @NotNull(message = "Email cannot be empty")
+    @Size(min = 4, max = 30, message = "Email must be within 4 digits and 30 digits")
     private String email;
 
     @Column(name = "address")
+    @NotNull(message = "Address cannot be empty")
+    @Size(min = 4, max = 30, message = "Address must be within 4 digits and 30 characters")
     private String address;
 
     @Column(name = "postcode")
+    @NotNull(message = "Postal Code cannot be empty")
+    @Size(min = 7, max = 7, message = "Post code must be 7 digits")
     private String postCode;
 
     @Column(name = "numofrooms")
+    @NotNull(message = "Cannot leave field blank")
     private String numOfRooms;
 
 

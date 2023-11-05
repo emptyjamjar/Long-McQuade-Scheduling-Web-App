@@ -2,6 +2,8 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "lesson")
@@ -15,27 +17,38 @@ public class Lesson {
     @Column(name = "lessonnum")
     private String lessonNumber;
 
+    @NotNull(message = "Student Number cannot be empty")
+    @Size(min = 2, message = "Student number must have a minimum length of two")
     @Column(name = "snum")
     private String studentNumber;
 
+    @NotNull(message = "Teacher Number cannot be empty")
+    @Size(min = 2, message = "Teacher number must have a minimum length of two")
     @Column(name = "tnum")
     private String teacherNumber;
 
+    @NotNull(message = "Centre Number cannot be empty")
+    @Size(min = 2, message = "Centre number must have a minimum length of two")
     @Column(name = "centrenum")
     private String centreID;
 
+    @NotNull(message = "Start time cannot be empty")
     @Column(name = "starttime")
     private String startTime;
 
+    @NotNull(message = "End time cannot be empty")
     @Column(name = "endtime")
     private String endTime;
 
+    @NotNull(message = "Room Number cannot be empty")
     @Column(name = "roomnumber")
     private String roomNumber;
 
+    @NotNull(message = "Date cannot be empty")
     @Column(name = "date")
     private String date;
 
+    @NotNull(message = "Day of week cannot be empty")
     @Column(name = "dayofweek")
     private String dayOfWeek;
 

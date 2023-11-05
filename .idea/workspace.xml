@@ -4,19 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="students and teachers can submit requests to admin for actions to be performed.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/errorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="minor change made to teacher and student class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/exception/MissingFieldEntryException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/exception/NewExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,6 +96,10 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater",
     "spring.configuration.checksum": "2f93c1d7a79f67b9c091d57a34a9b565",
     "ts.external.directory.path": "C:\\Users\\moham\\Dropbox\\Desktop\\University Work\\Y3S1\\CMPT 370\\Project\\SchedulingSystem\\SchedulingSystem_v1\\longMcQuadeScheduling\\node_modules\\typescript\\lib"
   }
@@ -103,6 +127,7 @@
       <workItem from="1697580233850" duration="2698000" />
       <workItem from="1698119416837" duration="1280000" />
       <workItem from="1698120855872" duration="19905000" />
+      <workItem from="1699220566830" duration="4198000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1696991189577</created>
@@ -118,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698167812032</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="students and teachers can submit requests to admin for actions to be performed.">
+      <created>1699220850161</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699220850161</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="students and teachers can submit requests to admin for actions to be performed." />
-    <option name="LAST_COMMIT_MESSAGE" value="students and teachers can submit requests to admin for actions to be performed." />
+    <MESSAGE value="minor change made to teacher and student class" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor change made to teacher and student class" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

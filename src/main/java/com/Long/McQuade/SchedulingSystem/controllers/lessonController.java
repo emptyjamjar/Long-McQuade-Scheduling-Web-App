@@ -2,10 +2,13 @@ package com.Long.McQuade.SchedulingSystem.controllers;
 
 
 import com.Long.McQuade.SchedulingSystem.entities.Lesson;
+import com.Long.McQuade.SchedulingSystem.exception.ErrorResponse;
 import com.Long.McQuade.SchedulingSystem.service.LessonServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -55,6 +58,19 @@ public class lessonController {
 
         int id = Character.getNumericValue(lessonNumber.charAt(1));
         return lessonService.deleteByID(id);
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleException(RuntimeException exc) {
+
+        ErrorResponse errorResponse = new ErrorResponse();
+
+
+        errorResponse.setStatus(HttpStatus.NOT_FOUND.value());
+        errorResponse.setMessage("Incorrect Data Entered for Lesson");
+        errorResponse.setTimeStamp(System.currentTimeMillis());
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
     }
 
 }
