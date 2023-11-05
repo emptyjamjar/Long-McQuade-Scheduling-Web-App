@@ -1,9 +1,7 @@
 #topContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #aaa3a3;
-  margin-bottom: 700px;
+  box-shadow: #aaa3a3 3px 0.5px 8px;
 }
 
 #wordLogo {
@@ -12,12 +10,7 @@
 
 #rightmostLinks {
   font-family: "Raleway";
-  display: flex;
-  text-align: center;
-  align-items: center;
-  width: 25%;
   text-decoration: none;
-  justify-content: space-around;
 }
 
 #iconsTop {
@@ -34,10 +27,7 @@
 #reportProblem {
   text-decoration: none;
   color: #333333;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
+  text-align: center;
 }
 
 #signOut:hover,

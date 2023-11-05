@@ -1,6 +1,10 @@
 import wordLogo from "../../assets/logo-words.png";
 import messageIcon from "../../assets/995789_comment_communication_message_messages_icon.svg";
 import phoneIcon from "../../assets/9023670_phone_call_fill_icon.svg";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import "./Topbar.css";
 
 /* 
@@ -10,38 +14,55 @@ import "./Topbar.css";
  */
 const Top = () => {
   return (
-    <nav
+    <Navbar
+      fixed="top"
+      collapseOnSelect
+      expand="sm"
       id="topContainer"
       className="navbar fixed-top navbar-light bg-background"
     >
-      <a className="navbar-brand" href="#">
-        <img
-          src={wordLogo}
-          id="wordLogo"
-          width="180px"
-          className="d-inline-block align-top"
-          alt=""
-        />
-      </a>
-      <div id="rightmostLinks">
-        <div id="iconsTop">
-          <a id="iconLink" href="/#">
-            <img src={messageIcon} width="30px" alt="Message Icon" />
-          </a>
-          <a id="iconLink" href="/#">
-            <img src={phoneIcon} width="30px" alt="Phone Icon" />
-          </a>
-        </div>
-        <div id="wordLinks">
-          <a id="signOut" href="/#">
-            Sign Out
-          </a>
-          <a id="reportProblem" href="/#">
-            Report a Problem
-          </a>
-        </div>
-      </div>
-    </nav>
+      <Container fluid>
+        <Row>
+          <Navbar.Brand className="navbar-brand" href="/">
+            <img
+              src={wordLogo}
+              id="wordLogo"
+              width="160px"
+              className="d-inline-block align-top"
+              alt=""
+            />
+          </Navbar.Brand>
+        </Row>
+        <Row>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav
+              justify
+              variant="underline"
+              className="justify-content-end"
+              style={{
+                fontSize: "14px",
+                fontWeight: "lighter",
+                alignItems: "center",
+                textAlign: "center",
+              }}
+            >
+              <Nav.Link id="iconLink" href="/messages">
+                <img src={messageIcon} width="30px" alt="Message Icon" />
+              </Nav.Link>
+              <Nav.Link id="iconLink" href="/contact">
+                <img src={phoneIcon} width="30px" alt="Phone Icon" />
+              </Nav.Link>
+              <div id="wordLinks">
+                <Nav.Link id="signOut" href="/">
+                  Sign Out
+                </Nav.Link>
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Row>
+      </Container>
+    </Navbar>
   );
 };
 
