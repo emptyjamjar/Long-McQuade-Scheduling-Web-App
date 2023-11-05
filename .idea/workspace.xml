@@ -4,24 +4,76 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="case statements for each entity" />
+=======
+    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/account/account.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/account/account.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/browser/axios.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/browser/axios.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/browser/axios.cjs.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/browser/axios.cjs.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/esm/axios.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/node/axios.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/node/axios.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/node/axios.cjs.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/dist/node/axios.cjs.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.d.cts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/index.d.cts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/env/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/lib/env/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/axios/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Authority.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Lesson.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/LessonCentre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/AuthorityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonCentreImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/LessonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/StudentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/TeacherServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/service/UserServiceImpl.class" afterDir="false" />
+    </list>
+>>>>>>> 3a9aee2bab391cb2cb3898eaaf86763ff5a666f6
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
+        <option value="HTTP Public Environment File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="messagingStart" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -31,19 +83,18 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectCodeStyleSettingsMigration">
-    <option name="version" value="2" />
-  </component>
-  <component name="ProjectId" id="2Wa1l9Bz8HnYMa5D8fe2FUo3jVU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2WuWV7FpTCjTvvcHnYj2NBlsB0F" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -64,34 +115,121 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jasmi/OneDrive - University of Saskatchewan/Year Four/CMPT 370/Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d200cdcd2d5c79e37a2ca27185a96c1d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Spring Boot.SchedulingSystemApplication (1)">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="test" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchedulingSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+>>>>>>> 3a9aee2bab391cb2cb3898eaaf86763ff5a666f6
       <module name="SchedulingSystem" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-20" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="SchedulingSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.McQuade.SchedulingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="SchedulingSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Long.McQuade.SchedulingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.SchedulingSystemApplication (1)" />
+      <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+        <item itemvalue="Spring Boot.SchedulingSystemApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="" />
-      <created>1696956033225</created>
+      <changelist id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commit" />
+      <created>1697582965521</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696956033225</updated>
       <workItem from="1696956034698" duration="1934000" />
       <workItem from="1696975998178" duration="6164000" />
+<<<<<<< HEAD
       <workItem from="1697580233850" duration="3757000" />
       <workItem from="1697755176715" duration="1481000" />
       <workItem from="1697912451107" duration="1418000" />
+=======
+      <workItem from="1697580233850" duration="2698000" />
+      <workItem from="1698965460355" duration="3678000" />
+      <workItem from="1699208507804" duration="3794000" />
+>>>>>>> 3a9aee2bab391cb2cb3898eaaf86763ff5a666f6
     </task>
-    <task id="LOCAL-00001" summary="commit">
-      <created>1696991189577</created>
+    <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
+      <option name="closed" value="true" />
+      <created>1698008642824</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1696991189577</updated>
+      <updated>1698008642824</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="case statements for each entity">
       <created>1697583382492</created>
       <option name="number" value="00002" />
@@ -100,28 +238,44 @@
       <updated>1697583382492</updated>
     </task>
     <option name="localTasksCounter" value="3" />
+=======
+    <task id="LOCAL-00002" summary="Added ArrayList attribute for a contact list in User class which contains other User objects.">
+      <option name="closed" value="true" />
+      <created>1698011131488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698011131488</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far">
+      <option name="closed" value="true" />
+      <created>1698013226813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698013226813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+>>>>>>> 3a9aee2bab391cb2cb3898eaaf86763ff5a666f6
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="commit" />
     <MESSAGE value="case statements for each entity" />
     <option name="LAST_COMMIT_MESSAGE" value="case statements for each entity" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+=======
+    <MESSAGE value="Made teacher and student class extend user class" />
+    <MESSAGE value="Made teacher and student class extend user class, got rid of redundant attributes and methods" />
+    <MESSAGE value="Added ArrayList attribute for a contact list in User class which contains other User objects." />
+    <MESSAGE value="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Message class; holds sender, recipient, message itself, and timestamp. Just have getters and setters so far" />
+>>>>>>> 3a9aee2bab391cb2cb3898eaaf86763ff5a666f6
   </component>
 </project>

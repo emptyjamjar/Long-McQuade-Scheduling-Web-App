@@ -1,0 +1,7 @@
+#calendar {
+  width: 80vw;
+  height: 100vh;
+  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
