@@ -4,11 +4,30 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "teacher")
-public class Teacher extends User{
+public class Teacher {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
 
     @Column(name = "teachernum")
     private String teacherNumber;
+
+    @Column(name = "first")
+    private String firstName;
+
+    @Column(name = "last")
+    private String lastName;
+
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "postcode")
+    private String postCode;
+
+    @Column(name = "phonenumber")
+    private String phoneNumber;
 
     @Column(name = "instruments")
     private String instrumentsTaught;
@@ -26,12 +45,36 @@ public class Teacher extends User{
 
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getTeacherNumber() {
         return teacherNumber;
     }
 
     public void setTeacherNumber(String teacherNumber) {
         this.teacherNumber = teacherNumber;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getAddress() {
