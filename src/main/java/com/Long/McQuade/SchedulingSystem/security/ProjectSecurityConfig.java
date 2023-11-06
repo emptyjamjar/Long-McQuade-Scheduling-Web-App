@@ -88,8 +88,6 @@ public class ProjectSecurityConfig {
 
         http.httpBasic(Customizer.withDefaults());
 
-        http.formLogin();
-
         return http.build();
     }
 
