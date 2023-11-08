@@ -56,7 +56,7 @@ function CalendarPage() {
   };
 
   return (
-    <div id="calendar">
+    <div id="calendar" className="private-route-body">
       <Header message="Calendar" name=""></Header>
       <h2>Request Lesson Change</h2>
       <div>

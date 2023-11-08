@@ -2,11 +2,12 @@ import Header from "../components/Header";
 
 const addstudent = () => {
   return (
-    <div>
+    <div className="private-route-body">
       <div id="manage">
         <Header message="Registration" name=""></Header>
       </div>
-      <form method="post" action="addNewStudent">First Name:
+      <form method="post" action="addNewStudent">
+        First Name:
         <input type="text" name="firstName" /> Last Name:
         <input type="text" name="lastName" /> Address:
         <input type="text" name="address" /> Postal Code:

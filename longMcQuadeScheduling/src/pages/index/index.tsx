@@ -5,7 +5,7 @@ import "./index.css";
 
 const Home = () => {
   return (
-    <div id="home">
+    <div className="private-route-body" id="home">
       <Welcome message="Welcome" name="Ruth"></Welcome>
       <div id="lessonTable">
         <h2 id="tableHeading">Upcoming Lessons</h2>

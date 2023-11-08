@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/index/index";
@@ -8,14 +13,22 @@ import Calendar from "./pages/calendar/calendar";
 import Contact from "./pages/contact";
 import ManageUsers from "./pages/manageUsers";
 import AddStudent from "./pages/addstudent";
+import Login from "./pages/login/login";
 
-/* 
-  The main application for all components 
-  TODO: need to make all pages responsive.
-*/
 function App() {
   return (
     <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<PrivateRoutes />} />
+      </Routes>
+    </Router>
+  );
+}
+
+function PrivateRoutes() {
+  return (
+    <>
       <Topbar />
       <Navbar />
       <Routes>
@@ -26,7 +39,7 @@ function App() {
         <Route path="/manageUsers" element={<ManageUsers />} />
         <Route path="/addstudent" element={<AddStudent />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

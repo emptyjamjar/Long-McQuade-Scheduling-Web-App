@@ -1,5 +1,5 @@
 const contact = () => {
-  return <div></div>;
+  return <div className="private-route-body"></div>;
 };
 
 export default contact;

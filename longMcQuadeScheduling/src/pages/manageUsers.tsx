@@ -4,10 +4,9 @@ const manageUsers = () => {
   return (
     <div
       style={{
-        
         width: "100vw",
-        
       }}
+      className="private-route-body"
     >
       <div id="manage">
         <Header message="Manage Users" name=""></Header>

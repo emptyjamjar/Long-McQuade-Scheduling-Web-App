@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users/students")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:5173")
 public class studentController {
 
     @Autowired
@@ -55,6 +55,7 @@ public class studentController {
     }
 
     @PostMapping("/addstudent")
+    @CrossOrigin
     public Student addNewStudent(@RequestBody Student student) {
 
 

@@ -3,24 +3,31 @@ import "./account.css";
 import axios from "axios";
 
 const account = () => {
-  const [user, setUser] = useState([]);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
-    loadUser;
+    loadUser();
   }, []);
 
   const loadUser = async () => {
-    const result = await axios.get("http://localhost:1919/users/1");
-    console.log(result.data);
+    const userID = 2;
+    axios
+      .get(`http://localhost:1919/users/students/${userID}`)
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   return (
-    <div id="account">
+    <div id="account" className="private-route-body">
       <h2 id="sectionHeading">Student</h2>
       <div id="userInfo">
         <div>
           <h3 id="infoHeading">First Name</h3>
-          <p>{user}</p>
+          <p></p>
         </div>
         <div>
           <h3 id="infoHeading">Last Name</h3>

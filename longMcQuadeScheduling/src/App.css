@@ -10,13 +10,13 @@
   justify-content: flex-start;
 }
 
-body {
+.private-route-body {
   padding-top: 60px;
   padding-left: 180px;
 }
 
 @media (max-width: 979px) {
-  body {
+  .private-route-body {
     padding-top: 55px;
     padding-left: 180px;
   }

@@ -3,7 +3,6 @@ package com.Long.McQuade.SchedulingSystem.controllers;
 
 import com.Long.McQuade.SchedulingSystem.entities.LessonCentre;
 import com.Long.McQuade.SchedulingSystem.service.LessonCentreImpl;
-import com.Long.McQuade.SchedulingSystem.service.LessonServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/lessonCentres")
+@CrossOrigin(origins = "http://localhost:5173")
 public class lessonCentreController {
 
     @Autowired
