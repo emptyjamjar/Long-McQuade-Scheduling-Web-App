@@ -6,7 +6,15 @@ interface ButtonProps {
 
 const Button = ({ children, onClick, color }: ButtonProps) => {
   return (
-    <button className={"btn btn-" + color} onClick={onClick}>
+    <button
+      className={"btn btn-" + color}
+      onClick={onClick}
+      style={{
+        fontSize: "15px",
+        fontFamily: "Raleway",
+        fontWeight: "lighter",
+      }}
+    >
       {children}
     </button>
   );

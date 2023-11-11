@@ -2,23 +2,40 @@
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
+  min-width: 800px;
 }
 
 #student {
   width: 100%;
-  background-color: pink;
 }
 
-#userInfo {
+.section {
   display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: #c7c1c1 0px 0.5px 8px;
+  border-radius: 5px;
+}
+
+#studentInfo {
   justify-content: space-between;
-  width: 70%;
-  padding-left: 5px;
-  padding-top: 1rem;
+}
+
+#col {
+  width: 30%;
+}
+
+Form {
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 
 p {
-  padding-right: 10px;
+  padding-bottom: 1rem;
 }
 
 #sectionHeading {
@@ -27,6 +44,8 @@ p {
   width: 100%;
 }
 
-#infoHeading {
+#infoHeading,
+.form-label {
   font-size: 18px;
+  font-weight: 450;
 }
