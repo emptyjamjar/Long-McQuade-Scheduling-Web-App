@@ -3,18 +3,10 @@ import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 
 const manageUsers = () => {
-  
-  const linkStyle = {
-    color: "black",        // Text color
-    textDecoration: "none", // Remove underline
-    marginRight: "10px",    // Adjust spacing if needed
-    fontSize: "16px",       // Font size
-    fontWeight: "bold",     // Font weight
-    cursor: "pointer",      // Show hand cursor on hover
-  };
-  const buttonStyleWhite = {
-    backgroundColor: "white",    
-    color: "#3498db",            
+
+  const buttonStyle = {
+    backgroundColor: "orange",    
+    color: "black",            
     padding: "10px 20px",        
     margin: "5px",               
     borderRadius: "5px",         
@@ -30,22 +22,22 @@ const manageUsers = () => {
         <Header message="Manage Users" name="" />
       </div>
 
-      <Nav.Link as={Link} style={buttonStyleWhite} to="/addstudent">
+      <Nav.Link as={Link} style={buttonStyle} to="/addstudent">
               Registration
             </Nav.Link>
 
-      <Nav.Link as={Link} style={buttonStyleWhite} to="/unenrollment">
+      <Nav.Link as={Link} style={buttonStyle} to="/unenrollment">
               Unenrollment
             </Nav.Link>
 
-      <Nav.Link as={Link} style={buttonStyleWhite} to="/teachersProfiles">
+      <Nav.Link as={Link} style={buttonStyle} to="/teachersProfiles">
               Teachers Profiles
             </Nav.Link>
 
-      <Nav.Link as={Link} style={buttonStyleWhite} to="/studentProfiles">
+      <Nav.Link as={Link} style={buttonStyle} to="/studentProfiles">
               Student Profiles
             </Nav.Link>
-      <Nav.Link as={Link} style={buttonStyleWhite} to="/accessCodes">
+      <Nav.Link as={Link} style={buttonStyle} to="/accessCodes">
               Access Codes
             </Nav.Link>
     </div>
