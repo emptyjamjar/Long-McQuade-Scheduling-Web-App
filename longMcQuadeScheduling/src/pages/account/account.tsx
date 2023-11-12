@@ -3,10 +3,13 @@ import "./account.css";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import axios from "axios";
+import Button from "react-bootstrap/esm/Button";
 
+/* Account page for users to check their contact information, username and password, 
+and notification preferences */
 const account = () => {
+  // TODO: connect to backend
   const [user, setUser] = useState(null);
-  const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
     loadUser();
@@ -24,12 +27,15 @@ const account = () => {
       });
   };
 
+  // Hook to toggle password appearance
+  const [showPassword, setShowPassword] = useState(false);
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
 
   return (
     <div id="account" className="private-route-body">
+      {/* User information section */}
       <h2 id="sectionHeading">Student</h2>
       <div className="section" id="studentInfo">
         <div id="col">
@@ -70,6 +76,7 @@ const account = () => {
         </div>
       </div>
 
+      {/* Username and password section */}
       <h2 id="sectionHeading">Username and Password</h2>
       <div className="section" id="usernamePasswordInfo">
         <Form>
@@ -77,18 +84,9 @@ const account = () => {
             <Form.Label className="form-label">Username</Form.Label>
             <Form.Text className="text-muted"> - Required</Form.Text>
             <Form.Control
-              className="form-input"
               type="username"
               placeholder="Username"
               defaultValue="rhapsodyruth@email.com"
-            />
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicNewPassword">
-            <Form.Label className="form-label">New Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="New Password"
-              className="form-input"
             />
           </Form.Group>
 
@@ -98,7 +96,6 @@ const account = () => {
               disabled
               type={showPassword ? "text" : "password"}
               defaultValue="password"
-              className="form-input"
             />
             <Form.Check
               type="switch"
@@ -109,12 +106,51 @@ const account = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicNewPassword">
+            <Form.Label className="form-label">New Password</Form.Label>
+            <Form.Control type="password" placeholder="New Password" />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
             <Form.Label className="form-label">Confirm New Password</Form.Label>
-            <Form.Control
-              type="password"
-              placeholder="New Password"
-              className="form-input"
+            <Form.Control type="password" placeholder="New Password" />
+          </Form.Group>
+          <Button variant="primary" type="submit" id="notification-submit-btn">
+            Save my changes
+          </Button>
+        </Form>
+      </div>
+
+      {/* Notification preferences section */}
+      <h2 id="sectionHeading">Notification and Reminders</h2>
+      <div className="section" id="usernamePasswordInfo">
+        <Form>
+          <Form.Group
+            className="mb-3"
+            id="notification-form-group"
+            controlId="formNotificationCheckboxes"
+          >
+            <Form.Check
+              type="checkbox"
+              className="custom-check"
+              label="I would like to receive email notifications for any lesson schedule changes"
             />
+            <Form.Check
+              type="checkbox"
+              className="custom-check"
+              label="I would like to receive email reminders 24 hours before my lesson"
+            />
+            <Form.Check
+              type="checkbox"
+              className="custom-check"
+              label="I would like to receive email reminders 2 hours before my lesson"
+            />
+            <Button
+              variant="primary"
+              type="submit"
+              id="notification-submit-btn"
+            >
+              Save my preferences
+            </Button>
           </Form.Group>
         </Form>
       </div>

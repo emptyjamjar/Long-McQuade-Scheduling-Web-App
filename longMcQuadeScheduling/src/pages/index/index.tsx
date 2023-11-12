@@ -3,6 +3,8 @@ import Table from "../../components/Table";
 import Button from "../../components/Button";
 import "./index.css";
 
+/* The homepage of the site */
+// TODO: render different homepages depending on type of user (admin, teacher, student)
 const Home = () => {
   return (
     <div className="private-route-body" id="home">

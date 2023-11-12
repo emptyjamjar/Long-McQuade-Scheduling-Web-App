@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Header from "../../components/Header";
 import "./login.css";
 
+/* The login page for all users */
 function Login() {
   return (
     <div id="login">

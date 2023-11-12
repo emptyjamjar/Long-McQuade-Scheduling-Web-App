@@ -43,23 +43,23 @@ function PageNavbar() {
               textTransform: "uppercase",
             }}
           >
+            <Nav.Link as={Link} style={linkStyle} to="/">
+              Home
+            </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/account">
               Account
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/messages">
-              Message
+              Messages
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/calendar">
               Calendar
             </Nav.Link>
-            <Nav.Link as={Link} style={linkStyle} to="/my_schedule">
-              My Schedule
+            <Nav.Link as={Link} style={linkStyle} to="/contact">
+              Contact
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/profiles">
               Teacher Profiles
-            </Nav.Link>
-            <Nav.Link as={Link} style={linkStyle} to="/contact">
-              Contact
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/manageUsers">
               Manage Users

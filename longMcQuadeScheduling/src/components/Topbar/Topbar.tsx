@@ -10,7 +10,6 @@ import "./Topbar.css";
 /* 
   Topbar is the section at the top of the screen where the logo, message icon, contact icon, and sign out option
   live. Has it's own css file for styling.
-  TODO: fix hover on icons - try to fix padding issue.
  */
 const Top = () => {
   return (

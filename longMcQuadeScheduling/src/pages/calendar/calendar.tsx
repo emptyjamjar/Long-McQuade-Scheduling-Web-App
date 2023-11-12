@@ -15,6 +15,7 @@ import "react-clock/dist/Clock.css";
 // TODO: CLEAN UP CODE
 // TODO: MAKE REQUEST CHANGE DATEPICKER BE A POP UP WHEN LESSON IS CLICKED ON CALENDAR
 
+// Variables for calendar information
 const locales = {
   "en-US": "date-fns/locale/en-US",
 };
@@ -29,6 +30,8 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
+// Array of lesson events: will become autopopulated by database when frontend and backend
+// are properly connected.
 const lessonEvents = [
   {
     title: "Violin with Jana",
@@ -42,6 +45,8 @@ const lessonEvents = [
   },
 ];
 
+/* Calendar page for admin, teachers, and students to check the scheduled lessons for that month, week,
+or day */
 function CalendarPage() {
   const [newEvent, setNewEvent] = useState({
     title: "",
@@ -51,6 +56,7 @@ function CalendarPage() {
 
   const [allEvents, setAllEvents] = useState(lessonEvents);
 
+  // TODO: test properly once frontend and backend are connected
   const handleLessonChange = () => {
     setAllEvents([...allEvents, newEvent]);
   };
@@ -58,26 +64,18 @@ function CalendarPage() {
   return (
     <div id="calendar" className="private-route-body">
       <Header message="Calendar" name=""></Header>
-      <h2>Request Lesson Change</h2>
       <div>
-        <input
-          type="text"
-          placeholder="Add Title"
-          style={{
-            width: "20%",
-            marginRight: "10px",
-          }}
-          value={newEvent.title}
-          onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
-        />
+        {/* Date/time picker for lesson change requests */}
+        <h2>Request Lesson Change</h2>
         <DateTimePicker
           minDate={new Date(today)}
-          // onChange={(start) => setNewEvent({ ...newEvent, start })}
           yearPlaceholder="yyyy"
           monthPlaceholder="mm"
           dayPlaceholder="dd"
         />
       </div>
+
+      {/* The actual calendar which displays a calendar for month, week, day, or agenda views */}
       <Calendar
         localizer={localizer}
         events={allEvents}

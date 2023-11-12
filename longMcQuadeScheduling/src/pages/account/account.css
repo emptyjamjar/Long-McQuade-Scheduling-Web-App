@@ -28,10 +28,30 @@
 }
 
 Form {
-  background-color: pink;
   width: 100%;
   display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.mb-3 {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+#custom-switch {
+  border: #c7c1c1 0.5px solid;
+}
+
+#custom-switch:focus {
+  box-shadow: none;
+}
+
+#custom-switch:checked {
+  transition: 0.2s ease-in;
+  background-color: #f68b1f;
+  color: #c7c1c1;
 }
 
 p {
@@ -48,4 +68,16 @@ p {
 .form-label {
   font-size: 18px;
   font-weight: 450;
+}
+
+#notification-submit-btn {
+  margin-top: 1rem;
+}
+
+#notification-form-group {
+  width: 100%;
+}
+
+.custom-check {
+  padding-bottom: 0.5rem;
 }
