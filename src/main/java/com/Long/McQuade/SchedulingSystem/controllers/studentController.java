@@ -16,7 +16,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users/students")
-@CrossOrigin("http://localhost:5173")
 public class studentController {
 
     @Autowired
@@ -29,8 +28,8 @@ public class studentController {
     @Autowired
     private AuthorityServiceImpl authorityService;
 
-    @GetMapping("/")
-    public List<Student> showAllUsers() {
+    @GetMapping("/studentProfiles")
+    public List<Student> studentProfiles() {
         return studentService.findAll();
     }
 
@@ -50,7 +49,7 @@ public class studentController {
     @PostMapping("/addstudent")
     public Student addNewStudent(@RequestBody Student student) {
 
-
+        System.out.println("Testing...");
         studentService.save(student);
         student.setStudentNumber("S" + student.getId());
 

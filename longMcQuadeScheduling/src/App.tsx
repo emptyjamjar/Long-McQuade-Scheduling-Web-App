@@ -8,6 +8,12 @@ import Calendar from "./pages/calendar/calendar";
 import Contact from "./pages/contact";
 import ManageUsers from "./pages/manageUsers";
 import AddStudent from "./pages/addstudent";
+import TeachersProfiles from "./pages/teachersProfiles";
+import StudentProfiles from "./pages/studentProfiles";
+import Unenrollment from "./pages/unenrollment";
+import AccessCodes from "./pages/accessCodes";
+
+
 
 /* 
   The main application for all components 
@@ -25,6 +31,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/manageUsers" element={<ManageUsers />} />
         <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/unenrollment" element={<Unenrollment />} />
+        <Route path="/studentProfiles" element={<StudentProfiles />} />
+        <Route path="/teachersProfiles" element={<TeachersProfiles />} />
+        <Route path="/accessCodes" element={<AccessCodes />} />
+
       </Routes>
     </Router>
   );
