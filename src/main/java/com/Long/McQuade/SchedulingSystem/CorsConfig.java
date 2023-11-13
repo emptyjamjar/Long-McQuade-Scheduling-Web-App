@@ -12,11 +12,18 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.addAllowedOrigin("http://localhost:5173/account");
-        config.addAllowedHeader("*");
+
+        config.addAllowedOrigin("http://localhost:5173");
+        config.addAllowedHeader("Content-Type");
         config.addAllowedMethod("*");
+        config.setAllowCredentials(true);
         source.registerCorsConfiguration("/**", config);
+
+        CorsFilter corsFilter = new CorsFilter(source);
+
+        // Console log to make sure cors is running upon startup
         System.out.println("CorsFilter bean is initialized.");
+
         return new CorsFilter(source);
     }
 }

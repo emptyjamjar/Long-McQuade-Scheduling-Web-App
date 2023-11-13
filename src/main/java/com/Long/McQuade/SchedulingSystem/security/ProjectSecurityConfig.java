@@ -42,6 +42,8 @@ public class ProjectSecurityConfig {
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
 
+        http.cors(Customizer.withDefaults());
+
 
         http.authorizeHttpRequests(configurer ->
                 configurer

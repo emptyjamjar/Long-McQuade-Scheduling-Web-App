@@ -1,6 +1,7 @@
 {
   "name": "longmcquadescheduling",
   "private": true,
+  "proxy": "http://localhost:1919",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

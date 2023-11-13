@@ -2,6 +2,50 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  height: 100%;
   text-align: center;
   align-items: center;
+}
+
+#login-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+  flex-direction: column;
+  width: 55%;
+}
+
+#rememberMeCheck:focus {
+  box-shadow: none;
+}
+
+.login-group-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#forgotLinks {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 14px;
+  height: 18%;
+}
+
+.forgot-link {
+  text-decoration: none;
+  color: #080f0f;
+}
+
+.forgot-link:hover {
+  transition: 0.3s ease-in-out;
+  color: #456990;
+}
+
+#loginButton {
+  margin-top: 2rem;
 }

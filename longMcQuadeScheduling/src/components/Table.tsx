@@ -1,7 +1,9 @@
 import Table from "react-bootstrap/Table";
 
-/* Tables to display lesson information on the homepage, styled with inline property  */
+/* Tables to display lesson information on the homepage.
+Uses react-bootstrap components and inline css for styling.  */
 const Tables = () => {
+  // Headings for the tables columns
   const headings = [
     "Student",
     "Teacher",
@@ -12,6 +14,7 @@ const Tables = () => {
     "Location",
   ];
 
+  //   TODO: insert lesson information below.. hardcoded for now
   const lessons = [
     "Rhapsody Ruth",
     "Jana Janovsky",
@@ -22,14 +25,13 @@ const Tables = () => {
     "Saskatoon North",
   ];
 
+  // Styling for the table rows
   const style = {
     width: "2rem",
     backgroundColor: "#F5F1ED",
     fontFamily: "Raleway",
     fontSize: "14px",
   };
-
-  //   TODO: insert lesson information below.. hardcoded for now
 
   return (
     <Table responsive hover bordered size="sm">

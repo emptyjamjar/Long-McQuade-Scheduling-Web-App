@@ -9,7 +9,7 @@ import "./Topbar.css";
 
 /* 
   Topbar is the section at the top of the screen where the logo, message icon, contact icon, and sign out option
-  live. Has it's own css file for styling.
+  live. Uses react-bootstrap components and separate css file for styling.
  */
 const Top = () => {
   return (

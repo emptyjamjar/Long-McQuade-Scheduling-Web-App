@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./account.css";
 import Form from "react-bootstrap/Form";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 import axios from "axios";
 import Button from "react-bootstrap/esm/Button";
 
 /* Account page for users to check their contact information, username and password, 
-and notification preferences */
+and notification preferences. Uses react boostrap and has separate css file.*/
 const account = () => {
-  // TODO: connect to backend
+  // TODO: connect to backend, get user id
+
+  // Hook for user access once backend is connected
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -16,9 +17,10 @@ const account = () => {
   }, []);
 
   const loadUser = async () => {
-    const userID = 2;
+    // Hardcoded user ID until we connect to backend
+    const userID = 1;
     axios
-      .get(`http://localhost:1919/users/students/${userID}`)
+      .get(`http://localhost:1919/users/${userID}`)
       .then((response) => {
         console.log(response.data);
       })
@@ -114,7 +116,7 @@ const account = () => {
             <Form.Label className="form-label">Confirm New Password</Form.Label>
             <Form.Control type="password" placeholder="New Password" />
           </Form.Group>
-          <Button variant="primary" type="submit" id="notification-submit-btn">
+          <Button variant="dark" type="submit" id="username-submit-btn">
             Save my changes
           </Button>
         </Form>
@@ -122,33 +124,28 @@ const account = () => {
 
       {/* Notification preferences section */}
       <h2 id="sectionHeading">Notification and Reminders</h2>
-      <div className="section" id="usernamePasswordInfo">
+      <div className="section" id="notificationsSection">
         <Form>
-          <Form.Group
-            className="mb-3"
-            id="notification-form-group"
-            controlId="formNotificationCheckboxes"
-          >
+          <Form.Group className="mb-3" id="notification-form-group">
             <Form.Check
               type="checkbox"
+              id="lesson-change-check"
               className="custom-check"
               label="I would like to receive email notifications for any lesson schedule changes"
             />
             <Form.Check
               type="checkbox"
+              id="day-reminder-check"
               className="custom-check"
               label="I would like to receive email reminders 24 hours before my lesson"
             />
             <Form.Check
               type="checkbox"
+              id="hours-reminder-check"
               className="custom-check"
               label="I would like to receive email reminders 2 hours before my lesson"
             />
-            <Button
-              variant="primary"
-              type="submit"
-              id="notification-submit-btn"
-            >
+            <Button variant="dark" type="submit" id="notification-submit-btn">
               Save my preferences
             </Button>
           </Form.Group>

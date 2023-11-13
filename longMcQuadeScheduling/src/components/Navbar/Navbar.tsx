@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 
 /* 
 Navbar is the left aligned orange column with links to different pages of the website.
-Uses react-bootstrap items and inline css.
-TODO: Figure out spacing on links, route to correct pages when established
+Uses react-bootstrap components and inline css for styling.
  */
 function PageNavbar() {
   const linkStyle = { margin: ".2rem" };

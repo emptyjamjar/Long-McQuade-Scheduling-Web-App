@@ -1,7 +1,24 @@
 #calendar {
   width: 80vw;
-  height: 100vh;
-  padding: 0 2rem 0 2rem;
+  min-width: 950px;
   display: flex;
   flex-direction: column;
+}
+
+#requestLessonChange {
+  width: fit-content;
+  height: fit-content;
+}
+
+#calendarHead {
+  display: flex;
+  justify-content: space-between;
+  width: 112%;
+  margin-bottom: 3rem;
+  align-items: flex-end;
+}
+
+#date-range {
+  display: flex;
+  justify-content: space-between;
 }
