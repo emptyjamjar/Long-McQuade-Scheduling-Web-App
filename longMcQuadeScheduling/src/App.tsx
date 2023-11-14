@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Outlet,
 } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Topbar from "./components/Topbar/Topbar";
@@ -40,10 +39,6 @@ function PrivateRoutes() {
         <Route path="/addstudent" element={<AddStudent />} />
       </Routes>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
     </>
   );
 }

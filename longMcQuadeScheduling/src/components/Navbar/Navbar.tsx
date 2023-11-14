@@ -52,20 +52,6 @@ function PageNavbar() {
             <Nav.Link as={Link} style={linkStyle} to="/messages">
               Messages
             </Nav.Link>
-
-            <Nav.Link style={linkStyle} href="/">
-              Home
-            </Nav.Link>
-            <Nav.Link style={linkStyle} href="/account">
-              Account
-            </Nav.Link>
-
-            <Nav.Link as={Link} style={linkStyle} to="/account">
-              Account
-            </Nav.Link>
-            <Nav.Link as={Link} style={linkStyle} to="/messages">
-              Messages
-            </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/calendar">
               Calendar
             </Nav.Link>
