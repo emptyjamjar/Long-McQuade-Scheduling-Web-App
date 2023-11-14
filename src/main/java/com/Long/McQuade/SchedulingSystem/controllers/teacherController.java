@@ -27,16 +27,30 @@ public class teacherController {
     @Autowired
     private AuthorityServiceImpl authorityService;
 
+    /**
+     *
+     * @return list of all teachers
+     */
     @GetMapping("/")
     public List<Teacher> showAllTeachers() {
         return teacherService.findAll();
     }
 
+<<<<<<< HEAD
 //    @GetMapping("/{id}")
 //    public Teacher showTeacherByID(@PathVariable("id") int id) {
 //
 //        return teacherService.findBy(id);
 //    }
+=======
+    /**
+     *
+     * @param id id of teacher
+     * @return list of teacher with specified id
+     */
+    @GetMapping("/{id}")
+    public Teacher showTeacherByID(@PathVariable("id") int id) {
+>>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
 
     @GetMapping("/{teacherNumber}")
     public Teacher showTeacherByID(@PathVariable("teacherNumber") String teacherNumber) {
@@ -44,6 +58,11 @@ public class teacherController {
         return teacherService.findTeacherByTeacherNumber(teacherNumber);
     }
 
+    /**
+     *
+     * @param teacher the new student
+     * @return the new student
+     */
     @PostMapping("/addteacher")
     public Teacher addNewTeacher(@RequestBody Teacher teacher) {
 
@@ -62,6 +81,11 @@ public class teacherController {
         return teacherService.save(teacher);
     }
 
+    /**
+     *
+     * @param teacher the updated student
+     * @return the updated student details
+     */
     @PutMapping("/updateteacher")
     public Teacher updateCurrentTeacher(@RequestBody Teacher teacher) {
 
@@ -75,6 +99,11 @@ public class teacherController {
         return newTeacher;
     }
 
+    /**
+     *
+     * @param id of teacher to be deleted
+     * @return conformation of teacher deletion
+     */
     @DeleteMapping("/deleteteacher/{id}")
     public String deleteCurrentStudent(@PathVariable("id") int id) {
 

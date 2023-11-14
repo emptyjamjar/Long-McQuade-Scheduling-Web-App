@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" afterDir="false" />
@@ -23,6 +24,9 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
     </list>
+=======
+    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commented controllers" />
+>>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +56,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -71,6 +76,24 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;d200cdcd2d5c79e37a2ca27185a96c1d&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d"
+>>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
   }
 }</component>
   <component name="RunManager" selected="Spring Boot.SchedulingSystemApplication">
@@ -97,14 +120,86 @@
       <created>1699226936507</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1699226936507</updated>
       <workItem from="1699226939955" duration="1642000" />
       <workItem from="1699229351288" duration="17591000" />
       <workItem from="1699765657573" duration="13019000" />
     </task>
+=======
+      <updated>1696956033225</updated>
+      <workItem from="1696956034698" duration="1934000" />
+      <workItem from="1696975998178" duration="6164000" />
+      <workItem from="1697580233850" duration="3757000" />
+      <workItem from="1697755176715" duration="1481000" />
+      <workItem from="1697912451107" duration="3110000" />
+      <workItem from="1698112189054" duration="1825000" />
+      <workItem from="1698117319503" duration="322000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit">
+      <created>1696991189577</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696991189577</updated>
+    </task>
+    <task id="LOCAL-00002" summary="case statements for each entity">
+      <created>1697583382492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697583382492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="show all lessons for each teacher or students on homepage">
+      <created>1697914336298</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697914336298</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commented controllers">
+      <created>1698113566411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698113566411</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commented controllers">
+      <created>1698117575856</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698117575856</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit" />
+    <MESSAGE value="case statements for each entity" />
+    <MESSAGE value="show all lessons for each teacher or students on homepage" />
+    <MESSAGE value="commented controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="commented controllers" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+>>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
 </project>

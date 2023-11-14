@@ -33,6 +33,10 @@ public class homepageController {
     @Autowired
     private LessonServiceImpl lessonService;
 
+    /**
+     *
+     * @return - returns a list of the users lesson information based off their authority
+     */
     @GetMapping("/")
     public String showHomepage() {
 

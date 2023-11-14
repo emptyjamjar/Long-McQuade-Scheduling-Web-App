@@ -30,17 +30,27 @@ public class studentController {
     @Autowired
     private AuthorityServiceImpl authorityService;
 
+    /**
+     *
+     * @return list of all students
+     */
     @GetMapping("/")
     public List<Student> showAllUsers() {
         return studentService.findAll();
     }
 
+    /**
+     *
+     * @param id id of student
+     * @return list of student with specified id
+     */
     @GetMapping("/{id}/")
     public Student showStudentByID(@PathVariable("id") int id) {
 
         return studentService.findBy(id);
     }
 
+<<<<<<< HEAD
     @GetMapping("/s")
     public ResponseEntity<String> getName() {
         String name = "John Doe"; // Replace this with the actual logic to get the user's name
@@ -48,12 +58,24 @@ public class studentController {
     }
 
 
+=======
+    /**
+     *
+     * @param studentNumber student number of student to be found
+     * @return student returned
+     */
+>>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
     @GetMapping("/{studentNumber}")
     public Student findStudentByStudentNumber(@PathVariable("studentNumber") String studentNumber) {
 
         return studentService.findStudentByStudentNumber(studentNumber);
     }
 
+    /**
+     *
+     * @param student the new student
+     * @return the new student
+     */
     @PostMapping("/addstudent")
     @CrossOrigin
     public Student addNewStudent(@RequestBody Student student) {
@@ -76,6 +98,11 @@ public class studentController {
     }
 
 
+    /**
+     *
+     * @param student the updated student
+     * @return the updated student details
+     */
     @PutMapping("/updatestudent")
     public Student updateCurrentStudent(@RequestBody Student student) {
 
@@ -89,6 +116,11 @@ public class studentController {
         return newStudent;
     }
 
+    /**
+     *
+     * @param id id of student to be deleted
+     * @return conformation of student deletion
+     */
     @DeleteMapping("/deletestudent/{id}")
     public String deleteCurrentStudent(@PathVariable("id") int id) {
 
