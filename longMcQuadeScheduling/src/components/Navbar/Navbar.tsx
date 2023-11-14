@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 /* 
 Navbar is the left aligned orange column with links to different pages of the website.
 Uses react-bootstrap components and inline css for styling.
+TODO: Figure out spacing on links, route to correct pages when established
  */
 function PageNavbar() {
   const linkStyle = { margin: ".2rem" };
@@ -38,6 +39,7 @@ function PageNavbar() {
               fontSize: "14px",
               fontWeight: "lighter",
               alignItems: "center",
+
               fontFamily: "Raleway",
               textTransform: "uppercase",
             }}
@@ -50,6 +52,20 @@ function PageNavbar() {
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/messages">
               Messages
+            </Nav.Link>
+
+            <Nav.Link style={linkStyle} href="/">
+              Home
+            </Nav.Link>
+            <Nav.Link style={linkStyle} href="/account">
+              Account
+            </Nav.Link>
+
+            <Nav.Link as={Link} style={linkStyle} to="/account">
+              Account
+            </Nav.Link>
+            <Nav.Link as={Link} style={linkStyle} to="/messages">
+              Message
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/calendar">
               Calendar

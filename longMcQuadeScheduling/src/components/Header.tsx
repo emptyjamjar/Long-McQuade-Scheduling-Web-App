@@ -11,21 +11,20 @@ interface H1Props {
     {getName()}.
  */
 const H1 = styled.h1`
+  position: sticky;
   font-family: "Roboto";
   color: #080f0f;
   font-weight: 500;
-  font-size: 50px;
+  font-size: 5vw;
   width: fit-content;
   margin: 0 0 3rem 0;
   height: fit-content;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0 0.5rem 0;
   border-bottom: 5px solid;
   border-image: linear-gradient(to right, #f5f1ed, #f68b1f) 1;
 `;
 
 const WelcomeText = ({ message, name }: H1Props) => {
-  // const name = "Ruth";
-
   if (name) {
     return (
       <H1 className="display-1">
