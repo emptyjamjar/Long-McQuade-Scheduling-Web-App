@@ -18,6 +18,8 @@ import Login from "./pages/login/login";
 =======
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+
 import Home from "./pages/";
 import Contact from "./pages/contact";
 >>>>>>> d69c25dc (Routed application and created /pages)
@@ -25,6 +27,7 @@ import Contact from "./pages/contact";
 function App() {
   return (
     <Router>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -49,6 +52,9 @@ function PrivateRoutes() {
       </Routes>
     </>
 =======
+=======
+      <Header />
+>>>>>>> 2f22d78d (Fixed App.tsx and Index.tsx)
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
