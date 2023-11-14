@@ -64,7 +64,7 @@ function PageNavbar() {
               Account
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/messages">
-              Message
+              Messages
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/calendar">
               Calendar
