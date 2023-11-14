@@ -13,8 +13,12 @@ const Home = () => {
       <div id="lessonTable">
         <div id="lessonTableHeader">
           <h2 id="tableHeading">Upcoming Lessons</h2>
+<<<<<<< HEAD
           {/* Button not functional */}
           <Button variant="dark" onClick={() => console.log("Clicked")}>
+=======
+          <Button color="dark" onClick={() => console.log("Clicked")}>
+>>>>>>> 52983a8c (Added username and password section to /account)
             Subscribe to Calendar
           </Button>
         </div>

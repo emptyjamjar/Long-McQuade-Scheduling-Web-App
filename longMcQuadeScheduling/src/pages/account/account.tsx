@@ -11,6 +11,7 @@ const account = () => {
 
   // Hook for user access once backend is connected
   const [user, setUser] = useState(null);
+  const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
     loadUser();
@@ -30,7 +31,7 @@ const account = () => {
   };
 
   // Hook to toggle password appearance
-  const [showPassword, setShowPassword] = useState(false);
+  
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
