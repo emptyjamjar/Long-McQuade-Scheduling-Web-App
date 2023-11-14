@@ -97,146 +97,10 @@
 >>>>>>> 13d30e86 (commit before merging with front)
 =======
     <list default="true" id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/adminViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherProfileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/repositories/RequestRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/service/RequestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/service/RequestServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/axios.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-36WQQXVT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-36WQQXVT.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-3D2ZZHF3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-3D2ZZHF3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-3KNKXXJW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-3KNKXXJW.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-3UFGQMBU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-3UFGQMBU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-4CBUFOCX.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-4CBUFOCX.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-55L2D7FU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-55L2D7FU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-C3T3PU6O.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-C3T3PU6O.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-CRWIS3E6.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-CRWIS3E6.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-D5CK6FB7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-D5CK6FB7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-F52H626J.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-F52H626J.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-FCDZD2KU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-FCDZD2KU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-H6A75QSK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-H6A75QSK.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-HGVBTMBL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-HGVBTMBL.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-HQ7AEHIS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-HQ7AEHIS.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-IRYO3Q7U.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-IRYO3Q7U.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-KBFJUSKC.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-KBFJUSKC.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-LX42PCX7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-LX42PCX7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-OH5IW6IT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-OH5IW6IT.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-OZJJQ7QZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-OZJJQ7QZ.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-PCVSDHXE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-PCVSDHXE.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-PUBZTBGD.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-PUBZTBGD.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-QHONCEU7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-QHONCEU7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-QMIWBWLO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-QMIWBWLO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-R3R2S4IK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-R3R2S4IK.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-RQVT6MSF.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-RQVT6MSF.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-STR36QGU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-STR36QGU.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-TKOZOJU7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-TKOZOJU7.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-U3YPZHSN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-U3YPZHSN.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-UNTBELUQ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-UNTBELUQ.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-VSTHW2JA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-VSTHW2JA.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-WC4WSEMJ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-WC4WSEMJ.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-WNKWOKNR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-WNKWOKNR.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-YNCU75EO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-YNCU75EO.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-ZXHYZKDV.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/chunk-ZXHYZKDV.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_format.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_format.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_format.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_format.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_getDay.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_getDay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_getDay.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_getDay.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_parse.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_parse.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_startOfWeek.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_startOfWeek.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_startOfWeek.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/date-fns_startOfWeek.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/moment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/moment.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-big-calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-big-calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-big-calendar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-big-calendar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap-sidebar-menu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap-sidebar-menu.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Button.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Col.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Col.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Container.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Container.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Form.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Nav.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Nav.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Navbar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Navbar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Row.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Row.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Row.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Row.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Table.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_Table.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_esm_Container.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_esm_Container.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_esm_Row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-bootstrap_esm_Row.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-calendar.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-datepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-datepicker.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-datetime-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-datetime-picker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-datetime-picker.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-datetime-picker.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-dom_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-dom_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-router-dom.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react-router-dom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react_jsx-dev-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react_jsx-dev-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react_jsx-runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/react_jsx-runtime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/styled-components.js" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/styled-components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/styled-components.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/node_modules/.vite/deps/styled-components.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SchedulingSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchedulingSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/homepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/homepageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
     </list>
 >>>>>>> 1926071e (creating new branch to see if manually adding front-end works)
     <option name="SHOW_DIALOG" value="false" />
@@ -298,6 +162,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2XmGd8hHYDYfCXDsVUhgDwCzCjh" />
 >>>>>>> 1926071e (creating new branch to see if manually adding front-end works)
   <component name="ProjectViewState">
@@ -307,6 +174,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 89d889f9 (Commiting changes copied from scheduling branch)
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -315,6 +185,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
 <<<<<<< HEAD
@@ -322,10 +193,14 @@
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/jasmi/OneDrive - University of Saskatchewan/Year Four/CMPT 370/Project&quot;,
 >>>>>>> cbffc67d (Added axios)
+=======
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+>>>>>>> 89d889f9 (Commiting changes copied from scheduling branch)
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+<<<<<<< HEAD
 <<<<<<< HEAD
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
@@ -499,8 +374,22 @@
 =======
     "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d",
     "vue.rearranger.settings.migration": "true"
+=======
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d200cdcd2d5c79e37a2ca27185a96c1d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> 89d889f9 (Commiting changes copied from scheduling branch)
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="SchedulingSystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -616,7 +505,8 @@
 >>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
 =======
       <updated>1699226936507</updated>
-      <workItem from="1699226939955" duration="768000" />
+      <workItem from="1699226939955" duration="1642000" />
+      <workItem from="1699229351288" duration="278000" />
     </task>
 >>>>>>> 1926071e (creating new branch to see if manually adding front-end works)
     <servers />

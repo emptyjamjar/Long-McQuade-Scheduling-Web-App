@@ -2,21 +2,45 @@ package com.Long.McQuade.SchedulingSystem.entities;
 
 
 import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "student")
-public class Student extends User {
+public class Student {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private int id;
 
     @Column(name = "snum")
     private String studentNumber;
+
+    @Column(name = "first")
+    private String firstName;
+
+    @Column(name = "last")
+    private String lastName;
+
+    @Column(name = "address")
+    private String address;
+
+    @Column(name = "pcode")
+    private String postCode;
+
+    @Column(name = "phonnum")
+    private String phoneNumber;
 
     @Column(name = "played")
     private String instrumentsPlayed;
 
     @Column(name = "experience")
     private String experience;
+
+    @Column(name = "yob")
+    private String yearOfBirth;
 
 
     public Student(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsPlayed, String experience, String yearOfBirth) {
@@ -34,6 +58,13 @@ public class Student extends User {
 
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getStudentNumber() {
         return studentNumber;
@@ -41,6 +72,22 @@ public class Student extends User {
 
     public void setStudentNumber(String studentNumber) {
         this.studentNumber = studentNumber;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getAddress() {

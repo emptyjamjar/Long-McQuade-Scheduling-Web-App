@@ -14,35 +14,22 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    protected int id;
+    private int id;
 
     @Column(name = "identifiernumber")
-    protected String userNumber;
+    private String userNumber;
 
     @Column(name = "first")
-    protected String firstName;
+    private String firstName;
 
     @Column(name = "last")
-    protected String lastName;
-
-    @Column(name = "address")
-    protected String address;
-
-    @Column(name = "pcode")
-    protected String postCode;
-
-    @Column(name = "phonnum")
-    protected String phoneNumber;
-
-
-    @Column(name = "yob")
-    protected String yearOfBirth;
+    private String lastName;
 
     @Column(name = "pwd")
-    protected String pwd;
+    private String pwd;
 
     @Column(name = "enabled")
-    protected boolean enabled;
+    private boolean enabled;
 
     public User(String userNumber, String firstName, String lastName, String pwd, boolean enabled) {
         this.userNumber = userNumber;
