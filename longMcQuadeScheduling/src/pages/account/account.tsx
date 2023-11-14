@@ -7,7 +7,6 @@ import Button from "react-bootstrap/esm/Button";
 /* Account page for users to check their contact information, username and password, 
 and notification preferences. Uses react boostrap and has separate css file.*/
 const account = () => {
-<<<<<<< HEAD
   // TODO: connect to backend, get user id
 
   // Hook for user access once backend is connected
@@ -154,9 +153,6 @@ const account = () => {
       </div>
     </div>
   );
-=======
-  return <div></div>;
->>>>>>> ff698e03 (Was trying out responsive sidebar)
 };
 
 export default account;
