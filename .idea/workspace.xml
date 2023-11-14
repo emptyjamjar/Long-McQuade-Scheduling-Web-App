@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" afterDir="false" />
@@ -27,6 +28,9 @@
 =======
     <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commented controllers" />
 >>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
+=======
+    <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="case statements for each entity" />
+>>>>>>> 13d30e86 (commit before merging with front)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +95,11 @@
     "WebServerToolWindowFactoryState": "false",
     "go.import.settings.migrated": "true",
     "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem",
+<<<<<<< HEAD
     "nodejs_package_manager_path": "npm",
+=======
+    "node.js.selected.package.tslint": "(autodetect)",
+>>>>>>> 13d30e86 (commit before merging with front)
     "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d"
 >>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
   }
