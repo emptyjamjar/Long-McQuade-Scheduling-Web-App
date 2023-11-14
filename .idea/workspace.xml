@@ -10,6 +10,7 @@
     <list default="true" id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Navbar/Navbar.tsx" afterDir="false" />
@@ -84,6 +85,8 @@
 >>>>>>> d0073fb8 (Tested some getters and setters for Student class to check if it properly inherited attributes and methods)
 =======
 >>>>>>> cbffc67d (Added axios)
+=======
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
     </list>
 =======
     <list default="true" id="4ee69a1a-4891-44b6-b7c2-a608f71248fe" name="Changes" comment="commented controllers" />
@@ -105,8 +108,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< HEAD
         <option value="Class" />
         <option value="HTTP Public Environment File" />
+=======
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
       </list>
     </option>
   </component>
@@ -144,6 +153,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -172,12 +182,18 @@
 =======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "WebServerToolWindowFactoryState": "false",
 <<<<<<< HEAD
     "go.import.settings.migrated": "true",
@@ -248,6 +264,25 @@
     </configuration>
     <configuration name="SchedulingSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="SchedulingSystem" />
+=======
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/moham/Dropbox/Desktop/University Work/Y3S1/CMPT 370/Project/SchedulingSystem/SchedulingSystem_v1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "2f93c1d7a79f67b9c091d57a34a9b565",
+    "ts.external.directory.path": "C:\\Users\\moham\\Dropbox\\Desktop\\University Work\\Y3S1\\CMPT 370\\Project\\SchedulingSystem\\SchedulingSystem_v1\\longMcQuadeScheduling\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SchedulingSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="SchedulingSystem_v1" />
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.Long.McQuade.SchedulingSystem.SchedulingSystemApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -341,9 +376,14 @@
       <workItem from="1696956034698" duration="1934000" />
       <workItem from="1696975998178" duration="6164000" />
       <workItem from="1697580233850" duration="2698000" />
+<<<<<<< HEAD
       <workItem from="1698965460355" duration="3678000" />
       <workItem from="1699208507804" duration="3794000" />
 >>>>>>> cbffc67d (Added axios)
+=======
+      <workItem from="1698119416837" duration="1280000" />
+      <workItem from="1698120855872" duration="9182000" />
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
     </task>
     <task id="LOCAL-00001" summary="Made teacher and student class extend user class, got rid of redundant attributes and methods">
       <option name="closed" value="true" />
@@ -416,7 +456,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

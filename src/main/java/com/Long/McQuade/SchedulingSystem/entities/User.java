@@ -44,7 +44,6 @@ public class User {
     @Column(name = "enabled")
     protected boolean enabled;
 
-
     public User(String userNumber, String firstName, String lastName, String pwd, boolean enabled) {
         this.userNumber = userNumber;
         this.firstName = firstName;

@@ -36,21 +36,13 @@ public class teacherController {
         return teacherService.findAll();
     }
 
-<<<<<<< HEAD
+
 //    @GetMapping("/{id}")
 //    public Teacher showTeacherByID(@PathVariable("id") int id) {
 //
 //        return teacherService.findBy(id);
 //    }
-=======
-    /**
-     *
-     * @param id id of teacher
-     * @return list of teacher with specified id
-     */
-    @GetMapping("/{id}")
-    public Teacher showTeacherByID(@PathVariable("id") int id) {
->>>>>>> 4360d0d81a4581dd5d395f20f5fac998e9938b09
+
 
     @GetMapping("/{teacherNumber}")
     public Teacher showTeacherByID(@PathVariable("teacherNumber") String teacherNumber) {

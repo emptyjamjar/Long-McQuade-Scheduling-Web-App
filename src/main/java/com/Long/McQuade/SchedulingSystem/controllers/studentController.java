@@ -17,11 +17,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users/students")
-<<<<<<< HEAD
+
 @CrossOrigin(origins = "http://localhost:5173")
-=======
-@CrossOrigin("http://localhost:5173")
->>>>>>> cbffc67d (Added axios)
 public class studentController {
 
     @Autowired
@@ -55,11 +52,18 @@ public class studentController {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
     @GetMapping("/s")
     public ResponseEntity<String> getName() {
         String name = "John Doe"; // Replace this with the actual logic to get the user's name
         return ResponseEntity.ok(name);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2536628b (students and teachers can submit requests to admin for actions to be performed.)
 
 
 =======
