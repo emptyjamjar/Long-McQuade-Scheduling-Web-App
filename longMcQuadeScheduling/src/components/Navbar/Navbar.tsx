@@ -39,7 +39,6 @@ function PageNavbar() {
               fontSize: "14px",
               fontWeight: "lighter",
               alignItems: "center",
-
               fontFamily: "Raleway",
               textTransform: "uppercase",
             }}
