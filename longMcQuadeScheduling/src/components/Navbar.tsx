@@ -34,6 +34,7 @@ function PageNavbar() {
               fontWeight: "lighter",
               display: "flex",
               alignItems: "center",
+              paddingTop: "40%",
             }}
           >
             <Nav.Link style={linkStyle} href="/account">

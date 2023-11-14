@@ -1,9 +1,23 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
 
 /* Tables to display lesson information on the homepage.
 Uses react-bootstrap components and inline css for styling.  */
+
 const Tables = () => {
-  // Headings for the tables columns
+  const [lesson, setLesson] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/lessons/")
+      .then((response) => {
+        setLesson(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching lessons:", error);
+      });
+  }, []);
+
   const headings = [
     "Student",
     "Teacher",
