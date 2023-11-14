@@ -1,6 +1,21 @@
 import Table from "react-bootstrap/Table";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
+// TODO: uncomment when able to get the lesson data, need to figure out
 const Tables = () => {
+  const [lessons, setLessons] = useState([]);
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/lessons/")
+      .then((response) => {
+        setLessons(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching lessons:", error);
+      });
+  }, []);
+
   const headings = [
     "Student",
     "Teacher",
@@ -9,16 +24,6 @@ const Tables = () => {
     "Instrument",
     "Room",
     "Location",
-  ];
-
-  const lessons = [
-    "Rhapsody Ruth",
-    "Jana Janovsky",
-    "Wednesday, October 25",
-    "3:30pm",
-    "Violin",
-    "Room",
-    "Saskatoon North",
   ];
 
   const style = {
@@ -42,20 +47,22 @@ const Tables = () => {
         </tr>
       </thead>
       <tbody>
-        <tr id="row">
-          {lessons.map((lesson) => (
-            <td key={lesson} style={style}>
-              {lesson}
-            </td>
-          ))}
-        </tr>
-        <tr id="row">
-          {lessons.map((lesson) => (
-            <td key={lesson} style={style}>
-              {lesson}
-            </td>
-          ))}
-        </tr>
+        {lessons.map(
+          (
+            lesson,
+            index // Map over the fetched 'lessons' array
+          ) => (
+            <tr id="row" key={index}>
+              {/* <td style={style}>{lesson.studentNumber}</td>
+              <td style={style}>{lesson.teacherNumber}</td>
+              <td style={style}>{lesson.date}</td>
+              <td style={style}>{lesson.startTime}</td>
+              <td style={style}>{lesson.roomNumber}</td>
+              <td style={style}>{lesson.date}</td>
+              <td style={style}>{lesson.centreID}</td> */}
+            </tr>
+          )
+        )}
       </tbody>
     </Table>
   );
