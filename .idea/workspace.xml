@@ -97,33 +97,23 @@
 >>>>>>> 13d30e86 (commit before merging with front)
 =======
     <list default="true" id="511498e6-ae18-4608-b650-996939a00bfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Topbar/Topbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/components/Topbar/Topbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/account/account.css" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/account/account.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/account/account.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/account/account.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/adminViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/adminViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/homepageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/lessonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/studentViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherProfileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/teacherViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/controllers/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/adminViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/adminViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/homepageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/homepageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonCentreController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/lessonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/studentViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherProfileController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/teacherViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/controllers/userController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/index/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/index/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/login/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/longMcQuadeScheduling/src/pages/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/SchedulingSystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/Long/McQuade/SchedulingSystem/security/ProjectSecurityConfig.class" afterDir="false" />
     </list>
 >>>>>>> 1926071e (creating new branch to see if manually adding front-end works)
     <option name="SHOW_DIALOG" value="false" />
@@ -215,8 +205,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 89d889f9 (Commiting changes copied from scheduling branch)
+=======
+>>>>>>> 3622db0b (Added comments and updated calendar)
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
@@ -225,6 +218,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< HEAD
 <<<<<<< HEAD
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -236,17 +230,25 @@
 =======
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
 >>>>>>> 89d889f9 (Commiting changes copied from scheduling branch)
+=======
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+>>>>>>> 3622db0b (Added comments and updated calendar)
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3622db0b (Added comments and updated calendar)
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;rest.client.default.execution.environment&quot;: &quot;dev&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;d200cdcd2d5c79e37a2ca27185a96c1d&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+<<<<<<< HEAD
 =======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -435,8 +437,10 @@
     "spring.configuration.checksum": "d200cdcd2d5c79e37a2ca27185a96c1d",
     "vue.rearranger.settings.migration": "true"
 >>>>>>> 068b0c7c (Changed branch name)
+=======
+>>>>>>> 3622db0b (Added comments and updated calendar)
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.SchedulingSystemApplication">
     <configuration name="All in Project-endpoints" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/Project-endpoints.http">
       <method v="2" />
@@ -571,6 +575,7 @@
       <updated>1699226936507</updated>
       <workItem from="1699226939955" duration="1642000" />
       <workItem from="1699229351288" duration="17591000" />
+      <workItem from="1699765657573" duration="13019000" />
     </task>
 >>>>>>> 1926071e (creating new branch to see if manually adding front-end works)
     <servers />

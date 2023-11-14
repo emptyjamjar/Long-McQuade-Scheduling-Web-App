@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
+/* 
+message: the message that will appear (!null)
+name: the user's name to display after the message (can be null)
+*/
 interface H1Props {
   message: string;
   name: string;
 }
 
 /* 
-    The welcome text for the homepage. Uses styled-components for styling (no css file).
+    The main header across pages. Can use with a name or not. Uses styled-components for 
+    styling (no css file).
     TODO: need to update with user's name when connected to code (i.e., getName()). {name} will become 
     {getName()}.
  */
@@ -16,7 +21,6 @@ const H1 = styled.h1`
   font-weight: 500;
   font-size: 4.5vw;
   width: fit-content;
-  margin: 0 0 3rem 0;
   height: fit-content;
   padding: 0rem 0 0.5rem 0;
   border-bottom: 3px solid;
