@@ -6,14 +6,10 @@ const addstudent = () => {
       <div id="manage">
         <Header message="Registration" name=""></Header>
       </div>
-<<<<<<< HEAD
-      <form method="post" action="addNewStudent">First Name:
-=======
       <form method="post" action="addStudent">
         Student ID:
         <input type="int" name="studentId" />
         First Name:
->>>>>>> 7af9c2d53f498ed5c2ab38ddc33b3f6ba9f79a9f
         <input type="text" name="firstName" /> Last Name:
         <input type="text" name="lastName" /> Address:
         <input type="text" name="address" /> Postal Code:
