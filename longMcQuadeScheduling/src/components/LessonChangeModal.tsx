@@ -120,33 +120,55 @@ function LessonChangeModal() {
                 </Form.Select>
               )}
             </Form.Group>
-            <Form.Group className="mb-3" controlId="lessonChangeDateRange">
+            <Form.Group controlId="lessonChangeDateRange">
               <Form.Label>Select a Date Range</Form.Label>
-              <div id="date-range" aria-aria-describedby="dateRangeText">
-                <Form.Control
-                  type="date"
-                  value={startDate.toISOString().slice(0, 10)}
-                  onChange={(e) => setStartDate(new Date(e.target.value))}
-                  min={new Date().toISOString().slice(0, 10)}
-                  max={addDays(new Date(), 30).toISOString().slice(0, 10)}
-                  name="start"
-                  style={{ width: "175px" }}
-                  placeholder="Start"
-                />
-                <Form.Control
-                  type="date"
-                  value={endDate.toISOString().slice(0, 10)}
-                  onChange={(e) => setEndDate(new Date(e.target.value))}
-                  min={startDate.toISOString().slice(0, 10)}
-                  max={addDays(new Date(), 30).toISOString().slice(0, 10)}
-                  name="end"
-                  style={{ width: "175px" }}
-                  placeholder="End"
-                />
+              <div id="date-range" aria-describedby="dateRangeText">
+                <Form.Group>
+                  <Form.Control
+                    type="date"
+                    value={startDate.toISOString().slice(0, 10)}
+                    onChange={(e) => setStartDate(new Date(e.target.value))}
+                    min={new Date().toISOString().slice(0, 10)}
+                    max={addDays(new Date(), 30).toISOString().slice(0, 10)}
+                    name="start"
+                    style={{ width: "175px" }}
+                    placeholder="Start"
+                    aria-describedby="dateRangeStart"
+                  />
+                  <Form.Text id="dateRangeStart" muted>
+                    Start
+                  </Form.Text>
+                </Form.Group>
+                <Form.Group
+                  style={{
+                    marginLeft: "10px",
+                  }}
+                >
+                  <Form.Control
+                    type="date"
+                    aria-describedby="dateRangeEnd"
+                    value={endDate.toISOString().slice(0, 10)}
+                    onChange={(e) => setEndDate(new Date(e.target.value))}
+                    min={startDate.toISOString().slice(0, 10)}
+                    max={addDays(new Date(), 30).toISOString().slice(0, 10)}
+                    name="end"
+                    style={{ width: "175px" }}
+                    placeholder="End"
+                  />
+                  <Form.Text
+                    id="dateRangeEnd"
+                    muted
+                    style={{
+                      width: "fit-content",
+                      height: "fit-content",
+                      padding: "0",
+                      margin: "0",
+                    }}
+                  >
+                    End
+                  </Form.Text>
+                </Form.Group>
               </div>
-              <Form.Text id="dateRangeText" muted>
-                Lessons can only be moved a month in advance from today's date
-              </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="dateTimePicker">
               <Form.Label>Available Dates</Form.Label>
@@ -158,6 +180,11 @@ function LessonChangeModal() {
                 ))}
               </Form.Select>
             </Form.Group>
+            <Form.Text id="dateRangeText" muted>
+              Lessons can only be moved as far as a month in advance from
+              today's date. Please contact the lesson centre if you need to move
+              a lesson outside of this time frame.
+            </Form.Text>
           </Form>
         </Modal.Body>
         <Modal.Footer>
