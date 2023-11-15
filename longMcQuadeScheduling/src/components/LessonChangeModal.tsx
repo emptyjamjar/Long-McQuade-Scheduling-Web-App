@@ -130,7 +130,7 @@ function LessonChangeModal() {
                     onChange={(e) => setStartDate(new Date(e.target.value))}
                     min={new Date().toISOString().slice(0, 10)}
                     max={addDays(new Date(), 30).toISOString().slice(0, 10)}
-                    name="start"
+                    name="startDatepicker"
                     style={{ width: "175px" }}
                     placeholder="Start"
                     aria-describedby="dateRangeStart"
@@ -151,7 +151,7 @@ function LessonChangeModal() {
                     onChange={(e) => setEndDate(new Date(e.target.value))}
                     min={startDate.toISOString().slice(0, 10)}
                     max={addDays(new Date(), 30).toISOString().slice(0, 10)}
-                    name="end"
+                    name="endDatepicker"
                     style={{ width: "175px" }}
                     placeholder="End"
                   />
@@ -172,13 +172,23 @@ function LessonChangeModal() {
             </Form.Group>
             <Form.Group className="mb-3" controlId="dateTimePicker">
               <Form.Label>Available Dates</Form.Label>
-              <Form.Select aria-label="Available Lessons">
-                {availableLessonsDateRange.map((event, index) => (
-                  <option key={index} value={index}>
-                    {event.title} - {format(event.start, "MM/dd/yyyy h:mm a")}
+
+              {/* Conditional logic for disabled dropdown */}
+              {availableLessonsDateRange.length > 0 ? (
+                <Form.Select aria-label="Available Dates">
+                  {availableLessonsDateRange.map((event, index) => (
+                    <option key={index} value={index}>
+                      {event.title} - {format(event.start, "MM/dd/yyyy h:mm a")}
+                    </option>
+                  ))}
+                </Form.Select>
+              ) : (
+                <Form.Select aria-label="Available Dates" disabled>
+                  <option value="-1">
+                    No availability in selected date range
                   </option>
-                ))}
-              </Form.Select>
+                </Form.Select>
+              )}
             </Form.Group>
             <Form.Text id="dateRangeText" muted>
               Lessons can only be moved as far as a month in advance from
