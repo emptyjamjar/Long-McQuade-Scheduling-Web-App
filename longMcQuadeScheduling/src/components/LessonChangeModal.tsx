@@ -39,12 +39,12 @@ const teacherAvailability = [
   {
     title: "Jana",
     start: new Date(2023, 10, 16, 15),
-    end: new Date(2023, 10, 30, 15, 30),
+    end: new Date(2023, 10, 16, 15, 30),
   },
   {
     title: "Jana",
     start: new Date(2023, 10, 23, 15),
-    end: new Date(2023, 10, 30, 15, 30),
+    end: new Date(2023, 10, 23, 15, 30),
   },
   {
     title: "Jana",
@@ -68,8 +68,8 @@ function LessonChangeModal() {
   const availableLessonsDateRange = teacherAvailability.filter(
     (event) =>
       (event.start >= startDate && event.start <= endDate) ||
-      (event.end >= startDate && event.end <= endDate) ||
-      (event.start == startDate && event.end >= endDate)
+      (event.end >= startDate && event.end <= addDays(endDate, 1)) ||
+      (event.start == startDate && event.end <= endDate)
   );
 
   return (
