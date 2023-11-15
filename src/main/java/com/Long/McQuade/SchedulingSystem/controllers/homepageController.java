@@ -27,7 +27,7 @@ public class homepageController {
 
     @GetMapping("/")
     public String showHomepage() {
-
+        System.out.println("Testing2...");
         String message = "";
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
