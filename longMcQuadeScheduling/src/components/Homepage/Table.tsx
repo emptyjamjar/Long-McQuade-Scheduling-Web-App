@@ -23,7 +23,7 @@ const Tables = () => {
     "Room",
     "Saskatoon North",
   ];
-  fetch("http://localhost:1919/users/students/")
+  // fetch("http://localhost:1919/users/students/")
 
   const style = {
     width: "8rem",
@@ -33,6 +33,35 @@ const Tables = () => {
   };
 
   //   TODO: insert lesson information below.. hardcoded for now
+
+  const fetchBooks =async () => {
+    
+    const baseUrl: string = "http://localhost:1919/users/students/";
+
+    const url: string = `${baseUrl}?page=0&size=9`;
+
+    const response = await fetch(url);
+
+    if (!reponse.ok) {
+      throw new Error('Something went wrong!');
+    }
+
+    const reponseJson = await reponse.json();
+
+    const reponseData = responseJson.students;
+
+    const loadedStudents: StudentModel[] = [];
+
+    console.log(reponseData)
+    
+    // for (const key in reponseData) {
+    //   loadedBooks.push{
+    //     id: responseData[key].id,
+    //     title: responseData[key].title,
+
+    //   }
+    // }
+  }
 
   return (
     <Table responsive hover bordered size="sm">

@@ -17,52 +17,44 @@ public class Teacher {
     private String teacherNumber;
 
     @Column(name = "first")
-    @NotNull(message = "First name cannot be empty")
     @Size(min = 2, max = 20, message = "First name must be between 2 characters and 20 characters")
     private String firstName;
 
     @Column(name = "last")
-    @NotNull(message = "Last name cannot be empty")
     @Size(min = 2, max = 20, message = "Last name must be between 2 characters and 20 characters")
     private String lastName;
 
     @Column(name = "address")
-    @NotNull(message = "Address cannot be empty")
     @Size(min = 5, max = 30, message = "Address must be between 5 characters and 30 characters")
     private String address;
 
     @Column(name = "postcode")
-    @NotNull(message = "Post Code cannot be empty")
     @Size(min = 7, max = 7, message = "Post code must be 7 characters")
     private String postCode;
 
     @Column(name = "email")
-    @NotNull(message = "Email cannot be empty")
     @Size(min = 5, max = 50, message = "Email must be between 5 and 50 characters")
-    private String phoneNumber;
+    private String email;
 
     @Column(name = "instruments")
-    @NotNull(message = "Instruments cannot be empty, enter at least one instrument")
     @Size(min = 5, max = 50, message = "Instruments must be between 5 and 50 characters")
     private String instrumentsTaught;
 
     @Column(name = "starttime")
-    @NotNull(message = "Start time cannot be empty")
     @Size(min = 5, max = 5, message = "Start time must be 5 characters")
     private String starttime;
 
     @Column(name = "endtime")
-    @NotNull(message = "End time cannot be empty")
     @Size(min = 5, max = 5, message = "End time must be 5 characters")
     private String endtime;
 
 
-    public Teacher(String firstName, String lastName, String address, String postCode, String phoneNumber, String instrumentsTaught, String starttime, String endtime) {
+    public Teacher(String firstName, String lastName, String address, String postCode, String email, String instrumentsTaught, String starttime, String endtime) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.postCode = postCode;
-        this.phoneNumber = phoneNumber;
+        this.email = email;
         this.instrumentsTaught = instrumentsTaught;
         this.starttime = starttime;
         this.endtime = endtime;
@@ -120,12 +112,12 @@ public class Teacher {
         this.postCode = postCode;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getInstrumentsTaught() {
@@ -161,8 +153,10 @@ public class Teacher {
                 ", lastName='" + lastName + '\'' +
                 ", address='" + address + '\'' +
                 ", postCode='" + postCode + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
                 ", instrumentsTaught='" + instrumentsTaught + '\'' +
+                ", starttime='" + starttime + '\'' +
+                ", endtime='" + endtime + '\'' +
                 '}';
     }
 }

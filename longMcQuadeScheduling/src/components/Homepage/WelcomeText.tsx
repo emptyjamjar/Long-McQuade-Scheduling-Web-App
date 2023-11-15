@@ -27,6 +27,31 @@ const WelcomeText = () => {
     borderImage: "linear-gradient(to right, #f5f1ed, #f68b1f) 1",
   };
 
+  const fetchBooks =async () => {
+    
+    const baseUrl: string = "http://localhost:1919/users/students/";
+
+    const url: string = `${baseUrl}?page=0&size=9`;
+
+    const response = await fetch(url);
+
+    if (!reponse.ok) {
+      throw new Error('Something went wrong!');
+    }
+
+    const reponseJson = await reponse.json();
+
+    const reponseData = responseJson.students;
+
+    const loadedStudents: StudentModel[] = [];
+
+    console.log(reponseData)
+  }
+  fetchBooks().catch((error:any) => {
+
+    console.log("error");
+  })
+
   if (name) {
     return (
       <h1 className="display-1" style={style}>

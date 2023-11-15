@@ -21,16 +21,13 @@ public class User {
     @Column(name = "identifiernumber")
     private String userNumber;
 
-    @NotNull(message = "First name cannot be empty")
     @Column(name = "first")
     @Size(min = 2, max = 20, message = "First name must be between 2 characters and 20 characters")
     private String firstName;
 
-    @NotNull(message = "Last name cannot be empty")
     @Column(name = "last")
     @Size(min = 2, max = 20, message = "Last name must be between 2 characters and 20 characters")
     private String lastName;
-
 
     @Column(name = "pwd")
     private String pwd;
