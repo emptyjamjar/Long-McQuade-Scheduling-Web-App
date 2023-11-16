@@ -21,4 +21,5 @@ const TeachersProfiles: React.FC<TeacherProfileProp>= ({ names, intro, image })=
 </div>
 };
 
+
 export default TeachersProfiles;
