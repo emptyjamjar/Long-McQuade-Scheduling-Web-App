@@ -1,6 +1,5 @@
 CREATE DATABASE  IF NOT EXISTS `scheduling_system`;
 USE `scheduling_system`;
-
 DROP TABLE IF EXISTS `student`;
 DROP TABLE IF EXISTS `authorities`;
 DROP TABLE IF EXISTS `users`;

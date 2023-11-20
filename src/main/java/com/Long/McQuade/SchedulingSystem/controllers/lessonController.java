@@ -3,6 +3,8 @@ package com.Long.McQuade.SchedulingSystem.controllers;
 
 import com.Long.McQuade.SchedulingSystem.entities.Lesson;
 import com.Long.McQuade.SchedulingSystem.exception.ErrorResponse;
+import com.Long.McQuade.SchedulingSystem.exception.TeacherDoesNotExistException;
+import com.Long.McQuade.SchedulingSystem.exception.TeacherUnavailableException;
 import com.Long.McQuade.SchedulingSystem.service.LessonServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.StudentServiceImpl;
 import com.Long.McQuade.SchedulingSystem.service.TeacherServiceImpl;
@@ -39,7 +41,22 @@ public class lessonController {
     }
 
     @PostMapping("/newlesson")
-    public Lesson createlesson(@RequestBody Lesson lesson) {
+    public Lesson createlesson(@RequestBody Lesson lesson) throws TeacherDoesNotExistException, TeacherUnavailableException {
+
+        String teacherNumber = lesson.getTeacherNumber();
+
+        if (teacherService.findTeacherByTeacherNumber(teacherNumber) == null) {
+            throw new TeacherDoesNotExistException();
+
+        }
+
+        List<Lesson> lessons = lessonService.findLessonsByTeacherNumber(teacherNumber);
+        for (Lesson theLesson: lessons) {
+            if (theLesson.getStartTime().equals(lesson.getStartTime())) {
+                throw new TeacherUnavailableException();
+            }
+        }
+
 
         lessonService.save(lesson);
         lesson.setLessonNumber("L" + lesson.getId());
@@ -58,6 +75,33 @@ public class lessonController {
 
         int id = Character.getNumericValue(lessonNumber.charAt(1));
         return lessonService.deleteByID(id);
+    }
+
+
+    @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleException(TeacherUnavailableException exc) {
+
+        ErrorResponse errorResponse = new ErrorResponse();
+
+
+        errorResponse.setStatus(HttpStatus.BAD_REQUEST.value());
+        errorResponse.setMessage("Teacher is unavailable at this time");
+        errorResponse.setTimeStamp(System.currentTimeMillis());
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<ErrorResponse> handleException(TeacherDoesNotExistException exc) {
+
+        ErrorResponse errorResponse = new ErrorResponse();
+
+
+        errorResponse.setStatus(HttpStatus.BAD_REQUEST.value());
+        errorResponse.setMessage("Teacher selected does not exist");
+        errorResponse.setTimeStamp(System.currentTimeMillis());
+
+        return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler
