@@ -1,5 +1,6 @@
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import LessonChangeModal from "../../components/LessonChangeModal";
+import CancelLessonModal from "../../components/CancelLessonModal";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import format from "date-fns/format";
 import parse from "date-fns/parse";
@@ -7,10 +8,6 @@ import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import { useState } from "react";
 import Header from "../../components/Header";
-import { Form, Modal } from "react-bootstrap";
-import Button from "react-bootstrap/esm/Button";
-import "./calendar.css";
-import { addDays } from "date-fns";
 
 // TODO: CLEAN UP CODE
 // TODO: MAKE REQUEST CHANGE DATEPICKER BE A POP UP WHEN LESSON IS CLICKED ON CALENDAR
@@ -96,6 +93,7 @@ function CalendarPage() {
       <div id="calendarHead">
         <Header message="Calendar" name=""></Header>
         <LessonChangeModal></LessonChangeModal>
+        <CancelLessonModal></CancelLessonModal>
       </div>
 
       {/* The actual calendar which displays a calendar for month, week, day, or agenda views */}

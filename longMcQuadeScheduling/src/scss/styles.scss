@@ -3,16 +3,15 @@ $theme-colors: (
   "secondary": #456990,
   "background": #f5f1ed,
   "dark": #080f0f,
+  "warning": rgb(239, 227, 98),
   //   "success": $success,
   //   "info": $info,
-  //   "warning": $warning,
   //   "danger": $danger,
   //   "light": $light,
-  //   "dark": $dark,,,,,,,,,
+  //   "dark": $dark,,,,,,,,,,,,
 );
 
 @import "bootstrap/scss/bootstrap";
 @import "react-bootstrap-sidebar-menu/dist/sidebar-menu.scss";
 @import "bootstrap/scss/bootstrap";
 @import "react-bootstrap-sidebar-menu/dist/sidebar-menu.scss";
-
