@@ -3,6 +3,7 @@ package com.Long.McQuade.SchedulingSystem.service;
 
 import com.Long.McQuade.SchedulingSystem.entities.Student;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface StudentService {
@@ -23,6 +24,6 @@ public interface StudentService {
 
     public List<Student> findStudentsByLastName(String lastName);
 
-    public List<Student> findAllByYearOfBirth(String yearOfBirth);
+    public List<Student> findAllByYearOfBirth(LocalDate yearOfBirth);
 
 }

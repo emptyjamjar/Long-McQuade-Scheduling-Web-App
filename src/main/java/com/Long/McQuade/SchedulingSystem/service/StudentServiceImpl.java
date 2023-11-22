@@ -5,6 +5,7 @@ import com.Long.McQuade.SchedulingSystem.repositories.StudentRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -80,7 +81,7 @@ public class StudentServiceImpl implements StudentService{
 
 
     @Override
-    public List<Student> findAllByYearOfBirth(String yearOfBirth) {
+    public List<Student> findAllByYearOfBirth(LocalDate yearOfBirth) {
         return repo.findAllByYearOfBirth(yearOfBirth);
     }
 

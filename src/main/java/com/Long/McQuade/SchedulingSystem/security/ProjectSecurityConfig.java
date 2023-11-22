@@ -46,51 +46,50 @@ public class ProjectSecurityConfig {
         http.authorizeHttpRequests(configurer ->
                 configurer
                         .requestMatchers(HttpMethod.GET, "/homepage/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.POST, "/users/add-admin").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/users/update-admin").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "/users/delete-admin/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
 
-                        .requestMatchers(HttpMethod.GET, "/users/").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/users/*").hasAnyAuthority("ADMIN", "STUDENT", "TEACHER")
-                        .requestMatchers(HttpMethod.POST, "/users/addadmin").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/users/updateadmin").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/users/deleteadmin/**").hasAnyAuthority("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/users/students/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/students/s").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/students/*").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/students/*/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.POST, "/users/students/add-student").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/users/students/update-student").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "/users/students/delete-students/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
 
-                        .requestMatchers(HttpMethod.GET, "/users/students/").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/users/students/s").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/users/students/*").hasAnyAuthority("ADMIN", "STUDENT")
-                        .requestMatchers(HttpMethod.GET, "/users/students/*/").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/users/students/addstudent").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/users/students/updatestudent").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/users/students/deletestudent/*").hasAnyAuthority("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/users/teachers/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/teachers/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.POST, "/users/teachers/add-teacher").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/users/teachers/update-teacher").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "/users/teachers/delete-teacher/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
 
-                        .requestMatchers(HttpMethod.GET, "/users/teachers/").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/users/teachers/*").hasAnyAuthority("ADMIN", "TEACHER")
-                        .requestMatchers(HttpMethod.POST, "/users/teachers/addteacher").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/users/teachers/updateteacher").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/users/teachers/deleteteacher/**").hasAnyAuthority("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/lessons/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/lessons/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.POST, "/lessons/new-lesson").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/lessons/update-lesson").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "/lessons/delete-lesson/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
 
-                        .requestMatchers(HttpMethod.GET, "/lessons/").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/lessons/**").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/lessons/newlesson").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/lessons/updatelesson").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/lessons/deletelesson/**").hasAnyAuthority("ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/lesson-centres/").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/lesson-centres/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.POST, "/lesson-centres/add-centre").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.PUT, "/lesson-centres/update-centre").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "/lesson-centres/delete-centre/**").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
 
-                        .requestMatchers(HttpMethod.GET, "/lessonCentres/").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/lessonCentres/**").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/lessonCentres/addcentre").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/lessonCentres/updatecentre").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/lessonCentre/deletecentre/**").hasAnyAuthority("ADMIN")
-
-                        .requestMatchers(HttpMethod.GET, "/users/students/requestLessonChange").hasAnyAuthority("STUDENT")
-
-                        .requestMatchers(HttpMethod.GET, "/users/requests").hasAnyAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/users/deleteRequest/*").hasAnyAuthority("ADMIN")
-
-                        .requestMatchers(HttpMethod.GET, "/users/teachers/requestLessonChange").hasAnyAuthority("TEACHER"))
+                        .requestMatchers(HttpMethod.GET, "/users/students/request-lesson-change").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.GET, "/users/requests").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT")
+                        .requestMatchers(HttpMethod.DELETE, "/users/delete-request/*").hasAnyAuthority("ADMIN", "TEACHER", "STUDENT"))
 
         ;
 
         http.csrf(csrf -> csrf.disable());
 
         http.httpBasic(Customizer.withDefaults());
+
+        http.cors(Customizer.withDefaults()); // Enable CORS
+
 
         return http.build();
     }

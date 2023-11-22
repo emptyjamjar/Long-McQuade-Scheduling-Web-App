@@ -43,7 +43,7 @@ CREATE TABLE `student` (
                            `email` varchar(45) DEFAULT NULL,
                            `played` varchar(255) DEFAULT NULL,
                            `experience` varchar(45) DEFAULT NULL,
-                           `yob` varchar(4) DEFAULT NULL,
+                           `yob` DATE DEFAULT NULL, -- Changed from VARCHAR(4) to DATE
                            PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

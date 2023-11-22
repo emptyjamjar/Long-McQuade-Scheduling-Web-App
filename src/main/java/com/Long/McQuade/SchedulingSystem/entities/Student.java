@@ -1,6 +1,6 @@
 package com.Long.McQuade.SchedulingSystem.entities;
 
-
+import java.time.LocalDate;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -37,6 +37,7 @@ public class Student {
     @Column(name = "pcode")
     private String postCode;
 
+
     @Column(name = "email")
     private String email;
 
@@ -47,12 +48,12 @@ public class Student {
     @Column(name = "experience")
     private String experience;
 
-    @Size(min = 4, max = 4, message = "Year of Birth must be 4 digits")
+    //Removed validation as it is no longer needed
     @Column(name = "yob")
-    private String yearOfBirth;
+    private LocalDate yearOfBirth;
 
 
-    public Student(String firstName, String lastName, String address, String postCode, String email, String instrumentsPlayed, String experience, String yearOfBirth) {
+    public Student(String firstName, String lastName, String address, String postCode, String email, String instrumentsPlayed, String experience, LocalDate yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -139,11 +140,11 @@ public class Student {
         this.experience = experience;
     }
 
-    public String getYearOfBirth() {
+    public LocalDate getYearOfBirth() {
         return yearOfBirth;
     }
 
-    public void setYearOfBirth(String yearOfBirth) {
+    public void setYearOfBirth(LocalDate yearOfBirth) {
         this.yearOfBirth = yearOfBirth;
     }
 

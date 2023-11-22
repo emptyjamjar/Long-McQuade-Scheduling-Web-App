@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/users/students")
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:5173")
 public class studentController {
 
     @Autowired
@@ -53,7 +53,7 @@ public class studentController {
         return studentService.findStudentByStudentNumber(studentNumber);
     }
 
-    @PostMapping("/addstudent")
+    @PostMapping("/add-student")
     public Student addNewStudent(@RequestBody Student student) {
 
 
