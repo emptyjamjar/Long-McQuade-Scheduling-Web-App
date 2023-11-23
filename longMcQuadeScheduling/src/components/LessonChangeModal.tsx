@@ -263,10 +263,8 @@ function LessonChangeModal() {
                 {"."}
               </>
             );
-          } else if (selectedUpcomingLessonIndex == "") {
-            return <>Please select an upcoming lesson to change</>;
           } else {
-            return <>Please select a date to switch your lesson to</>;
+            return <>Please select an upcoming lesson and a new lesson date</>;
           }
         })()}
 
