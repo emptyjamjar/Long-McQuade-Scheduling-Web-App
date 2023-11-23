@@ -26,41 +26,28 @@ const lessonEvents = [
   },
 ];
 
-interface Lesson {
-  title: string;
-  start: Date;
-  end: Date;
-}
-
-// Filter for lessons to retrieve only lessons in future
 const futureLessons = lessonEvents.filter((event) => event.start >= new Date());
 
 /* Modal for lesson canellations. Will pop-up with a cancellation form */
 function LessonCancelModal() {
-  // Hook to show/hide modal
   const [modalShow, setModalShow] = useState(false);
-
   const handleModalClose = () => setModalShow(false);
   const handleModalShow = () => setModalShow(true);
 
-  // Hook to show/hide alert
-  const [alertShow, setAlertShow] = useState(false);
-
+  const [, setAlertShow] = useState(false);
   const handleAlertClose = () => setAlertShow(false);
 
-  // Hook to show/hide form confirmation
   const [confirmationShow, setConfirmationShow] = useState(false);
-
   const handleConfirmationClose = () => setConfirmationShow(false);
-
   const handleConfirmationSubmit = () => {
     setConfirmationShow(false);
     handleModalClose();
   };
   const handleConfirmationShow = () => setConfirmationShow(true);
 
-  // State to store the selected lesson
-  const [selectedLesson, setSelectedLesson] = useState<number | "">("");
+  const [selectedLessonIndex, setSelectedLessonIndex] = useState<number | "">(
+    ""
+  );
 
   return (
     <>
@@ -113,12 +100,15 @@ function LessonCancelModal() {
                 {futureLessons.length > 0 ? (
                   <Form.Select
                     aria-label="Upcoming Lessons"
-                    value={selectedLesson}
+                    value={selectedLessonIndex}
                     onChange={(e) => {
                       console.log("e.target.value", e.target.value);
-                      setSelectedLesson(parseInt(e.target.value, 10));
+                      setSelectedLessonIndex(parseInt(e.target.value, 10));
                     }}
                   >
+                    <option key={""} value={""} disabled>
+                      Select an upcoming lesson
+                    </option>
                     {futureLessons.map((event, index) => (
                       <option key={index} value={index}>
                         {event.title} -{" "}
@@ -155,17 +145,17 @@ function LessonCancelModal() {
           </Modal.Footer>
         </Modal>
       )}
-      ;
+
       <FormConfirmation
         show={confirmationShow}
         onClose={handleConfirmationClose}
         onSubmit={handleConfirmationSubmit}
       >
-        {selectedLesson !== "" ? (
+        {selectedLessonIndex !== "" ? (
           <>
             You are about to cancel{" "}
-            {`${futureLessons[selectedLesson].title} on ${format(
-              futureLessons[selectedLesson].start,
+            {`${futureLessons[selectedLessonIndex].title} on ${format(
+              futureLessons[selectedLessonIndex].start,
               "MMMM d, yyyy hh:mm a"
             )}`}
           </>

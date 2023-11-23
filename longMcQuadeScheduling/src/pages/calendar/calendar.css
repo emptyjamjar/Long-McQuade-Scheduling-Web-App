@@ -18,6 +18,12 @@
   align-items: flex-end;
 }
 
+#calendarButtons {
+  width: 37%;
+  display: flex;
+  justify-content: space-between;
+}
+
 #date-range {
   display: flex;
   justify-content: space-between;

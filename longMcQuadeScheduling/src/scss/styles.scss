@@ -4,11 +4,10 @@ $theme-colors: (
   "background": #f5f1ed,
   "dark": #080f0f,
   "warning": rgb(239, 227, 98),
-  //   "success": $success,
-  //   "info": $info,
-  //   "danger": $danger,
-  //   "light": $light,
-  //   "dark": $dark,,,,,,,,,,,,
+  "success": rgb(63, 141, 56),
+  "info": rgb(161, 161, 161),
+  "danger": rgb(255, 39, 39),
+  "light": #f6b16d,
 );
 
 @import "bootstrap/scss/bootstrap";

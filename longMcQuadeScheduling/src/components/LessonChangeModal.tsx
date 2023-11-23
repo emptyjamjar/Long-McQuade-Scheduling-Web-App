@@ -3,11 +3,7 @@ import Button from "react-bootstrap/esm/Button";
 import { useState } from "react";
 import { Form, Modal } from "react-bootstrap";
 import { addDays } from "date-fns";
-
-// Variables for calendar information
-const locales = {
-  "en-US": "date-fns/locale/en-US",
-};
+import FormConfirmation from "./FormConfirmationModal";
 
 // Array of lesson events: will become autopopulated by database when frontend and backend
 // are properly connected.
@@ -56,15 +52,28 @@ const teacherAvailability = [
 /* Modal for lesson change requests. Will pop-up with a date-time picker */
 function LessonChangeModal() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  // Start and  end dates for specified by user
+  // Start and  end dates forrange specified by user
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
-  // Available lessons within the users specified date range
+  const [confirmationShow, setConfirmationShow] = useState(false);
+  const handleConfirmationClose = () => setConfirmationShow(false);
+  const handleConfirmationSubmit = () => {
+    setConfirmationShow(false);
+    handleClose();
+  };
+  const handleConfirmationShow = () => setConfirmationShow(true);
+
+  const [selectedUpcomingLessonIndex, setSelectedUpcomingLessonIndex] =
+    useState<number | "">("");
+
+  const [selectedNewLessonIndex, setSelectedNewLessonIndex] = useState<
+    number | ""
+  >("");
+
   const availableLessonsDateRange = teacherAvailability.filter(
     (event) =>
       (event.start >= startDate && event.start <= endDate) ||
@@ -107,7 +116,19 @@ function LessonChangeModal() {
               <Form.Label>Your Upcoming Lessons</Form.Label>
               {/* Conditional logic for disabled dropdown */}
               {futureLessons.length > 0 ? (
-                <Form.Select aria-label="Upcoming Lessons">
+                <Form.Select
+                  aria-label="Upcoming Lessons"
+                  value={selectedUpcomingLessonIndex}
+                  onChange={(e) => {
+                    console.log("e.target.value", e.target.value);
+                    setSelectedUpcomingLessonIndex(
+                      parseInt(e.target.value, 10)
+                    );
+                  }}
+                >
+                  <option key={""} value={""} disabled>
+                    Select an upcoming lesson
+                  </option>
                   {futureLessons.map((event, index) => (
                     <option key={index} value={index}>
                       {event.title} - {format(event.start, "MM/dd/yyyy h:mm a")}
@@ -175,7 +196,17 @@ function LessonChangeModal() {
 
               {/* Conditional logic for disabled dropdown */}
               {availableLessonsDateRange.length > 0 ? (
-                <Form.Select aria-label="Available Dates">
+                <Form.Select
+                  aria-label="Available Dates"
+                  value={selectedNewLessonIndex}
+                  onChange={(e) => {
+                    console.log("e.target.value", e.target.value);
+                    setSelectedNewLessonIndex(parseInt(e.target.value, 10));
+                  }}
+                >
+                  <option key={""} value={""} disabled>
+                    Select a new lesson date
+                  </option>
                   {availableLessonsDateRange.map((event, index) => (
                     <option key={index} value={index}>
                       {event.title} - {format(event.start, "MM/dd/yyyy h:mm a")}
@@ -201,11 +232,68 @@ function LessonChangeModal() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="dark" onClick={handleClose}>
+          <Button variant="dark" onClick={handleConfirmationShow}>
             Submit Request
           </Button>
         </Modal.Footer>
       </Modal>
+
+      <FormConfirmation
+        show={confirmationShow}
+        onClose={handleConfirmationClose}
+        onSubmit={handleConfirmationSubmit}
+      >
+        {(() => {
+          if (
+            selectedUpcomingLessonIndex !== "" &&
+            selectedNewLessonIndex !== ""
+          ) {
+            return (
+              <>
+                You are about to make a request to switch your lesson on{" "}
+                {`${format(
+                  futureLessons[selectedUpcomingLessonIndex].start,
+                  "MMMM d, yyyy hh:mm a"
+                )}`}{" "}
+                to{" "}
+                {`${format(
+                  availableLessonsDateRange[selectedNewLessonIndex].start,
+                  "MMMM d, yyyy hh:mm a"
+                )}`}
+                {"."}
+              </>
+            );
+          } else if (selectedUpcomingLessonIndex == "") {
+            return <>Please select an upcoming lesson to change</>;
+          } else {
+            return <>Please select a date to switch your lesson to</>;
+          }
+        })()}
+
+        {/* {selectedUpcomingLessonIndex !== "" ? (
+          <>
+            You are about to make a request to switch your lesson on{" "}
+            {`${format(
+              futureLessons[selectedUpcomingLessonIndex].start,
+              "MMMM d, yyyy hh:mm a"
+            )}`}{" "}
+            {selectedNewLessonIndex !== "" ? (
+              <>
+                to{" "}
+                {`${format(
+                  availableLessonsDateRange[selectedNewLessonIndex].start,
+                  "MMMM d, yyyy hh:mm a"
+                )}`}
+                {"."}
+              </>
+            ) : (
+              "No new lesson date selected"
+            )}
+          </>
+        ) : (
+          "No upcoming lesson selected"
+        )} */}
+      </FormConfirmation>
     </>
   );
 }

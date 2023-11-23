@@ -8,11 +8,11 @@ import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import { useState } from "react";
 import Header from "../../components/Header";
+import "./calendar.css";
 
 // TODO: CLEAN UP CODE
 // TODO: MAKE REQUEST CHANGE DATEPICKER BE A POP UP WHEN LESSON IS CLICKED ON CALENDAR
 
-// Variables for calendar information
 const locales = {
   "en-US": "date-fns/locale/en-US",
 };
@@ -48,30 +48,6 @@ const lessonEvents = [
   },
 ];
 
-// Filter for lessons to retrieve only lessons in future
-const futureLessons = lessonEvents.filter((event) => event.start >= new Date());
-
-//Teacher availability
-// TODO: get from backend when connected, will need to filter in modal by
-// user chosen date range
-const teacherAvailability = [
-  {
-    title: "Jana",
-    start: new Date(2023, 10, 16, 15),
-    end: new Date(2023, 10, 30, 15, 30),
-  },
-  {
-    title: "Jana",
-    start: new Date(2023, 10, 23, 15),
-    end: new Date(2023, 10, 30, 15, 30),
-  },
-  {
-    title: "Jana",
-    start: new Date(2023, 10, 30, 15),
-    end: new Date(2023, 10, 30, 15, 30),
-  },
-];
-
 /* Calendar page for admin, teachers, and students to check the scheduled lessons for that month, week,
 or day */
 function CalendarPage() {
@@ -83,20 +59,16 @@ function CalendarPage() {
 
   const [allEvents, setAllEvents] = useState(lessonEvents);
 
-  // TODO: test properly once frontend and backend are connected
-  const handleLessonChange = () => {
-    setAllEvents([...allEvents, newEvent]);
-  };
-
   return (
     <div id="calendar" className="private-route-body">
       <div id="calendarHead">
         <Header message="Calendar" name=""></Header>
-        <LessonChangeModal></LessonChangeModal>
-        <CancelLessonModal></CancelLessonModal>
+        <div id="calendarButtons">
+          <LessonChangeModal></LessonChangeModal>
+          <CancelLessonModal></CancelLessonModal>
+        </div>
       </div>
 
-      {/* The actual calendar which displays a calendar for month, week, day, or agenda views */}
       <Calendar
         localizer={localizer}
         events={allEvents}
