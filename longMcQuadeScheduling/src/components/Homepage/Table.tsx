@@ -12,8 +12,6 @@ const Tables = () => {
     "Location",
   ];
 
-  // glpat-me9NJE6WL-Jy_nDq9iP-
-
   const lessons = [
     "Rhapsody Ruth",
     "Jana Janovsky",
@@ -24,7 +22,6 @@ const Tables = () => {
     "Saskatoon North",
   ];
 
-
   const style = {
     width: "8rem",
     backgroundColor: "#F5F1ED",
@@ -33,7 +30,6 @@ const Tables = () => {
   };
 
   //   TODO: insert lesson information below.. hardcoded for now
-
 
   return (
     <Table responsive hover bordered size="sm">
