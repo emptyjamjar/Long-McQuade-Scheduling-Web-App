@@ -6,7 +6,9 @@ const addstudent = () => {
       <div id="manage">
         <Header message="Registration" name=""></Header>
       </div>
-      <form method="post" action="addNewStudent">
+      <form method="post" action="addStudent">
+        Student ID:
+        <input type="int" name="studentId" />
         First Name:
         <input type="text" name="firstName" /> Last Name:
         <input type="text" name="lastName" /> Address:
