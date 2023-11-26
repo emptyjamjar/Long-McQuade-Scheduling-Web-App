@@ -60,12 +60,18 @@ function LessonChangeModal() {
   const [endDate, setEndDate] = useState(new Date());
 
   const [confirmationShow, setConfirmationShow] = useState(false);
-  const handleConfirmationClose = () => setConfirmationShow(false);
+  const handleConfirmationClose = () => {
+    setConfirmationShow(false);
+    handleShow();
+  };
   const handleConfirmationSubmit = () => {
     setConfirmationShow(false);
     handleClose();
   };
-  const handleConfirmationShow = () => setConfirmationShow(true);
+  const handleConfirmationShow = () => {
+    setConfirmationShow(true);
+    handleClose();
+  };
 
   const [selectedUpcomingLessonIndex, setSelectedUpcomingLessonIndex] =
     useState<number | "">("");
@@ -267,30 +273,6 @@ function LessonChangeModal() {
             return <>Please select an upcoming lesson and a new lesson date</>;
           }
         })()}
-
-        {/* {selectedUpcomingLessonIndex !== "" ? (
-          <>
-            You are about to make a request to switch your lesson on{" "}
-            {`${format(
-              futureLessons[selectedUpcomingLessonIndex].start,
-              "MMMM d, yyyy hh:mm a"
-            )}`}{" "}
-            {selectedNewLessonIndex !== "" ? (
-              <>
-                to{" "}
-                {`${format(
-                  availableLessonsDateRange[selectedNewLessonIndex].start,
-                  "MMMM d, yyyy hh:mm a"
-                )}`}
-                {"."}
-              </>
-            ) : (
-              "No new lesson date selected"
-            )}
-          </>
-        ) : (
-          "No upcoming lesson selected"
-        )} */}
       </FormConfirmation>
     </>
   );

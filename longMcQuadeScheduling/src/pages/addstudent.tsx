@@ -1,27 +1,141 @@
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import axios from "axios";
 import Header from "../components/Header";
 
-const addstudent = () => {
+interface StudentState {
+  firstName: string;
+  lastName: string;
+  address: string;
+  postCode: string;
+  phoneNumber: string;
+  instrumentsPlayed: string;
+  experience: string;
+  yearOfBirth: string;
+}
+
+const AddStudent = () => {
+  const [student, setStudent] = useState<StudentState>({
+    firstName: "",
+    lastName: "",
+    address: "",
+    postCode: "",
+    phoneNumber: "",
+    instrumentsPlayed: "",
+    experience: "",
+    yearOfBirth: "",
+  });
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setStudent((prevStudent) => ({
+      ...prevStudent,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const apiEndpoint = "http://localhost:1919/users/students/add-student";
+    const username = "A1";
+    const password = "admin";
+
+    try {
+      const response = await axios.post(apiEndpoint, student, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Basic ${btoa(`${username}:${password}`)}`, // Basic Authentication Header
+        },
+      });
+
+      console.log("Success:", response.data);
+      alert("Student added successfully!");
+      // Optionally reset form or handle redirection
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error adding student. Please try again.");
+    }
+  };
+
   return (
     <div className="private-route-body">
-      <div id="manage">
-        <Header message="Registration" name=""></Header>
-      </div>
-      <form method="post" action="addStudent">
-        Student ID:
-        <input type="int" name="studentId" />
-        First Name:
-        <input type="text" name="firstName" /> Last Name:
-        <input type="text" name="lastName" /> Address:
-        <input type="text" name="address" /> Postal Code:
-        <input type="text" name="postCode" /> Phone number:
-        <input type="text" name="phoneNumber" /> Instruments played:
-        <input type="text" name="instrumentsPlayed" /> Experience:
-        <input type="text" name="experience" /> Date of Birth:
-        <input type="date" name="yearOfBirth" />
+      <Header message="Registration" name="name" />
+      <form onSubmit={handleSubmit}>
+        <label>
+          First Name:
+          <input
+            type="text"
+            name="firstName"
+            value={student.firstName}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Last Name:
+          <input
+            type="text"
+            name="lastName"
+            value={student.lastName}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Address:
+          <input
+            type="text"
+            name="address"
+            value={student.address}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Postal Code:
+          <input
+            type="text"
+            name="postCode"
+            value={student.postCode}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Phone number:
+          <input
+            type="text"
+            name="phoneNumber"
+            value={student.phoneNumber}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Instruments played:
+          <input
+            type="text"
+            name="instrumentsPlayed"
+            value={student.instrumentsPlayed}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Experience:
+          <input
+            type="text"
+            name="experience"
+            value={student.experience}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Date of Birth:
+          <input
+            type="date"
+            name="yearOfBirth"
+            value={student.yearOfBirth}
+            onChange={handleChange}
+          />
+        </label>
         <input type="submit" value="Submit" />
       </form>
     </div>
   );
 };
 
-export default addstudent;
+export default AddStudent;
