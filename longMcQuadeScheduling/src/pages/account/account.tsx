@@ -23,8 +23,6 @@ const account = () => {
 
   const [showPassword, setShowPassword] = useState(false);
 
-  const [newPassword, setNewPassword] = useState("");
-
   const handleTogglePassword = () => {
     setShowPassword(!showPassword);
   };
@@ -66,6 +64,7 @@ const account = () => {
   }, [userDetails]);
 
   console.log("user:", user);
+  console.log("userDetails:", userDetails);
 
   return (
     <>
@@ -107,16 +106,16 @@ const account = () => {
             <Form>
               <Form.Group className="mb-3" controlId="formBasicUsername">
                 <Form.Label className="form-label">Username</Form.Label>
-                <Form.Text className="text-muted"> - Required</Form.Text>
+
                 <Form.Control
+                  disabled
                   type="username"
-                  placeholder="Username"
-                  defaultValue={userDetails.username}
+                  defaultValue={userDetails.userNumber}
                 />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicCurrentPassword">
-                <Form.Label>Current Password</Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Form.Control
                   disabled
                   type={showPassword ? "text" : "password"}
@@ -129,18 +128,9 @@ const account = () => {
                   onChange={handleTogglePassword}
                 />
               </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicNewPassword">
-                <Form.Label className="form-label">New Password</Form.Label>
-                <Form.Control type="password" placeholder="New Password" />
-              </Form.Group>
-
-              <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
-                <Form.Label className="form-label">
-                  Confirm New Password
-                </Form.Label>
-                <Form.Control type="password" placeholder="New Password" />
-              </Form.Group>
+              <Form.Text className="text-muted">
+                * Please contact a lesson centre employee to update credentials
+              </Form.Text>
             </Form>
           </div>
 

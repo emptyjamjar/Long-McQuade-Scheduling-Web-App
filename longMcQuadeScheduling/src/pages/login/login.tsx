@@ -46,6 +46,7 @@ function Login() {
         response.data.message === "Login successful"
       ) {
         setUser(response.data.currentUser);
+
         navigate("/");
       } else {
         setError("Authentication failed. Please check your credentials.");
@@ -87,14 +88,6 @@ function Login() {
             {error}
           </div>
         )}
-        <div id="forgotLinks">
-          <a href="#" className="forgot-link">
-            Forgot username?
-          </a>
-          <a href="#" className="forgot-link">
-            Forgot password?
-          </a>
-        </div>
         <Button id="loginButton" variant="dark" type="submit">
           LOGIN
         </Button>

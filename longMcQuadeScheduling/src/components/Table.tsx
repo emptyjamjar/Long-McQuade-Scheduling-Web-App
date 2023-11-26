@@ -9,7 +9,7 @@ const Tables = () => {
   const [lesson, setLesson] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:8080/lessons/")
+      .get("http://localhost:1919/lessons/")
       .then((response) => {
         setLesson(response.data);
       })
