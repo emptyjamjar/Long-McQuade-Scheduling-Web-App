@@ -1,82 +1,92 @@
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+import { useState } from "react";
+import { Form, Button } from "react-bootstrap";
 import Header from "../../components/Header";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useUser } from "../../components/UserContext";
 import "./login.css";
 
-/* The login page for all users. Has separate css file and uses react bootstrap components */
 function Login() {
-  // Hooks for username, password, and memory
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+  const [credentials, setCredentials] = useState({
+    username: "",
+    password: "",
+  });
+  const { setUser } = useUser();
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  // The asynchronous login method which attempts to connect to backend
-  // TODO: not working currently, CORS errors, update if need be
   const handleLogin = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
+    console.log(
+      "Username: ",
+      credentials.username,
+      ", Password: ",
+      credentials.password
+    );
+
+    const apiEndpoint = "http://localhost:1919/login";
+
     try {
       const response = await axios.post(
-        "http://localhost:1919/",
+        apiEndpoint,
         {
-          username,
-          password,
+          username: credentials.username,
+          password: credentials.password,
         },
         {
           headers: {
             "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Credentials": true,
           },
         }
       );
 
-      if (response.status === 200) {
+      if (
+        response.status === 200 &&
+        response.data.message === "Login successful"
+      ) {
+        setUser(response.data.currentUser);
         navigate("/");
       } else {
-        console.log("Authentication failed");
+        setError("Authentication failed. Please check your credentials.");
       }
     } catch (error) {
-      console.log("Error during login: ", error);
+      setError("Error during login. Please try again.");
+      console.error("Error during login:", error);
     }
   };
 
   return (
     <div id="login">
-      <Header message="Where the Music Begins" name=""></Header>
+      <Header message="Where the Music Begins" name="" />
       <Form onSubmit={handleLogin} id="login-form">
         <Form.Group className="login-group-form" controlId="formLoginUsername">
-          <Form.Label>Username</Form.Label>
           <Form.Control
-            type="username"
+            type="text"
             placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={credentials.username}
+            onChange={(e) =>
+              setCredentials({ ...credentials, username: e.target.value })
+            }
           />
         </Form.Group>
 
         <Form.Group className="login-group-form" controlId="formLoginPassword">
-          <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={credentials.password}
+            onChange={(e) =>
+              setCredentials({ ...credentials, password: e.target.value })
+            }
           />
         </Form.Group>
-        <Form.Group className="login-group-form" controlId="formBasicCheckbox">
-          <Form.Check
-            type="checkbox"
-            id="rememberMeCheck"
-            label="Remember Me"
-            checked={rememberMe}
-            onChange={(e) => setRememberMe(e.target.checked)}
-          />
-        </Form.Group>
+
+        {error && (
+          <div className="error-message" style={{ color: "rgb(255, 39, 39)" }}>
+            {error}
+          </div>
+        )}
         <div id="forgotLinks">
           <a href="#" className="forgot-link">
             Forgot username?

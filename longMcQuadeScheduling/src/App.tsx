@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { UserProvider } from "./components/UserContext";
 import Navbar from "./components/Navbar/Navbar";
 import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/index/index";
@@ -16,12 +17,14 @@ import AccessCodes from "./pages/accessCodes";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<PrivateRoutes />} />
-      </Routes>
-    </Router>
+    <UserProvider>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<PrivateRoutes />} />
+        </Routes>
+      </Router>
+    </UserProvider>
   );
 }
 
