@@ -5,6 +5,7 @@ import Header from "../components/Header";
 interface StudentState {
   firstName: string;
   lastName: string;
+  email: string;
   address: string;
   postCode: string;
   phoneNumber: string;
@@ -17,6 +18,7 @@ const AddStudent = () => {
   const [student, setStudent] = useState<StudentState>({
     firstName: "",
     lastName: "",
+    email: "",
     address: "",
     postCode: "",
     phoneNumber: "",
@@ -75,6 +77,15 @@ const AddStudent = () => {
             type="text"
             name="lastName"
             value={student.lastName}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Email:
+          <input
+            type="text"
+            name="email"
+            value={student.email}
             onChange={handleChange}
           />
         </label>
