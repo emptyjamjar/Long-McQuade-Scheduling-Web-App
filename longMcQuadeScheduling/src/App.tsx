@@ -14,6 +14,8 @@ import TeachersProfiles from "./pages/teachersProfiles";
 import StudentProfiles from "./pages/studentProfiles";
 import Unenrollment from "./pages/unenrollment";
 import AccessCodes from "./pages/accessCodes";
+import AddLesson from "./pages/AddLesson";
+import AddTeacher from "./pages/AddTeacher";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function PrivateRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/manageUsers" element={<ManageUsers />} />
         <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/AddLesson" element={<AddLesson />} />
+        <Route path="/AddTeacher" element={<AddTeacher />} />
         <Route path="/unenrollment" element={<Unenrollment />} />
         <Route path="/studentProfiles" element={<StudentProfiles />} />
         <Route

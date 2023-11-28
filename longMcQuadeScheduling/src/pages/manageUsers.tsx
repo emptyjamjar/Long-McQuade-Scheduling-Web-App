@@ -30,6 +30,14 @@ const manageUsers = () => {
         Registration
       </Nav.Link>
 
+      <Nav.Link as={Link} style={buttonStyle} to="/AddTeacher">
+        Add Teacher
+      </Nav.Link>
+
+      <Nav.Link as={Link} style={buttonStyle} to="/AddLesson">
+        Add Lesson
+      </Nav.Link>
+
       <Nav.Link as={Link} style={buttonStyle} to="/unenrollment">
         Unenrollment
       </Nav.Link>
