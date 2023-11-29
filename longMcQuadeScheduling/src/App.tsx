@@ -48,7 +48,7 @@ function PrivateRoutes() {
         <Route path="/studentProfiles" element={<StudentProfiles />} />
         <Route
           path="/teachersProfiles"
-          element={<TeachersProfiles names={""} intro={""} image={""} />}
+          element={<TeachersProfiles />}
         />
         <Route path="/accessCodes" element={<AccessCodes />} />
       </Routes>

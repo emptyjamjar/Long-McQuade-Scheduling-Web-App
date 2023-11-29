@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
@@ -28,14 +29,6 @@ const manageUsers = () => {
 
       <Nav.Link as={Link} style={buttonStyle} to="/addstudent">
         Registration
-      </Nav.Link>
-
-      <Nav.Link as={Link} style={buttonStyle} to="/AddTeacher">
-        Add Teacher
-      </Nav.Link>
-
-      <Nav.Link as={Link} style={buttonStyle} to="/AddLesson">
-        Add Lesson
       </Nav.Link>
 
       <Nav.Link as={Link} style={buttonStyle} to="/unenrollment">

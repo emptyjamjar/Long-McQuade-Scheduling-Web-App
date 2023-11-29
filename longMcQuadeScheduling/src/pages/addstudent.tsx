@@ -108,11 +108,11 @@ const AddStudent = () => {
           />
         </label>
         <label>
-          Phone number:
+          Email Address:
           <input
             type="text"
-            name="phoneNumber"
-            value={student.phoneNumber}
+            name="email"
+            value={student.email}
             onChange={handleChange}
           />
         </label>

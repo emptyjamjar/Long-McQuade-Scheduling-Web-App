@@ -6,7 +6,7 @@ name: the user's name to display after the message (can be null)
 */
 interface H1Props {
   message: string;
-  name: string;
+  name?: string;
 }
 
 /* 
