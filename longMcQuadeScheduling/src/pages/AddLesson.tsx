@@ -46,13 +46,12 @@ const AddLesson = () => {
       const response = await axios.post(apiEndpoint, lesson, {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Basic ${btoa(`${username}:${password}`)}`, // Basic Authentication Header
+          Authorization: `Basic ${btoa(`${username}:${password}`)}`,
         },
       });
 
       console.log("Success:", response.data);
       alert("Lesson added successfully!");
-      // Optionally reset form or handle redirection
     } catch (error) {
       console.error("Error:", error);
       alert("Error adding Lesson. Please try again.");
