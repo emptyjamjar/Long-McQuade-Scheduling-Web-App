@@ -1,0 +1,62 @@
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  min-width: 800px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  box-shadow: #c7c1c1 0px 0.5px 8px;
+  border-radius: 5px;
+}
+
+#lessonCentreInfo {
+  justify-content: space-between;
+}
+
+#col {
+  width: 48%;
+  display: flex;
+  align-items: normal;
+}
+
+#contactHeading {
+  font-size: 26px;
+  font-family: "Raleway";
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: -25px;
+}
+
+li {
+  padding-bottom: 0.5rem;
+}
+
+#infoHeading {
+  font-size: 22px;
+  font-weight: 450;
+  padding-left: 15px;
+}
+
+.icon {
+  width: 20px;
+  margin-top: -5px;
+}
+
+.icon-and-heading {
+  display: flex;
+  border-bottom: #c7c1c1 1px solid;
+  /* width: 50%; */
+  align-items: center;
+  margin-bottom: 10px;
+  /* background-color: aliceblue; */
+}
