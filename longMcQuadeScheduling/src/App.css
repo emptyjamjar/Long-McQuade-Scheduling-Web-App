@@ -1,28 +1,23 @@
-#appContainer {
+#root {
   background-color: #f5f1ed;
-  width: 100vw;
+  padding: 2rem;
+  min-height: 100vh;
+  min-width: 1050px;
+  width: auto;
+  font-family: "Roboto", "Raleway";
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 4rem;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
-#homepage {
-  position: relative;
-  margin: 2rem;
-  width: fit-content;
-  height: fit-content;
+.private-route-body {
+  padding-top: 60px;
+  padding-left: 180px;
 }
 
-#tableHeading {
-  color: #6e6969;
-  font-family: "Raleway";
-  font-size: 20px;
-  margin: 2rem 0 0.5rem 0;
-}
-
-#lessonChangeRequestHeader {
-  display: flex;
-  justify-content: space-between;
-  height: fit-content;
-  align-items: center;
+@media (max-width: 979px) {
+  .private-route-body {
+    padding-top: 55px;
+    padding-left: 180px;
+  }
 }

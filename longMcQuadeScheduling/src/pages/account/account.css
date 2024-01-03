@@ -1,0 +1,99 @@
+#account {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-width: 800px;
+}
+
+#student {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: #c7c1c1 0px 0.5px 8px;
+  border-radius: 5px;
+}
+
+#studentInfo {
+  justify-content: space-between;
+}
+
+#col {
+  width: 30%;
+}
+
+Form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.mb-3 {
+  width: 50%;
+  padding-right: 1rem;
+}
+
+#custom-switch {
+  border: #c7c1c1 0.5px solid;
+}
+
+#custom-switch:focus,
+#lesson-change-check:focus,
+#day-reminder-check:focus,
+#hours-reminder-check:focus {
+  box-shadow: none;
+}
+
+#custom-switch:checked {
+  transition: 0.2s ease-in;
+  background-color: #f68b1f;
+  color: #c7c1c1;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+#sectionHeading {
+  font-size: 26px;
+  font-family: "Raleway";
+  width: 100%;
+}
+
+#infoHeading,
+.form-label {
+  font-size: 18px;
+  font-weight: 450;
+}
+
+#notification-submit-btn,
+#username-submit-btn {
+  margin-top: 1rem;
+  box-shadow: #c7c1c1 1px 1px 8px;
+  width: fit-content;
+}
+
+#notification-form-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.custom-check {
+  padding-bottom: 0.3rem;
+}
+
+#notification-submit-btn:hover,
+#username-submit-btn:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: #938f8f 3px 1px 10px;
+}

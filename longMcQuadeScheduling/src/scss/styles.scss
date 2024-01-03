@@ -3,12 +3,14 @@ $theme-colors: (
   "secondary": #456990,
   "background": #f5f1ed,
   "dark": #080f0f,
-  //   "success": $success,
-  //   "info": $info,
-  //   "warning": $warning,
-  //   "danger": $danger,
-  //   "light": $light,
-  //   "dark": $dark,,,,,,
+  "warning": rgb(239, 227, 98),
+  "success": rgb(63, 141, 56),
+  "info": rgb(161, 161, 161),
+  "danger": rgb(255, 39, 39),
+  "light": #f6b16d,
 );
 
 @import "bootstrap/scss/bootstrap";
+@import "react-bootstrap-sidebar-menu/dist/sidebar-menu.scss";
+@import "bootstrap/scss/bootstrap";
+@import "react-bootstrap-sidebar-menu/dist/sidebar-menu.scss";
