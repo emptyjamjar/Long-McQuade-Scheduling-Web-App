@@ -1,5 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { UserProvider } from "./components/UserContext";
 import Navbar from "./components/Navbar/Navbar";
 import Topbar from "./components/Topbar/Topbar";
 import Home from "./pages/index/index";
@@ -13,15 +14,19 @@ import TeachersProfiles from "./pages/teachersProfiles";
 import StudentProfiles from "./pages/studentProfiles";
 import Unenrollment from "./pages/unenrollment";
 import AccessCodes from "./pages/accessCodes";
+import AddLesson from "./pages/AddLesson";
+import AddTeacher from "./pages/AddTeacher";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<PrivateRoutes />} />
-      </Routes>
-    </Router>
+    <UserProvider>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<PrivateRoutes />} />
+        </Routes>
+      </Router>
+    </UserProvider>
   );
 }
 
@@ -37,11 +42,13 @@ function PrivateRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/manageUsers" element={<ManageUsers />} />
         <Route path="/addstudent" element={<AddStudent />} />
+        <Route path="/AddLesson" element={<AddLesson />} />
+        <Route path="/AddTeacher" element={<AddTeacher />} />
         <Route path="/unenrollment" element={<Unenrollment />} />
         <Route path="/studentProfiles" element={<StudentProfiles />} />
         <Route
           path="/teachersProfiles"
-          element={<TeachersProfiles names={""} intro={""} image={""} />}
+          element={<TeachersProfiles />}
         />
         <Route path="/accessCodes" element={<AccessCodes />} />
       </Routes>

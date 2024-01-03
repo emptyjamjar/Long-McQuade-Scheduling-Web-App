@@ -58,7 +58,7 @@ function PageNavbar() {
             <Nav.Link as={Link} style={linkStyle} to="/contact">
               Contact
             </Nav.Link>
-            <Nav.Link as={Link} style={linkStyle} to="/profiles">
+            <Nav.Link as={Link} style={linkStyle} to="/teachersProfiles">
               Teacher Profiles
             </Nav.Link>
             <Nav.Link as={Link} style={linkStyle} to="/manageUsers">

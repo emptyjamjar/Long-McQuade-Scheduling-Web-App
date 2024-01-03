@@ -5,6 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import { useNavigate } from "react-router-dom";
+import { useUser } from "../../components/UserContext";
 import "./Topbar.css";
 
 /* 
@@ -12,6 +14,14 @@ import "./Topbar.css";
   live. Uses react-bootstrap components and separate css file for styling.
  */
 const Top = () => {
+  const navigate = useNavigate();
+  const { setUser } = useUser();
+
+  const handleLogout = () => {
+    setUser(null);
+    navigate("/login");
+  };
+
   return (
     <Navbar
       fixed="top"
@@ -53,7 +63,7 @@ const Top = () => {
                 <img src={phoneIcon} width="30px" alt="Phone Icon" />
               </Nav.Link>
               <div id="wordLinks">
-                <Nav.Link id="signOut" href="/">
+                <Nav.Link id="signOut" onClick={handleLogout}>
                   Sign Out
                 </Nav.Link>
               </div>

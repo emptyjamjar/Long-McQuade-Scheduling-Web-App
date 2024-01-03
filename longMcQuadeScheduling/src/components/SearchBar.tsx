@@ -1,32 +1,36 @@
-
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useState, useEffect } from 'react';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
+  value: string;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch, value }) => {
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  useEffect(() => {
+    setSearchQuery(value);
+  }, [value]);
+
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const { target } = event;
-    setSearchQuery(target.value);
+    setSearchQuery(event.target.value);
   };
 
-  const handleSearch = () => {
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
     onSearch(searchQuery);
   };
 
   return (
-    <div>
+    <form onSubmit={handleSubmit}>
       <input
         type="search"
-        placeholder="Type in a user..."
+        placeholder="Enter Student Number"
         value={searchQuery}
         onChange={handleInputChange}
       />
-      <button onClick={handleSearch}>Search</button>
-    </div>
+      <button type="submit">Search</button>
+    </form>
   );
 };
 

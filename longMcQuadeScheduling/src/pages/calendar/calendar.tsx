@@ -38,13 +38,13 @@ const lessonEvents = [
   },
   {
     title: "Violin with Jana",
-    start: new Date(2023, 10, 1, 15, 30),
-    end: new Date(2023, 10, 1, 16),
+    start: new Date(2023, 11, 1, 15, 30),
+    end: new Date(2023, 11, 1, 16),
   },
   {
     title: "Violin with Jana",
-    start: new Date(2023, 10, 29, 15, 30),
-    end: new Date(2023, 10, 29, 16),
+    start: new Date(2023, 11, 29, 15, 30),
+    end: new Date(2023, 11, 29, 16),
   },
 ];
 

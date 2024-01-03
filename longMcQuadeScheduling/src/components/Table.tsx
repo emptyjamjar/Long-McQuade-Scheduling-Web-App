@@ -1,15 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
+import { useUser } from "./UserContext";
 
 /* Tables to display lesson information on the homepage.
 Uses react-bootstrap components and inline css for styling.  */
 
 const Tables = () => {
   const [lesson, setLesson] = useState([]);
+
   useEffect(() => {
     axios
-      .get("http://localhost:8080/lessons/")
+      .get("http://localhost:1919/lessons/")
       .then((response) => {
         setLesson(response.data);
       })
