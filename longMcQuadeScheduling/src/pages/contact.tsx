@@ -1,5 +1,5 @@
 import "./contact.css";
-import messageIcon from "../assets/995789_comment_communication_message_messages_icon.svg";
+import messageIcon from "../assets/5402397_email_inbox_mail_message_envelope_icon.svg";
 import phoneIcon from "../assets/9023670_phone_call_fill_icon.svg";
 import locationIcon from "../assets/4200779_address_location_map_navigation_icon.svg";
 import hoursIcon from "../assets/211718_clock_icon.svg";

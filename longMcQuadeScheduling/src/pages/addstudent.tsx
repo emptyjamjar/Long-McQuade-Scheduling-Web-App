@@ -80,15 +80,7 @@ const AddStudent = () => {
             onChange={handleChange}
           />
         </label>
-        <label>
-          Email:
-          <input
-            type="text"
-            name="email"
-            value={student.email}
-            onChange={handleChange}
-          />
-        </label>
+
         <label>
           Address:
           <input

@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 
-
-
 interface TeacherProfile {
   name: string;
   instrument: string;
@@ -20,26 +18,35 @@ const someTeachers: TeacherProfile[] = [
     instrument: "Guitar",
     bio: "Greetings, I'm PassTheMicMike, a 29-year-old music maestro with a passion for guiding students on their musical journey. For four wonderful years, I've been sharing my love for piano and guitar at Long & McQuade. My musical roots run deep—I started playing the guitar at 6 and embraced the piano at 9. Despite the busy schedule from my other full-time job, I bring positivity and dedication to each lesson. Life happens, and schedules might shift, but I'm here to ensure that our musical adventure remains upbeat and enjoyable. If changes arise, feel free to reach out—I'm all about fostering a positive and flexible learning environment! 🎵✨.",
   },
-
 ];
 
 const TeacherProfile: React.FC = () => {
   return (
-    <div style={{ width: "100vw" }}>
-      <div id="teachersProfiles">
-      <Header message="Teachers Profile" name="" />
-        {someTeachers.map((teacher, index) => (
-          <TeacherProfileBox key={index} teacher={teacher} />
-        ))}
+    <div className="private-route-body">
+      <div style={{ width: "80vw" }}>
+        <div id="teachersProfiles">
+          <Header message="Teachers Profile" name="" />
+          {someTeachers.map((teacher, index) => (
+            <TeacherProfileBox key={index} teacher={teacher} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
-
-const TeacherProfileBox: React.FC<{ teacher: TeacherProfile }> = ({ teacher }) => {
+const TeacherProfileBox: React.FC<{ teacher: TeacherProfile }> = ({
+  teacher,
+}) => {
   return (
-    <div style={{ border: "1px solid #ccc", padding: "20px", borderRadius: "8px", margin: "20px" }}>
+    <div
+      style={{
+        border: "1px solid #ccc",
+        padding: "20px",
+        borderRadius: "8px",
+        margin: "20px",
+      }}
+    >
       <h2>{teacher.name}</h2>
       <p>Instrument Taught: {teacher.instrument}</p>
       <p>Bio: {teacher.bio}</p>
